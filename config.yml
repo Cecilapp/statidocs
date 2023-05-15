@@ -1,0 +1,33 @@
+title: Cecil
+baseline: ''
+baseurl: 'http://localhost:8000/'
+description: 'Site description'
+author:
+  name: 'Arnaud Ligny'
+  url: 'https://arnaudligny.fr'
+image: cecil-card.png
+
+navigation:
+  - Introduction
+  - Core concepts
+  - Advanced guides
+
+docsearch:
+  enabled: true
+  apiKey: 'xxxx'
+  appId: 'xxxx'
+  indexName: 'xxxx'
+  debug: false
+
+#output:
+  #formats:
+  #  - name: svg
+  #    mediatype: image/svg+xml
+  #    extension: svg
+  #    exclude: [redirect, paginated]
+  #pagetypeformats:
+  #  page: [svg, html]
+  #  homepage: [html, atom]
+  #  section:  [html, atom]
+  #  vocabulary: [html]
+  #  term: [html, atom]
