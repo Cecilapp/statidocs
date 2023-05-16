@@ -31,7 +31,7 @@ a.title-anchor:hover {
 
 /* Menu */
 #menu h3 {
-  @apply text-gray-500 uppercase font-semibold text-sm tracking-wider;
+  @apply text-gray-500 uppercase font-semibold text-sm;
 }
 #menu ul {
   @apply list-none p-0 mb-6 ml-4;
