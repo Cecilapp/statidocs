@@ -1,6 +1,6 @@
 {
-  "name": "cecil/stadocs",
-  "description": "to do",
+  "name": "cecil/statidocs",
+  "description": "Create and manage an effective documentation.",
   "license": "MIT",
   "type": "project",
   "authors": [
@@ -12,12 +12,9 @@
     }
   ],
   "require": {
-    "cecil/theme-pwa": "^1.14",
     "cecil/theme-netlify": "^1.4",
-    "cecil/theme-netlifycms": "^1.7"
-  },
-  "require-dev": {
-    "cecil/faker": "^1.7"
+    "cecil/theme-netlifycms": "^1.7",
+    "cecil/theme-pwa": "^1.14"
   },
   "config": {
     "allow-plugins": {
