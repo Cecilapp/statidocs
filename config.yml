@@ -1,6 +1,7 @@
 title: Cecil
 baseline: ''
 baseurl: 'https://cecilapp.github.io/statidocs/'
+canonicalurl: true
 description: 'Site description'
 author:
   name: 'Arnaud Ligny'
