@@ -1083,6 +1083,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1264,10 +1268,6 @@ video {
   line-height: 1.25;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .text-blue-100 {
   --tw-text-opacity: 1;
   color: rgb(219 234 254 / var(--tw-text-opacity));
@@ -1342,7 +1342,6 @@ a.title-anchor:hover {
   line-height: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
