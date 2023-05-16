@@ -5,7 +5,7 @@ description: 'Site description'
 author:
   name: 'Arnaud Ligny'
   url: 'https://arnaudligny.fr'
-image: cecil-card.png
+#image: og-card.png
 
 navigation:
   - Introduction
