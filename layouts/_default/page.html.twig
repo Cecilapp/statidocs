@@ -7,8 +7,7 @@
     <style>{{ asset('styles.css')|inline }}</style>
   </head>
   <body class="font-sans antialiased">
-    {#- main navigation ~#}
-    <nav class="h-16 fixed top-0 inset-x-0 z-10 bg-primary px-4 py-3 shadow-md flex items-center">
+    <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary px-4 py-3 shadow-md flex items-center">
       {#- mobile navigation ~#}
       <button class="flex lg:hidden items-center text-blue-100" onclick="toggleMenu()">
         <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +15,7 @@
         </svg>
       </button>
       {#- site title ~#}
-      <a href="{{ url() }}" title="{{ site.title }}" class="inline-block text-blue-100 hover:text-white px-4 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
+      <a href="{{ url() }}" title="{{ site.title }}" class="lg:w-48 inline-block text-blue-100 hover:text-white px-4 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
         {{ site.title }}
       </a>
       {#- DocSearch ~#}
@@ -31,8 +30,9 @@
         </svg>
         <span class="hidden sm:block">GitHub</span>
       </a>
-    </nav>
-    <div class="flex h-full mt-16">
+    </header>
+    <main class="flex h-full mt-16">
+    {%- block content ~%}
       {#- docs menu navigation ~#}
       <nav id="menu" class="fixed flex-shrink-0 lg:w-64 xl:w-80 lg:flex lg:flex-col z-30 h-screen w-full hidden bg-gray-100 px-6 lg:px-8 py-4 lg:py-8 overflow-auto leading-tight">
         {%- for entry in site.menu ~%}
@@ -46,8 +46,7 @@
         </ul>
         {%- endfor ~%}
       </nav>
-      <main class="w-full lg:ml-64 xl:ml-96 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
-        {%- block content ~%}
+      <article class="w-full lg:ml-64 xl:ml-96 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
         {#- GitHub edit ~#}
         {%- if page.type != 'homepage' ~%}
         <a href="{{ site.github.repo }}/blob/{{ site.github.branch }}/pages/{{ page.filepath }}" title="Improve the documentation by editing this file on GitHub" class="hidden md:inline-block float-right text-sm hover:bg-gray-100 text-gray-900 py-2 px-4 border border-gray-400 rounded hover:no-underline">
@@ -55,12 +54,11 @@
         </a>
         {%- endif ~%}
         {#- article content ~#}
-        <article class="markdown max-w-none">
-          {#- <h1 class="text-3xl font-bold">{{ page.title }}</h1> ~#}
+        <section id="content" class="markdown max-w-none">
           {%- block article ~%}
-            {{ page.content }}
+          {{ page.content }}
           {%- endblock article ~%}
-        </article>
+        </section>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
         <div class="mt-12 mb-12 flow-root">
@@ -76,8 +74,7 @@
           {%- endif ~%}
         </div>
         {%- endif ~%}
-        {%- endblock content ~%}
-      </main>
+      </article>
       {#- current page navigation ~#}
       {%- if page.type != 'homepage' ~%}
       <nav id="in-page-menu" class="hidden xl:block py-8 w-64 text-gray-500">
@@ -85,7 +82,10 @@
         <ul class="list-none p-0 sticky top-[80px]"></ul>
       </nav>
       {%- endif ~%}
-    </div>
+    {% endblock content %}
+    </main>
+    <footer>
+    </footer>
     {#- scripts ~#}
     <script>
       function toggleMenu() {
