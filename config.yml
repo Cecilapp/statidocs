@@ -8,6 +8,10 @@ author:
   url: 'https://arnaudligny.fr'
 #image: og-card.png
 
+github:
+  repo: https://github.com/Cecilapp/statidocs
+  branch: main
+
 navigation:
   - Introduction
   - Core concepts
