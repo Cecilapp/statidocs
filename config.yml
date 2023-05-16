@@ -23,16 +23,3 @@ docsearch:
   appId: 'xxxx'
   indexName: 'xxxx'
   debug: false
-
-#output:
-  #formats:
-  #  - name: svg
-  #    mediatype: image/svg+xml
-  #    extension: svg
-  #    exclude: [redirect, paginated]
-  #pagetypeformats:
-  #  page: [svg, html]
-  #  homepage: [html, atom]
-  #  section:  [html, atom]
-  #  vocabulary: [html]
-  #  term: [html, atom]
