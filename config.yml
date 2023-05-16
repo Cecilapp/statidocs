@@ -1,8 +1,8 @@
-title: Cecil
-baseline: ''
+title: Statidocs
+baseline: 'An effective documentation'
 baseurl: 'https://cecilapp.github.io/statidocs/'
 canonicalurl: true
-description: 'Site description'
+description: 'Create and manage an effective documentation.'
 author:
   name: 'Arnaud Ligny'
   url: 'https://arnaudligny.fr'
