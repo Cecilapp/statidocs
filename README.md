@@ -1,6 +1,6 @@
-# Stadocs
+# Statidocs
 
-to do.
+Create and manage and effective documentation.
 
 ```bash
 # install
