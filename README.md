@@ -3,6 +3,8 @@
 Create and manage an effective documentation.
 
 ```bash
+# download
+curl -LO https://cecil.app/cecil.phar
 # install
 composer install
 npm install
