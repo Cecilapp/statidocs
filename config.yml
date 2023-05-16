@@ -1,6 +1,6 @@
 title: Cecil
 baseline: ''
-baseurl: 'http://localhost:8000/'
+baseurl: 'https://cecilapp.github.io/statidocs/'
 description: 'Site description'
 author:
   name: 'Arnaud Ligny'
