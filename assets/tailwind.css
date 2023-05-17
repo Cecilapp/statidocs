@@ -55,22 +55,25 @@ a.title-anchor:hover {
 /* DocSearch */
 .DocSearch.DocSearch-Button {
   @apply w-full md:w-64 lg:w-80 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
-  @apply max-sm:bg-transparent !important;
-  @apply max-sm:shadow-none !important;
+  @apply max-md:bg-transparent !important;
+  @apply max-md:shadow-none !important;
 }
 .DocSearch .DocSearch-Button-Placeholder {
-  @apply text-primary-300 !important;
+  @apply text-primary-100 !important;
 }
 .DocSearch-Button-Keys {
   display: none !important;
 }
 .DocSearch-Search-Icon {
-  @apply text-primary-300 !important;
+  @apply text-primary-100 !important;
 }
 .DocSearch-Form {
   @apply bg-primary-800 !important;
-  @apply text-primary-300 !important;
+  @apply text-primary-100 !important;
+}
+.DocSearch-Input {
+  @apply text-primary-100 !important;
 }
 .DocSearch-Input::placeholder {
-  @apply text-primary-300 !important;
+  @apply text-primary-100 !important;
 }
