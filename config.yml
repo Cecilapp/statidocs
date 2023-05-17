@@ -6,7 +6,7 @@ description: 'Create and manage an effective documentation.'
 author:
   name: 'Arnaud Ligny'
   url: 'https://arnaudligny.fr'
-#image: og-card.png
+image: cecil-card.png
 
 github:
   repo: https://github.com/Cecilapp/statidocs
@@ -23,3 +23,7 @@ docsearch:
   appId: 'xxxx'
   indexName: 'xxxx'
   debug: false
+
+body:
+  highlight:
+    enabled: true
