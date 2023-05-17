@@ -1405,7 +1405,7 @@ a.title-anchor:hover {
   }
 }
 
-@media not all and (min-width: 640px) {
+@media not all and (min-width: 768px) {
   .DocSearch.DocSearch-Button {
     background-color: transparent !important;
     --tw-shadow: 0 0 #0000 !important;
@@ -1416,7 +1416,7 @@ a.title-anchor:hover {
 
 .DocSearch .DocSearch-Button-Placeholder {
   --tw-text-opacity: 1 !important;
-  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
 .DocSearch-Button-Keys {
@@ -1425,24 +1425,29 @@ a.title-anchor:hover {
 
 .DocSearch-Search-Icon {
   --tw-text-opacity: 1 !important;
-  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
 .DocSearch-Form {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1 !important;
-  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
+}
+
+.DocSearch-Input {
+  --tw-text-opacity: 1 !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
 .DocSearch-Input::-moz-placeholder {
   --tw-text-opacity: 1 !important;
-  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
 .DocSearch-Input::placeholder {
   --tw-text-opacity: 1 !important;
-  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
+  color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:bg-gray-100:hover {
