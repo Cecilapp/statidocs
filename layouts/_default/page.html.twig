@@ -92,7 +92,18 @@
         document.getElementById('menu').classList.toggle('hidden');
       }
     </script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <style>
+      .hljs {
+        background: none;
+      }
+      code.hljs {
+        padding: 0;
+      }
+      pre code.hljs {
+        padding: 0;
+      }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js" integrity="sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==" crossorigin="anonymous"></script>
     <script>
       $(function () {
