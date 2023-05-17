@@ -1,233 +1,103 @@
 # Markdown
 
----
-__Advertisement :)__
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+[Link to 1-Installation.md](1-Installation.md.md).
 
-You will like those projects!
+There should be whitespace between paragraphs.
 
----
+## Header 2
 
-# h1 Heading 8-)
-
-## h2 Heading
-
-### h3 Heading
-
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
-___
-
----
-
-***
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-## Emphasis
-
-__This is bold text__
-
-__This is bold text__
-
-*This is italic text*
-
-*This is italic text*
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    - Ac tristique libero volutpat at
-    - Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-- Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link <https://github.com/nodeca/pica> (enable linkify to see)
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+> This is a blockquote following a header.
 >
-> Shortcuts (emoticons): :-) :-( 8-) ;)
+> When something is important enough, you do it even if the odds are not in your favor.
 
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+### Header 3
 
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+```php
+// PHP code
+Cecil::create(
+    [
+        'title'   => "My website",
+        'baseurl' => 'http://localhost:8000/',
+    ]
+)->build();
+```
 
-- 19^th^
-- H~2~O
+#### Header 4
 
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
 
-++Inserted text++
+##### Header 5
 
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
-==Marked text==
+###### Header 6
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
-Footnote 1 link[^first].
+### There's a horizontal rule below this
 
-Footnote 2 link[^second].
+* * *
 
-Inline footnote^[Text of inline footnote] definition.
+### Here is an unordered list
 
-Duplicated footnote reference[^second].
+* Item foo
+* Item bar
+* Item baz
+* Item zip
 
-[^first]: Footnote __can have markup__
+### And an ordered list
 
-    and multiple paragraphs.
+1. Item one
+1. Item two
+1. Item three
+1. Item four
 
-[^second]: Footnote text.
+### And a nested list
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+* level 1 item
+  * level 2 item
+  * level 2 item
+    * level 3 item
+    * level 3 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+* level 1 item
 
-Term 1
+### Image
 
-:   Definition 1
-with lazy continuation.
+![Cecil favicon](/favicon.png "Cecil favicon")
 
-Term 2 with *inline markup*
+### Definition lists
 
-:   Definition 2
+First Term
+: This is the definition of the first term.
 
-        { some code, part of Definition 2 }
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
 
-    Third paragraph of definition 2.
+### Code blocks
 
-*Compact style:*
+```text
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+```text
+The final element.
+```
