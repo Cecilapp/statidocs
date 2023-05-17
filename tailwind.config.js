@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     './layouts/**/*.html.twig',
@@ -5,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1D49C8',
+        primary: colors.blue,
       },
     },
   },
