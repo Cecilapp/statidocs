@@ -1,0 +1,13 @@
+      {#- docs menu navigation ~#}
+      <nav id="menu" class="fixed flex-shrink-0 lg:w-64 xl:w-80 lg:flex lg:flex-col z-30 h-screen w-full hidden bg-gray-100 px-6 lg:px-8 py-4 lg:py-8 overflow-auto leading-tight">
+        {%- for entry in site.menu ~%}
+        <h3>{{ entry }}</h3>
+        <ul>
+          {%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ entry|slugify ~ '}') ~%}
+          <li>
+            <a href="{{ url(p) }}" class="{% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
+          </li>
+          {%- endfor ~%}
+        </ul>
+        {%- endfor ~%}
+      </nav>

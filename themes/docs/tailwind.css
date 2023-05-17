@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-primary-700;
+}
+
+a:hover {
+  @apply underline;
+}
+
+header a {
+  @apply hover:no-underline
+}
+
+/* Hx anchor */
+.title-anchor {
+  margin-left: -22px;
+  padding-right: 0.5rem;
+}
+a.title-anchor {
+  text-decoration: none;
+  @apply text-primary-700;
+  opacity: 0.75;
+}
+a.title-anchor:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Menu */
+#menu h3 {
+  @apply text-gray-500 uppercase font-semibold text-sm;
+}
+#menu ul {
+  @apply list-none p-0 mb-6 ml-4;
+}
+#menu ul:last-child {
+  @apply mb-0;
+}
+#menu ul>li {
+  @apply my-3;
+}
+#menu ul>li:last-child {
+  @apply mb-0;
+}
+#menu ul>li>a {
+  @apply text-gray-800;
+}
+#menu ul>li>a.active {
+  @apply font-bold;
+}
+
+/* DocSearch */
+.DocSearch.DocSearch-Button {
+  @apply w-full md:w-64 lg:w-80 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
+  @apply max-md:bg-transparent !important;
+  @apply max-md:shadow-none !important;
+}
+.DocSearch .DocSearch-Button-Placeholder {
+  @apply text-primary-100 !important;
+}
+.DocSearch-Button-Keys {
+  display: none !important;
+}
+.DocSearch-Search-Icon {
+  @apply text-primary-100 !important;
+}
+.DocSearch-Form {
+  @apply bg-primary-800 !important;
+  @apply text-primary-100 !important;
+}
+.DocSearch-Input {
+  @apply text-primary-100 !important;
+}
+.DocSearch-Input::placeholder {
+  @apply text-primary-100 !important;
+}
