@@ -24,6 +24,9 @@ docsearch:
   indexName: 'xxxx'
   debug: false
 
+theme:
+  - docs
+
 body:
   highlight:
     enabled: true

@@ -9,7 +9,7 @@ curl -LO https://cecil.app/cecil.phar
 composer install
 npm install
 # build CSS
-npx tailwindcss -i ./assets/tailwind.css -o ./assets/styles.css --watch
+npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css --watch
 # serve
 php cecil.phar serve -v
 ```
