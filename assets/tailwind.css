@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 a {
-  @apply text-primary;
+  @apply text-primary-700;
 }
 
 a:hover {
   @apply underline;
 }
 
-body>nav a {
+header a {
   @apply hover:no-underline
 }
 
@@ -21,7 +21,7 @@ body>nav a {
 }
 a.title-anchor {
   text-decoration: none;
-  @apply text-primary;
+  @apply text-primary-700;
   opacity: 0.75;
 }
 a.title-anchor:hover {
