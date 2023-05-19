@@ -1,42 +1,44 @@
 {% extends '_default/page.html.twig' %}
 
     {%- block content ~%}
-      {#- docs menu navigation ~#}
-      {%- include 'partials/menu.html.twig' ~%}
-      <article class="w-full lg:ml-64 xl:ml-96 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
-        {#- GitHub edit ~#}
-        {%- if page.type != 'homepage' ~%}
-        <a href="{{ site.github.repo }}/blob/{{ site.github.branch }}/pages/{{ page.filepath }}" title="Improve the documentation by editing this file on GitHub" class="hidden md:inline-block float-right text-sm hover:bg-gray-100 text-gray-900 py-2 px-4 border border-gray-400 rounded hover:no-underline">
-          Edit<span class="hidden lg:inline"> on GitHub</span>
-        </a>
-        {%- endif ~%}
+      {#- sidebar navigation ~#}
+      {%- include 'partials/sidebar.html.twig' ~%}
+      <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
         {#- article content ~#}
         <section id="content" class="markdown max-w-none">
           {%- block article ~%}
           {{ page.content }}
           {%- endblock article ~%}
         </section>
+        <footer class="pt-6">
+          {% include 'partials/edit.html.twig' %}
+        </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
-        <div class="mt-12 mb-12 flow-root">
+        <nav class="mt-12 mb-12">
           {%- if page.prev is defined ~%}
-          <a class="float-left mt-3" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
-            ← {{ page.prev.title }}
+          <a class="float-left mt-3 font-medium hover:no-underline" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
+            <div class="mb-2 text-slate-500">Previous</div>
+            <div class="hover:opacity-75">← {{ page.prev.title }}</div>
           </a>
           {%- endif ~%}
           {%- if page.next is defined ~%}
-          <a class="float-right mt-3" href="{{ url(page.next) }}" title="{{ page.next.title }}">
-            {{ page.next.title }} →
+          <a class="float-right mt-3 font-medium hover:no-underline" href="{{ url(page.next) }}" title="{{ page.next.title }}">
+            <div class="mb-2 text-slate-500 text-right">Next</div>
+            <div class="hover:opacity-75">{{ page.next.title }} →</div>
           </a>
           {%- endif ~%}
-        </div>
+        </nav>
         {%- endif ~%}
       </article>
       {#- current page navigation ~#}
       {%- if page.type != 'homepage' ~%}
-      <nav id="in-page-menu" class="hidden xl:block py-8 w-64 text-gray-500">
-        <h3 class="mb-2 font-semibold text-sm uppercase">On this page</h3>
-        <ul class="list-none p-0 sticky top-[80px]"></ul>
-      </nav>
+      <div>
+        <nav id="on-this-page" class="hidden xl:block py-8 w-64 text-slate-400 sticky top-[80px]">
+          <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">On this page</h3>
+          <ul class="list-none pb-5 border-b-2"></ul>
+          {% include 'partials/edit.html.twig' %}
+        </nav>
+      </div>
       {%- endif ~%}
     {% endblock content %}
