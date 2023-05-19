@@ -29,26 +29,26 @@ a.title-anchor:hover {
   opacity: 1;
 }
 
-/* Menu */
-#menu h3 {
+/* Sidebar */
+#sidebar h3 {
   @apply text-gray-500 uppercase font-semibold text-sm;
 }
-#menu ul {
+#sidebar ul {
   @apply list-none p-0 mb-6 ml-4;
 }
-#menu ul:last-child {
+#sidebar ul:last-child {
   @apply mb-0;
 }
-#menu ul>li {
+#sidebar ul>li {
   @apply my-3;
 }
-#menu ul>li:last-child {
+#sidebar ul>li:last-child {
   @apply mb-0;
 }
-#menu ul>li>a {
+#sidebar ul>li>a {
   @apply text-gray-800;
 }
-#menu ul>li>a.active {
+#sidebar ul>li>a.active {
   @apply font-bold;
 }
 
