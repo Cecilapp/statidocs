@@ -1,7 +1,6 @@
 {% extends '_default/page.html.twig' %}
 
-    {%- block content ~%}
-      {#- sidebar navigation ~#}
+    {% block content %}
       {%- include 'partials/sidebar.html.twig' ~%}
       <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
         {#- article content ~#}
@@ -11,7 +10,7 @@
           {%- endblock article ~%}
         </section>
         <footer class="pt-6">
-          {% include 'partials/edit.html.twig' %}
+          {%- include 'partials/edit.html.twig' ~%}
         </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
@@ -37,7 +36,7 @@
         <nav id="on-this-page" class="hidden xl:block py-8 w-64 text-slate-400 sticky top-[80px]">
           <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">On this page</h3>
           <ul class="list-none pb-5 border-b-2"></ul>
-          {% include 'partials/edit.html.twig' %}
+          {%- include 'partials/edit.html.twig' ~%}
         </nav>
       </div>
       {%- endif ~%}
