@@ -8,10 +8,13 @@
   </head>
   <body class="font-sans antialiased">
     <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 px-4 py-3 shadow-md flex items-center">
-      {#- mobile navigation ~#}
+      {#- mobile sidebar ~#}
       <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
-        <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+        </svg>
+        <svg id="sidebar-svg2" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+          <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
       {#- site title ~#}
@@ -33,9 +36,9 @@
     </header>
     <main class="flex h-full mt-16">
     {%- block content ~%}
-      {#- docs menu navigation ~#}
-      {%- include 'partials/menu.html.twig' ~%}
-      <article class="w-full lg:ml-64 xl:ml-96 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
+      {#- sidebar navigation ~#}
+      {%- include 'partials/sidebar.html.twig' ~%}
+      <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
         {#- article content ~#}
         <section id="content" class="markdown max-w-none">
           {%- block article ~%}
@@ -50,7 +53,9 @@
     {#- scripts ~#}
     <script>
       function toggleMenu() {
-        document.getElementById('menu').classList.toggle('hidden');
+        document.getElementById('sidebar').classList.toggle('hidden');
+        document.getElementById('sidebar-svg1').classList.toggle('hidden');
+        document.getElementById('sidebar-svg2').classList.toggle('hidden');
       }
     </script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
@@ -70,12 +75,12 @@
       $(function () {
         $('article h2, article h3').each(function () {
           var url = document.URL.replace(/#.*$/, "") + '#' + $(this).attr('id');
-          $(this).prepend(' <a class="title-anchor" href="' + url + '">#</a>');
+          $(this).prepend('<a class="title-anchor" href="' + url + '">#</a>');
         });
         $('article h2').each(function () {
           var url = '#' + $(this).attr('id');
-          var caption = $(this).text().substr(2);
-          $('#in-page-menu ul').append('<li class="py-2"><a class="text-gray-500" href="' + url + '">' + caption + '</a></li>');
+          var caption = $(this).text().substr(1);
+          $('#on-this-page ul').append('<li class="py-1"><a class="text-slate-500" href="' + url + '">' + caption + '</a></li>');
         });
       });
     </script>
