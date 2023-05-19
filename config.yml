@@ -12,7 +12,7 @@ github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
 
-menu:
+sidebar:
   - Introduction
   - Core concepts
   - Advanced guides
