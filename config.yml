@@ -17,6 +17,15 @@ sidebar:
   - Core concepts
   - Advanced guides
 
+language: en
+languages:
+  - code: en
+    name: English
+    locale: en
+  - code: fr
+    name: Français
+    locale: fr
+
 docsearch:
   enabled: true
   apiKey: 'xxxx'
