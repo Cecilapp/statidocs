@@ -2,7 +2,8 @@
         {%- for entry in site.sidebar ~%}
         <h3>{{ entry }}</h3>
         <ul>
-          {%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ entry|slugify ~ '}') ~%}
+          {#{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ entry|slugify ~ '}') ~%}#}
+          {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ entry|slugify) ~%}
           <li>
             <a href="{{ url(p) }}" class="{% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
           </li>
