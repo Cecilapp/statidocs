@@ -1,4 +1,4 @@
-# Page 3
+# Project Structure
 
 ## Title 1
 

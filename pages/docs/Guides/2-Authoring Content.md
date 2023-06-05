@@ -1,4 +1,4 @@
-# Markdown
+# Authoring Content in Markdown
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 

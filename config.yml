@@ -26,6 +26,6 @@ docsearch:
   appId: 'xxxx'
   indexName: 'xxxx'
 sidebar:
-  - Group 1
-  - Group 2
-  - Group 3
+  - Introduction
+  - Guides
+  - Reference

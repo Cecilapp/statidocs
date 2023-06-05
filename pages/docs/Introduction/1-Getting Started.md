@@ -1,4 +1,4 @@
-# Page 6
+# Getting Started
 
 ## Title 1
 
