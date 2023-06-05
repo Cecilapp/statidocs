@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}" class="scroll-pt-[70px] scroll-smooth">
+<html lang="{{ site.language }}" class="scroll-pt-[70px] scroll-smooth overflow-y-scroll">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {%~ include 'partials/metatags.html.twig' ~%}
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300,400,700|Poppins:400,600&display=swap" rel="stylesheet">
     <style>{{ asset('styles.css')|inline }}</style>
   </head>
-  <body class="font-sans antialiased">
-    <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 px-4 py-3 shadow-md flex items-center">
+  <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950">
+    <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
       {#- mobile sidebar ~#}
       <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -37,9 +37,9 @@
     <main class="flex h-full mt-16">
     {% block content %}
       {%- include 'partials/sidebar.html.twig' ~%}
-      <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 md:px-6 lg:px-16 py-8 lg:py-16">
+      <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-8">
         {#- article content ~#}
-        <section id="content" class="markdown max-w-none">
+        <section id="content" class="markdown dark:markdown-invert max-w-none">
           {%- block article ~%}
           {{ page.content }}
           {%- endblock article ~%}
@@ -74,13 +74,9 @@
       $(function () {
         $('article h2, article h3').each(function () {
           var url = document.URL.replace(/#.*$/, "") + '#' + $(this).attr('id');
-          $(this).prepend('<a class="title-anchor" href="' + url + '">#</a>');
+          $(this).append('<a class="title-anchor" href="' + url + '">#</a>');
         });
-        $('article h2').each(function () {
-          var url = '#' + $(this).attr('id');
-          var caption = $(this).text().substr(1);
-          $('#on-this-page ul').append('<li class="py-1"><a class="text-slate-500" href="' + url + '">' + caption + '</a></li>');
-        });
+
       });
     </script>
     {%- if site.docsearch.enabled ?? false ~%}
