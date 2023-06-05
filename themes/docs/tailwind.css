@@ -37,7 +37,7 @@ a.title-anchor:hover {
   @apply text-slate-500 dark:text-slate-200 uppercase font-semibold text-sm;
 }
 #sidebar ul {
-  @apply list-none p-0 mb-6 ml-4;
+  @apply list-none p-0 mb-6;
 }
 #sidebar ul:last-child {
   @apply mb-0;
