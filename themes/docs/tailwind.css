@@ -16,8 +16,7 @@ header a {
 
 /* Hx anchor */
 .title-anchor {
-  margin-left: -22px;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 a.title-anchor {
   text-decoration: none;
@@ -29,9 +28,13 @@ a.title-anchor:hover {
   opacity: 1;
 }
 
+#on-this-page > ul {
+  @apply list-none pb-5 border-b-2;
+}
+
 /* Sidebar */
 #sidebar h3 {
-  @apply text-gray-500 uppercase font-semibold text-sm;
+  @apply text-slate-500 dark:text-slate-200 uppercase font-semibold text-sm;
 }
 #sidebar ul {
   @apply list-none p-0 mb-6 ml-4;
@@ -46,7 +49,7 @@ a.title-anchor:hover {
   @apply mb-0;
 }
 #sidebar ul>li>a {
-  @apply text-gray-800;
+  @apply text-slate-800 dark:text-slate-300;
 }
 #sidebar ul>li>a.active {
   @apply font-bold;
