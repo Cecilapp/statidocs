@@ -1,6 +1,11 @@
       <nav id="sidebar" class="fixed flex-shrink-0 lg:w-64 xl:w-80 lg:flex lg:flex-col z-30 h-screen w-full hidden bg-primary-100 dark:bg-primary-950 px-4 lg:px-6 py-4 lg:py-6 overflow-auto leading-tight">
         {%- for group in site.sidebar ~%}
-        <h3>{{ group }}</h3>
+          {%- if site.page('docs/' ~ group|slugify) ~%}
+            {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
+          {%- else ~%}
+            {%- set group_title = group ~%}
+          {%- endif ~%}
+        <h3>{{ group_title }}</h3>
         <ul>
           {#{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}#}
           {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
