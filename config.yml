@@ -7,14 +7,6 @@ author:
   name: 'Arnaud Ligny'
   url: 'https://arnaudligny.fr'
 image: cecil-card.png
-theme:
-  - docs
-github:
-  repo: https://github.com/Cecilapp/statidocs
-sidebar:
-  - Category 1
-  - Category 2
-  - Category 3
 language: en
 languages:
   - code: en
@@ -23,3 +15,17 @@ languages:
   - code: fr
     name: Français
     locale: fr
+theme:
+  - docs
+github:
+  repo: https://github.com/Cecilapp/statidocs
+  branch: main
+docsearch:
+  enabled: true
+  apiKey: 'xxxx'
+  appId: 'xxxx'
+  indexName: 'xxxx'
+sidebar:
+  - Group 1
+  - Group 2
+  - Group 3
