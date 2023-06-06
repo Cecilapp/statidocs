@@ -25,6 +25,7 @@
       {%- if site.docsearch.enabled ?? false ~%}
       <div id="search-container" class="md:inline-block px-4 py-2"></div>
       {%- endif ~%}
+      <div class="grow"></div>
       {#- GitHub link ~#}
       <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex text-primary-100 hover:text-white px-3 py-2 sm:mr-4 items-center">
         <svg class="fill-current text-primary-200 w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
@@ -33,6 +34,10 @@
         </svg>
         <span class="hidden sm:block">GitHub</span>
       </a>
+      <div class="flex justify-end">
+        {#{%- include 'partials/theme-selector.html.twig' ~%}#}
+        {%- include 'partials/language-selector.html.twig' ~%}
+      </div>
     </header>
     <main class="flex h-full mt-16">
     {% block content %}
