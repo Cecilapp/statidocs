@@ -5,9 +5,9 @@
           {%- else ~%}
             {%- set group_title = group ~%}
           {%- endif ~%}
-        <h3>{{ group_title }}</h3>
+        <h3>{{ group_title|trans }}</h3>
         <ul>
-          {#{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}#}
+          {#-{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}~#}
           {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
           <li>
             <a href="{{ url(p) }}" class="{% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
