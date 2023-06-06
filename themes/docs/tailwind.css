@@ -80,3 +80,10 @@ a.title-anchor:hover {
 .DocSearch-Input::placeholder {
   @apply text-primary-100 !important;
 }
+
+#theme-select, #lang-select {
+  @apply bg-transparent border-0 text-primary-50;
+}
+#theme-select option, #lang-select option {
+  @apply text-primary-950;
+}
