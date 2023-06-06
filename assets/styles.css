@@ -1520,8 +1520,14 @@ a.title-anchor:hover {
 }
 
 #theme-select, #lang-select {
+  cursor: pointer;
   border-width: 0px;
   background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(219 234 254 / var(--tw-text-opacity));
+}
+
+#theme-select:hover, #lang-select:hover {
   --tw-text-opacity: 1;
   color: rgb(239 246 255 / var(--tw-text-opacity));
 }
@@ -1550,9 +1556,9 @@ a.title-anchor:hover {
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
 }
 
-.hover\:text-white:hover {
+.hover\:text-primary-50:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(239 246 255 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
