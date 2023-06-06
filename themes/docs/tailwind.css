@@ -82,7 +82,10 @@ a.title-anchor:hover {
 }
 
 #theme-select, #lang-select {
-  @apply bg-transparent border-0 text-primary-50;
+  @apply bg-transparent border-0 text-primary-100 cursor-pointer;
+}
+#theme-select:hover, #lang-select:hover {
+  @apply text-primary-50;
 }
 #theme-select option, #lang-select option {
   @apply text-primary-950;
