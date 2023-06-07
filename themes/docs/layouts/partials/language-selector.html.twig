@@ -1,6 +1,6 @@
 {#- language selector ~#}
 {%- if page.translations|length >= 1 ~%}
-      <form id="lang-form" action="#" method="post">
+      <form id="lang-form">
         <label class="sr-only" for="lang-select">{% trans %}Language:{% endtrans %}</label>
         <select id="lang-select" onchange="switchLanguage(value)">
           <option value="{{ url(page) }}">{{ page.language|language_name(site.language.locale(page.language))|capitalize }}</option>
@@ -14,8 +14,7 @@
       <script>
         function switchLanguage(language) {
           setLanguageCookie(language);
-          document.getElementById('lang-form').action = document.getElementById('lang-select').value;
-          document.getElementById('lang-form').submit();
+          window.location.href = document.getElementById('lang-select').value;
         }
         function setLanguageCookie(language) {
           language = trimSlashes(language);
