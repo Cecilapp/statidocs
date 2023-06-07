@@ -17,5 +17,5 @@ module.exports = {
       className: 'markdown',
     }),
   ],
-  darkMode: 'class',
+  //darkMode: 'class',
 }
