@@ -90,3 +90,54 @@ a.title-anchor:hover {
 #theme-select option, #lang-select option {
   @apply text-primary-950;
 }
+
+/* Note block in Markdown */
+.note {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  @apply border border-l-4 border-blue-500 dark:border-white;
+}
+.note > p {
+  margin: 0;
+}
+[class*="note-"] {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+[class*="note-"]:before {
+  position: absolute;
+  top: 1.3rem;
+  left: 0.8rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  mask-image: url(/images/icons/info.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  content: "";
+  @apply bg-blue-500 dark:bg-white;
+}
+.note-info {
+  @apply border border-l-4 border-sky-700 dark:border-sky-400 bg-sky-50 dark:bg-sky-900;
+}
+.note-info:before {
+  mask-image: url(/images/icons/info.svg);
+  @apply bg-sky-700 dark:bg-sky-400;
+}
+.note-tip {
+  @apply border border-l-4 border-lime-700 dark:border-lime-400 bg-lime-50 dark:bg-lime-900;
+}
+.note-tip:before {
+  mask-image: url(/images/icons/light-bulb.svg);
+  @apply bg-lime-700 dark:bg-lime-400;
+}
+.note-important {
+  @apply border border-l-4 border-red-700 dark:border-red-400 bg-red-50 dark:bg-red-900;
+}
+.note-important:before {
+  mask-image: url(/images/icons/stop.svg);
+  @apply bg-red-700 dark:bg-red-400;
+}
