@@ -10,6 +10,7 @@ docsearch:
 sidebar:
   - Group 1
 
-body:
-  highlight:
-    enabled: true
+pages:
+  body:
+    highlight:
+      enabled: true
