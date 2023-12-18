@@ -2,7 +2,7 @@
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to 1-Page 1.md](page:docs/category-1/page-1/).
+[Link to _1-Getting Started.md_](page:docs/introduction/getting-started).
 
 There should be whitespace between paragraphs.
 
