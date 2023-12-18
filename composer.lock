@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0332fdb7d75743f29c0c4e7c150fde74",
+    "content-hash": "48efaed6c3098df2296a1dbd64eb3dc7",
     "packages": [
         {
             "name": "cecil/theme-installer",
@@ -78,16 +78,16 @@
         },
         {
             "name": "cecil/theme-netlify",
-            "version": "1.4.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-netlify.git",
-                "reference": "e5fa01c7aac664d596709185fdb31b0a20031f13"
+                "reference": "22f2799058513cfe427f5b47b568d515e60f2932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/e5fa01c7aac664d596709185fdb31b0a20031f13",
-                "reference": "e5fa01c7aac664d596709185fdb31b0a20031f13",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/22f2799058513cfe427f5b47b568d515e60f2932",
+                "reference": "22f2799058513cfe427f5b47b568d515e60f2932",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
             "extra": {
                 "name": "netlify",
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -112,13 +112,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-netlify/issues",
-                "source": "https://github.com/Cecilapp/theme-netlify/tree/1.4.0"
+                "source": "https://github.com/Cecilapp/theme-netlify/tree/2.0.0"
             },
             "funding": [
-                {
-                    "url": "https://www.paypal.me/narno",
-                    "type": "custom"
-                },
                 {
                     "url": "https://github.com/ArnaudLigny",
                     "type": "github"
@@ -128,20 +124,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-02-22T00:32:07+00:00"
+            "time": "2023-12-09T01:10:41+00:00"
         },
         {
             "name": "cecil/theme-netlifycms",
-            "version": "1.7.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-netlifycms.git",
-                "reference": "ab01f7e7cde2a2f03536e785ba02d7b4aecbac3d"
+                "reference": "a7422d85eaa42cdaf4c6c9fb1530103218ba7741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlifycms/zipball/ab01f7e7cde2a2f03536e785ba02d7b4aecbac3d",
-                "reference": "ab01f7e7cde2a2f03536e785ba02d7b4aecbac3d",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlifycms/zipball/a7422d85eaa42cdaf4c6c9fb1530103218ba7741",
+                "reference": "a7422d85eaa42cdaf4c6c9fb1530103218ba7741",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +163,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-netlifycms/issues",
-                "source": "https://github.com/Cecilapp/theme-netlifycms/tree/1.7.2"
+                "source": "https://github.com/Cecilapp/theme-netlifycms/tree/2.0.0"
             },
             "funding": [
                 {
@@ -183,20 +179,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-03-21T14:39:13+00:00"
+            "time": "2023-04-22T01:45:02+00:00"
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "1.15.3",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "907abf5271b7b90aa999b0000e9c47c2add9c10b"
+                "reference": "18e4825775bdcfc2322eb1508af5c18781545dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/907abf5271b7b90aa999b0000e9c47c2add9c10b",
-                "reference": "907abf5271b7b90aa999b0000e9c47c2add9c10b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/18e4825775bdcfc2322eb1508af5c18781545dba",
+                "reference": "18e4825775bdcfc2322eb1508af5c18781545dba",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +202,7 @@
             "extra": {
                 "name": "pwa",
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -221,13 +217,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/1.15.3"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.0.1"
             },
             "funding": [
-                {
-                    "url": "https://www.paypal.me/narno",
-                    "type": "custom"
-                },
                 {
                     "url": "https://github.com/ArnaudLigny",
                     "type": "github"
@@ -237,7 +229,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-05T09:20:45+00:00"
+            "time": "2023-12-13T01:56:22+00:00"
         }
     ],
     "packages-dev": [],
@@ -248,5 +240,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
