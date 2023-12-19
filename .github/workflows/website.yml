@@ -15,8 +15,6 @@ jobs:
         uses: Cecilapp/Cecil-Action@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_site"
 
   deploy:
     needs: build
