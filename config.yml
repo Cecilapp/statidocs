@@ -15,6 +15,7 @@ languages:
   - code: fr
     name: Français
     locale: fr
+    enabled: true
 theme:
   - docs
 github:
