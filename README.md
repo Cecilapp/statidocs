@@ -1,7 +1,5 @@
 # Statidocs
 
-> Create and manage an effective documentation.
-
 _Statidocs_ is a documentation theme built on top of [Cecil](https://cecil.app).
 
 > [!IMPORTANT]  
