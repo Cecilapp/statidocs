@@ -5,7 +5,7 @@ description: Learn how to start building your documentation site with Statidocs 
 # Getting Started
 
 :::important
-**WIP**  
+**Work in progress**  
 _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 :::
 
