@@ -26,7 +26,8 @@
       <div id="search-container" class="md:inline-block px-4 py-2"></div>
       {%- endif ~%}
       <div class="grow"></div>
-      {#- GitHub link ~#}
+      {#- GitHub link -#}
+      {%- if site.github.repo|default ~%}
       <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex text-primary-100 hover:text-primary-50 px-3 py-2 sm:mr-4 items-center">
         <svg class="fill-current text-primary-200 w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
           <title>{{ site.title }} on GitHub</title>
@@ -34,6 +35,7 @@
         </svg>
         <span class="hidden sm:block">GitHub</span>
       </a>
+      {%- endif ~%}
       <div class="flex justify-end">
         {#{%- include 'partials/theme-selector.html.twig' ~%}#}
         {%- include 'partials/language-selector.html.twig' ~%}
