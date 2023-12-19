@@ -1,14 +1,15 @@
-github:
-  repo: https://github.com/org/repo
-  branch: main
-docsearch:
-  enabled: true
-  apiKey: 'xxxx'
-  appId: 'xxxx'
-  indexName: 'xxxx'
-  debug: false
-sidebar:
-  - Group 1
+#github:
+#  repo: https://github.com/org/repo
+#  branch: main
+#docsearch:
+#  enabled: true
+#  apiKey: 'xxxx'
+#  appId: 'xxxx'
+#  indexName: 'xxxx'
+#  debug: false
+#sidebar:
+#  - Group 1
+#  - Group 2
 
 pages:
   body:
