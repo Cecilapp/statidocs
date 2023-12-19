@@ -1,29 +1,28 @@
 ---
 title: Getting Started
-description: Learn how to start building your next documentation site with Statidocs by Cecil.
+description: Learn how to start building your documentation site with Statidocs by Cecil.
 ---
 # Getting Started
 
 :::important
 **WIP**  
-Statidocs is still in development.
-If something that’s not working, [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
+_Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 :::
 
 ## Creating a new project
 
-Statidocs is a documentation theme built on top of [Cecil](https://cecil.app).
+_Statidocs_ is a documentation theme built on top of [Cecil](https://cecil.app).
 
-You can create a new Statidocs project using the following commands:
+You can preview your documentation site with the following commands:
 
-```sh
+```bash
+# download Cecil
 curl -LO https://cecil.app/cecil.phar
+# build and serve locally
 php cecil.phar serve
 ```
 
-This will create a new [project directory](page:docs/guides/project-structure).
-
 :::tip
 **Demo**  
-Try Statidocs on GitHub Pages: [cecilapp.github.io/statidocs/](https://cecilapp.github.io/statidocs/).
+Try _Statidocs_ on GitHub Pages: [cecilapp.github.io/statidocs/](https://cecilapp.github.io/statidocs/).
 :::
