@@ -1,12 +1,28 @@
 ---
 title: Commencer
+description: Apprenez comment commencer à créer un site web de documentation avec Statidocs par Cecil.
 ---
 # Commencer
 
-## Titre 1
+:::important
+**Travail en cours**  
+_Statidocs_ est encore en cours de développement. Si quelque chose ne fonctionne pas, veuillez [créer un ticket sur GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
+:::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Créer un nouveau projet
 
-## Titre 2
+_Statidocs_ est un theme de documentation construit par dessus [Cecil](https://cecil.app).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Vous pouvez prévisualier votre site web de documentation via les commandes suivantes :
+
+```bash
+# télécharger Cecil
+curl -LO https://cecil.app/cecil.phar
+# construire et servir localement
+php cecil.phar serve
+```
+
+:::tip
+**Démo**  
+Essayez _Statidocs_ sur GitHub Pages : [cecilapp.github.io/statidocs/fr/](https://cecilapp.github.io/statidocs/fr/).
+:::
