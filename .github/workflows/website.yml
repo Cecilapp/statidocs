@@ -21,6 +21,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      actions: write
     concurrency:
       group: pages
       cancel-in-progress: true
