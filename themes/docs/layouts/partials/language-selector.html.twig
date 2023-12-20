@@ -1,5 +1,4 @@
-{#- language selector ~#}
-{%- if page.translations|length >= 1 ~%}
+      {%- if page.translations|length >= 1 ~%}
       <form id="lang-form">
         <label class="sr-only" for="lang-select">{% trans %}Language:{% endtrans %}</label>
         <select id="lang-select" onchange="switchLanguage(value)">
@@ -30,4 +29,4 @@
           return str;
         }
       </script>
-{%- endif ~%}
+      {%- endif ~%}
