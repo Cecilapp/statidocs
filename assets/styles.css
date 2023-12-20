@@ -1378,14 +1378,19 @@ video {
   color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1416,6 +1421,13 @@ a {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+@media (prefers-color-scheme: dark) {
+  a {
+    --tw-text-opacity: 1;
+    color: rgb(96 165 250 / var(--tw-text-opacity));
+  }
+}
+
 a:hover {
   text-decoration-line: underline;
 }
@@ -1434,6 +1446,16 @@ a.title-anchor {
   text-decoration: none;
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  a.title-anchor {
+    --tw-text-opacity: 1;
+    color: rgb(96 165 250 / var(--tw-text-opacity));
+  }
+}
+
+a.title-anchor {
   opacity: 0.75;
 }
 
@@ -1442,10 +1464,21 @@ a.title-anchor:hover {
   opacity: 1;
 }
 
+/* On this page */
+
 #on-this-page > ul {
   list-style-type: none;
   border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
   padding-bottom: 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  #on-this-page > ul {
+    --tw-border-opacity: 1;
+    border-color: rgb(100 116 139 / var(--tw-border-opacity));
+  }
 }
 
 /* Sidebar */
@@ -1798,6 +1831,21 @@ a.title-anchor:hover {
   .dark\:bg-primary-950 {
     --tw-bg-opacity: 1;
     background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-slate-300 {
+    --tw-text-opacity: 1;
+    color: rgb(203 213 225 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-slate-400 {
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-slate-500 {
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity));
   }
 }
 
