@@ -24,5 +24,5 @@ php cecil.phar serve
 
 :::tip
 **Demo**  
-Try _Statidocs_ on GitHub Pages: [cecilapp.github.io/statidocs/](https://cecilapp.github.io/statidocs/).
+Try _Statidocs_ on [GitHub Pages](https://cecilapp.github.io/statidocs/).
 :::
