@@ -30,6 +30,9 @@ a.title-anchor:hover {
 #on-this-page > ul {
   @apply list-none pb-5 border-b-2 border-slate-400 dark:border-slate-500;
 }
+main details a {
+  @apply no-underline !important;
+}
 
 /* Sidebar */
 #sidebar h3 {
