@@ -83,7 +83,6 @@
           var url = document.URL.replace(/#.*$/, "") + '#' + $(this).attr('id');
           $(this).append('<a class="title-anchor" href="' + url + '">#</a>');
         });
-
       });
     </script>
     {%- if site.docsearch.enabled ?? false ~%}
