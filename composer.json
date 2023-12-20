@@ -12,9 +12,8 @@
     }
   ],
   "require": {
-    "cecil/theme-netlify": "^2.0",
-    "cecil/theme-netlifycms": "^2.0",
-    "cecil/theme-pwa": "^2.0"
+    "cecil/theme-pwa": "^2.0",
+    "cecil/theme-netlify": "^2.0"
   },
   "config": {
     "allow-plugins": {

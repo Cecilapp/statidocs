@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48efaed6c3098df2296a1dbd64eb3dc7",
+    "content-hash": "43d705deabc4a0e1fae004af6a581e4e",
     "packages": [
         {
             "name": "cecil/theme-installer",
@@ -127,72 +127,17 @@
             "time": "2023-12-09T01:10:41+00:00"
         },
         {
-            "name": "cecil/theme-netlifycms",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-netlifycms.git",
-                "reference": "a7422d85eaa42cdaf4c6c9fb1530103218ba7741"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlifycms/zipball/a7422d85eaa42cdaf4c6c9fb1530103218ba7741",
-                "reference": "a7422d85eaa42cdaf4c6c9fb1530103218ba7741",
-                "shasum": ""
-            },
-            "require": {
-                "cecil/theme-installer": "^1.4"
-            },
-            "type": "cecil-theme",
-            "extra": {
-                "name": "netlify-cms",
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cecil component theme Netlify CMS",
-            "keywords": [
-                "cecil",
-                "cms",
-                "netlify",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-netlifycms/issues",
-                "source": "https://github.com/Cecilapp/theme-netlifycms/tree/2.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/narno",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2023-04-22T01:45:02+00:00"
-        },
-        {
             "name": "cecil/theme-pwa",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "18e4825775bdcfc2322eb1508af5c18781545dba"
+                "reference": "4f0c14ba9c4d0dc9dd714ff6190c2f97fd34446f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/18e4825775bdcfc2322eb1508af5c18781545dba",
-                "reference": "18e4825775bdcfc2322eb1508af5c18781545dba",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/4f0c14ba9c4d0dc9dd714ff6190c2f97fd34446f",
+                "reference": "4f0c14ba9c4d0dc9dd714ff6190c2f97fd34446f",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +162,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.0.1"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.0.3"
             },
             "funding": [
                 {
@@ -229,7 +174,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-12-13T01:56:22+00:00"
+            "time": "2023-12-20T15:01:54+00:00"
         }
     ],
     "packages-dev": [],
