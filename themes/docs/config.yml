@@ -3,9 +3,9 @@
 #  branch: main
 #docsearch:
 #  enabled: true
-#  apiKey: 'xxxx'
-#  appId: 'xxxx'
-#  indexName: 'xxxx'
+#  apiKey: xxxx
+#  appId: xxxx
+#  indexName: xxxx
 #  debug: false
 #sidebar:
 #  - Group 1
