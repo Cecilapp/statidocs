@@ -11,7 +11,7 @@ curl -LO https://cecil.app/cecil.phar
 # install dependencies
 composer install
 npm install
-# (re)build theme CSS
+# (re)build theme CSS (if necessary)
 npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css --watch
 # serve
 php cecil.phar serve -v
