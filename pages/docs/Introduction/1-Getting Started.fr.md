@@ -24,5 +24,5 @@ php cecil.phar serve
 
 :::tip
 **Démo**  
-Essayez _Statidocs_ sur GitHub Pages : [cecilapp.github.io/statidocs/fr/](https://cecilapp.github.io/statidocs/fr/).
+Essayez _Statidocs_ sur [GitHub Pages](https://cecilapp.github.io/statidocs/fr/).
 :::
