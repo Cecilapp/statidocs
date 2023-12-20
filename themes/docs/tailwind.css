@@ -3,13 +3,11 @@
 @tailwind utilities;
 
 a {
-  @apply text-primary-700;
+  @apply text-primary-700 dark:text-primary-400;
 }
-
 a:hover {
   @apply underline;
 }
-
 header a {
   @apply hover:no-underline
 }
@@ -20,7 +18,7 @@ header a {
 }
 a.title-anchor {
   text-decoration: none;
-  @apply text-primary-700;
+  @apply text-primary-700 dark:text-primary-400;
   opacity: 0.75;
 }
 a.title-anchor:hover {
@@ -28,8 +26,9 @@ a.title-anchor:hover {
   opacity: 1;
 }
 
+/* On this page */
 #on-this-page > ul {
-  @apply list-none pb-5 border-b-2;
+  @apply list-none pb-5 border-b-2 border-slate-400 dark:border-slate-500;
 }
 
 /* Sidebar */
