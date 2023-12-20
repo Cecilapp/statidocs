@@ -13,7 +13,7 @@ _Statidocs_ est encore en cours de développement. Si quelque chose ne fonctionn
 
 Téléchargez d'abord l'[archive actuelle de _Statidocs_](https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main).
 
-Ensuite, _Statidocs_ est un theme construit sur [Cecil](https://cecil.app):
+Ensuite, _Statidocs_ est un theme construit sur [Cecil](https://cecil.app) :
 
 ```bash
 # télécharger Cecil
