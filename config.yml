@@ -13,11 +13,17 @@ languages:
     name: English
     locale: en
   - code: fr
+    enabled: true
     name: Français
     locale: fr
-    enabled: true
+    config:
+      baseline: 'Une documentation efficace'
+      description: 'Créez et gérez une documentation efficace.'
 theme:
   - docs
+  - pwa
+serviceworker:
+  enabled: true
 github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
