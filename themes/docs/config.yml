@@ -12,6 +12,7 @@
 #  - Group 2
 
 pages:
+  sortby: weight
   body:
     highlight:
       enabled: true
