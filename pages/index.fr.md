@@ -2,4 +2,4 @@
 
 > Créer et gérer une documentation efficace.
 
-➡️ [Commencer](page:fr/docs/introduction/getting-started)
+➡️ [Démarrage](page:fr/docs/introduction/getting-started)
