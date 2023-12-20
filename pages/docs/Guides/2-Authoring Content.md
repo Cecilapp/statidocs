@@ -16,12 +16,12 @@ There should be whitespace between paragraphs.
 
 ```php
 // PHP code
-Cecil::create(
-    [
-        'title'   => "My website",
-        'baseurl' => 'http://localhost:8000/',
-    ]
-)->build();
+$config = [
+    'title'   => "My website",
+    'baseurl' => 'http://localhost:8000/',
+];
+
+Builder::create($config)->build();
 ```
 
 #### Header 4
@@ -45,25 +45,25 @@ Cecil::create(
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this
+## There's a horizontal rule below this
 
 * * *
 
-### Here is an unordered list
+## Here is an unordered list
 
 * Item foo
 * Item bar
 * Item baz
 * Item zip
 
-### And an ordered list
+## And an ordered list
 
 1. Item one
 1. Item two
 1. Item three
 1. Item four
 
-### And a nested list
+## And a nested list
 
 * level 1 item
   * level 2 item
@@ -79,11 +79,11 @@ Cecil::create(
   * level 2 item
 * level 1 item
 
-### Image
+## Image
 
 ![Cecil favicon](/favicon.png "Cecil favicon")
 
-### Definition lists
+## Definition lists
 
 First Term
 : This is the definition of the first term.
@@ -92,7 +92,7 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
-### Code blocks
+## Code blocks
 
 ```text
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
