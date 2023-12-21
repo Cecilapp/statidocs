@@ -11,6 +11,8 @@
 #  - Group 1
 #  - Group 2
 
+pagination:
+  enabled: false
 pages:
   sortby: weight
   body:
