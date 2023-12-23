@@ -18,3 +18,15 @@ pages:
   body:
     highlight:
       enabled: true
+    images:
+      resize:
+        enabled: true
+      webp:
+        enabled: true
+      responsive:
+        enabled: true
+      caption:
+        enabled: true
+    links:
+      embed:
+        enabled: true
