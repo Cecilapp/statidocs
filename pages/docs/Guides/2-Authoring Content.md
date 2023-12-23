@@ -101,3 +101,29 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```text
 The final element.
 ```
+
+## Notes
+
+:::
+empty
+:::
+
+:::info
+info
+:::
+
+:::tip
+tip
+:::
+
+:::important
+important
+:::
+
+:::warning
+warning
+:::
+
+:::caution
+caution
+:::
