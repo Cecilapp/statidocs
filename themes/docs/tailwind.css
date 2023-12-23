@@ -57,6 +57,17 @@ main details a {
   @apply font-bold;
 }
 
+/* Selectors */
+#theme-select, #lang-select {
+  @apply bg-transparent border-0 text-primary-100 cursor-pointer;
+}
+#theme-select:hover, #lang-select:hover {
+  @apply text-primary-50;
+}
+#theme-select option, #lang-select option {
+  @apply text-primary-950;
+}
+
 /* DocSearch */
 .DocSearch.DocSearch-Button {
   @apply w-full md:w-64 lg:w-80 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
@@ -81,16 +92,6 @@ main details a {
 }
 .DocSearch-Input::placeholder {
   @apply text-primary-100 !important;
-}
-
-#theme-select, #lang-select {
-  @apply bg-transparent border-0 text-primary-100 cursor-pointer;
-}
-#theme-select:hover, #lang-select:hover {
-  @apply text-primary-50;
-}
-#theme-select option, #lang-select option {
-  @apply text-primary-950;
 }
 
 /* Note block in Markdown */

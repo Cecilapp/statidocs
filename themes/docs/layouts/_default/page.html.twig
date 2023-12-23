@@ -38,8 +38,8 @@
       </a>
       {%- endif ~%}
       <div class="flex justify-end">
-        {#-{%- include 'partials/theme-selector.html.twig' ~%}-#}
-        {%- include 'partials/language-selector.html.twig' ~%}
+        <div class="hidden sm:block">{%- include 'partials/theme-selector.html.twig' ~%}</div>
+        <div>{%- include 'partials/language-selector.html.twig' ~%}</div>
       </div>
     </header>
     <main class="flex h-full mt-16">

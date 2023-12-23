@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -1137,10 +1141,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -1334,7 +1334,7 @@ video {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-sm {
@@ -1353,6 +1353,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
@@ -1419,11 +1423,9 @@ a {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  a {
-    --tw-text-opacity: 1;
-    color: rgb(96 165 250 / var(--tw-text-opacity));
-  }
+:is(:where(.dark) a) {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 a:hover {
@@ -1446,11 +1448,9 @@ a.title-anchor {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  a.title-anchor {
-    --tw-text-opacity: 1;
-    color: rgb(96 165 250 / var(--tw-text-opacity));
-  }
+:is(:where(.dark) a.title-anchor) {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 a.title-anchor {
@@ -1472,11 +1472,9 @@ a.title-anchor:hover {
   padding-bottom: 1.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  #on-this-page > ul {
-    --tw-border-opacity: 1;
-    border-color: rgb(100 116 139 / var(--tw-border-opacity));
-  }
+:is(:where(.dark) #on-this-page > ul) {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 main details a {
@@ -1494,11 +1492,9 @@ main details a {
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  #sidebar h3 {
-    --tw-text-opacity: 1;
-    color: rgb(226 232 240 / var(--tw-text-opacity));
-  }
+:is(:where(.dark) #sidebar h3) {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 #sidebar ul {
@@ -1525,15 +1521,33 @@ main details a {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  #sidebar ul>li>a {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
+:is(:where(.dark) #sidebar ul>li>a) {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
 #sidebar ul>li>a.active {
   font-weight: 700;
+}
+
+/* Selectors */
+
+#theme-select, #lang-select {
+  cursor: pointer;
+  border-width: 0px;
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(219 234 254 / var(--tw-text-opacity));
+}
+
+#theme-select:hover, #lang-select:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 246 255 / var(--tw-text-opacity));
+}
+
+#theme-select option, #lang-select option {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity));
 }
 
 /* DocSearch */
@@ -1620,24 +1634,6 @@ main details a {
   color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
 }
 
-#theme-select, #lang-select {
-  cursor: pointer;
-  border-width: 0px;
-  background-color: transparent;
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
-}
-
-#theme-select:hover, #lang-select:hover {
-  --tw-text-opacity: 1;
-  color: rgb(239 246 255 / var(--tw-text-opacity));
-}
-
-#theme-select option, #lang-select option {
-  --tw-text-opacity: 1;
-  color: rgb(23 37 84 / var(--tw-text-opacity));
-}
-
 /* Note block in Markdown */
 
 .note {
@@ -1651,11 +1647,9 @@ main details a {
   border-color: rgb(29 78 216 / var(--tw-border-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  }
+:is(:where(.dark) .note) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .note > p {
@@ -1687,11 +1681,9 @@ main details a {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  [class*="note-"]:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) [class*="note-"]):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .note-info {
@@ -1703,13 +1695,11 @@ main details a {
   background-color: rgb(240 249 255 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-info {
-    --tw-border-opacity: 1;
-    border-color: rgb(56 189 248 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(12 74 110 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-info) {
+  --tw-border-opacity: 1;
+  border-color: rgb(56 189 248 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
 }
 
 .note-info:before {
@@ -1719,11 +1709,9 @@ main details a {
   background-color: rgb(3 105 161 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-info:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(56 189 248 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-info):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
 .note-tip {
@@ -1735,13 +1723,11 @@ main details a {
   background-color: rgb(247 254 231 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-tip {
-    --tw-border-opacity: 1;
-    border-color: rgb(163 230 53 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(54 83 20 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-tip) {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 230 53 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 83 20 / var(--tw-bg-opacity));
 }
 
 .note-tip:before {
@@ -1751,11 +1737,9 @@ main details a {
   background-color: rgb(77 124 15 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-tip:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(163 230 53 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-tip):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
 }
 
 .note-important {
@@ -1767,13 +1751,11 @@ main details a {
   background-color: rgb(245 243 255 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-important {
-    --tw-border-opacity: 1;
-    border-color: rgb(167 139 250 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(76 29 149 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-important) {
+  --tw-border-opacity: 1;
+  border-color: rgb(167 139 250 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity));
 }
 
 .note-important:before {
@@ -1783,11 +1765,9 @@ main details a {
   background-color: rgb(109 40 217 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-important:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(167 139 250 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-important):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
 }
 
 .note-warning {
@@ -1799,13 +1779,11 @@ main details a {
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-warning {
-    --tw-border-opacity: 1;
-    border-color: rgb(251 191 36 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(120 53 15 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-warning) {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 191 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 53 15 / var(--tw-bg-opacity));
 }
 
 .note-warning:before {
@@ -1815,11 +1793,9 @@ main details a {
   background-color: rgb(180 83 9 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-warning:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-warning):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 
 .note-caution {
@@ -1831,13 +1807,11 @@ main details a {
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-caution {
-    --tw-border-opacity: 1;
-    border-color: rgb(248 113 113 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-caution) {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
 .note-caution:before {
@@ -1847,32 +1821,30 @@ main details a {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .note-caution:before {
-    --tw-bg-opacity: 1;
-    background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-  }
+:is(:where(.dark) .note-caution):before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
 
-  .dark\:markdown-invert {
-    --tw-prose-body: var(--tw-prose-invert-body);
-    --tw-prose-headings: var(--tw-prose-invert-headings);
-    --tw-prose-lead: var(--tw-prose-invert-lead);
-    --tw-prose-links: var(--tw-prose-invert-links);
-    --tw-prose-bold: var(--tw-prose-invert-bold);
-    --tw-prose-counters: var(--tw-prose-invert-counters);
-    --tw-prose-bullets: var(--tw-prose-invert-bullets);
-    --tw-prose-hr: var(--tw-prose-invert-hr);
-    --tw-prose-quotes: var(--tw-prose-invert-quotes);
-    --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
-    --tw-prose-captions: var(--tw-prose-invert-captions);
-    --tw-prose-kbd: var(--tw-prose-invert-kbd);
-    --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);
-    --tw-prose-code: var(--tw-prose-invert-code);
-    --tw-prose-pre-code: var(--tw-prose-invert-pre-code);
-    --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
-    --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
-    --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
-  }
+:is(:where(.dark) .dark\:markdown-invert) {
+  --tw-prose-body: var(--tw-prose-invert-body);
+  --tw-prose-headings: var(--tw-prose-invert-headings);
+  --tw-prose-lead: var(--tw-prose-invert-lead);
+  --tw-prose-links: var(--tw-prose-invert-links);
+  --tw-prose-bold: var(--tw-prose-invert-bold);
+  --tw-prose-counters: var(--tw-prose-invert-counters);
+  --tw-prose-bullets: var(--tw-prose-invert-bullets);
+  --tw-prose-hr: var(--tw-prose-invert-hr);
+  --tw-prose-quotes: var(--tw-prose-invert-quotes);
+  --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
+  --tw-prose-captions: var(--tw-prose-invert-captions);
+  --tw-prose-kbd: var(--tw-prose-invert-kbd);
+  --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);
+  --tw-prose-code: var(--tw-prose-invert-code);
+  --tw-prose-pre-code: var(--tw-prose-invert-pre-code);
+  --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
+  --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
+  --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
 }
 
 .hover\:text-primary-50:hover {
@@ -1888,29 +1860,11 @@ main details a {
   opacity: 0.75;
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-primary-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-primary-950 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-slate-300 {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-slate-400 {
-    --tw-text-opacity: 1;
-    color: rgb(148 163 184 / var(--tw-text-opacity));
-  }
-}
-
 @media (min-width: 640px) {
+  .sm\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .sm\:mr-4 {
     margin-right: 1rem;
   }
@@ -1991,4 +1945,24 @@ main details a {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+}
+
+:is(:where(.dark) .dark\:bg-primary-900) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+:is(:where(.dark) .dark\:bg-primary-950) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+:is(:where(.dark) .dark\:text-slate-300) {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+:is(:where(.dark) .dark\:text-slate-400) {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
