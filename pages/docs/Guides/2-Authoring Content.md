@@ -1,18 +1,101 @@
 # Authoring Content in Markdown
 
+Cecil supports [Markdown](https://cecil.app/documentation/content/#markdown) syntax in `.md` files as well as [front matter](https://cecil.app/documentation/content/#front-matter) to define variables.
+
+**Table of content:**
+
+[toc]
+
+```markdown
+[toc]
+```
+
+## Inline style
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to _1-Getting Started.md_](page:docs/introduction/getting-started).
+```markdown
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+```
 
-There should be whitespace between paragraphs.
+You can [link to a page](/about.md) or [to another page](page:index).
 
-## Header 2
+```markdown
+You can [link to a page](/about.md) or [to another page](page:index).
+```
 
-> This is a blockquote following a header.
+You can highlight `inline code` with backticks.
+
+```markdown
+You can highlight `inline code` with backticks.
+```
+
+## How to structure page
+
+Cecil automatically use the page file name as title, but you can also define title and other variables in the [front matter](https://cecil.app/documentation/content/#front-matter).
+
+You can structure content using a heading. Headings in Markdown are indicated by a number of `#` at the start of the line.
+
+```markdown
+---
+title: Page title
+description: Page short description.
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+## Heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+```
+
+## Image
+
+Images use Cecil’s built-in optimized asset support.
+
+![Cecil favicon](/favicon.png "Cecil favicon")
+
+```markdown
+![Cecil favicon](/favicon.png "Cecil favicon")
+```
+
+Cecil search images in `assets/` and `static/` folders, but relative path is also supported:
+
+```markdown
+![Cecil favicon](../assets/favicon.png "Cecil favicon")
+```
+
+## List
+
+* Unordered list
+* Unordered list
+* Unordered list
+
+1. Ordered list
+2. Ordered list
+3. Ordered list
+
+* Level 1
+  * Level 2
+  * Level 2
+    * Level 3
+    * Level 3
+
+## Blockquote
+
+> This is a blockquote, which is commonly used when quoting another person or document.
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> Blockquotes are indicated by a `>` at the start of each line.
 
-### Header 3
+```markdown
+> This is a blockquote, which is commonly used when quoting another person or document.
+>
+> Blockquotes are indicated by a `>` at the start of each line.
+```
+
+## Code block
+
+A code block is indicated by a block with three backticks ` ``` ` at the start and end. You can indicate the programming language being used after the opening backticks.
 
 ```php
 // PHP code
@@ -24,66 +107,23 @@ $config = [
 Builder::create($config)->build();
 ```
 
-#### Header 4
+<pre>
+```php
+// PHP code
+$config = [
+    'title'   => "My website",
+    'baseurl' => 'http://localhost:8000/',
+];
 
-* This is an unordered list following a header.
-* This is an unordered list following a header.
-* This is an unordered list following a header.
+Builder::create($config)->build();
+```
+</pre>
 
-##### Header 5
+## There is a horizontal rule below this
 
-1. This is an ordered list following a header.
-2. This is an ordered list following a header.
-3. This is an ordered list following a header.
+---
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-## There's a horizontal rule below this
-
-* * *
-
-## Here is an unordered list
-
-* Item foo
-* Item bar
-* Item baz
-* Item zip
-
-## And an ordered list
-
-1. Item one
-1. Item two
-1. Item three
-1. Item four
-
-## And a nested list
-
-* level 1 item
-  * level 2 item
-  * level 2 item
-    * level 3 item
-    * level 3 item
-* level 1 item
-  * level 2 item
-  * level 2 item
-  * level 2 item
-* level 1 item
-  * level 2 item
-  * level 2 item
-* level 1 item
-
-## Image
-
-![Cecil favicon](/favicon.png "Cecil favicon")
-
-## Definition lists
+## Definition list
 
 First Term
 : This is the definition of the first term.
@@ -92,15 +132,14 @@ Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
 
-## Code blocks
+## Table
 
-```text
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```text
-The final element.
-```
+| Head 1       | Head 2            | Head 3 |
+|:-------------|:------------------|:-------|
+| ok           | good swedish fish | nice   |
+| out of stock | good and plenty   | nice   |
+| ok           | good `oreos`      | hmm    |
+| ok           | good `zoute` drop | yumm   |
 
 ## Notes
 
@@ -127,3 +166,9 @@ warning
 :::caution
 caution
 :::
+
+```markdown
+:::info|tip|important|warning|caution
+caution
+:::
+```
