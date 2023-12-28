@@ -4,11 +4,6 @@ description: Learn how to start building your documentation website with Statido
 ---
 # Getting Started
 
-:::important
-**Work in progress**  
-_Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
-:::
-
 ## Creating a new project
 
 First download [_Statidocs_ current archive](https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main).
