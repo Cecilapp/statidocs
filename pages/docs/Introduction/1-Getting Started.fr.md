@@ -4,11 +4,6 @@ description: Apprenez à construire votre site web de documentation avec Statido
 ---
 # Démarrage
 
-:::important
-**Travail en cours**  
-_Statidocs_ est encore en cours de développement. Si quelque chose ne fonctionne pas, veuillez [créer un ticket sur GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
-:::
-
 ## Créer un nouveau projet
 
 Téléchargez d'abord l'[archive actuelle de _Statidocs_](https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main).
