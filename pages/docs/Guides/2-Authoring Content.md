@@ -169,6 +169,6 @@ caution
 
 ```markdown
 :::info|tip|important|warning|caution
-caution
+Note here.
 :::
 ```
