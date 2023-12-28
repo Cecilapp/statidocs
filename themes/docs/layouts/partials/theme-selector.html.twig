@@ -1,49 +1,49 @@
-{#- theme selector ~#}
-<form id="theme-form">
-  <label class="sr-only" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
-  <select id="theme-select" onchange="switchTheme(value)">
-    <option value="auto">{% trans %}Auto{% endtrans %}</option>
-    <option value="dark">{% trans %}Dark{% endtrans %}</option>
-    <option value="light">{% trans %}Light{% endtrans %}</option>
-  </select>
-</form>
-<script>
-  window.addEventListener('load', (event) => {
-    console.log("Page is fully loaded, select theme.");
-    selectTheme();
-  });
-  function selectTheme() {
-    if (!('theme' in localStorage)) {
-      document.getElementById('theme-select').options[0].selected = true;
-    }
-    if (localStorage.theme === 'dark') {
-      document.getElementById('theme-select').options[1].selected = true;
-    }
-    if (localStorage.theme === 'light') {
-      document.getElementById('theme-select').options[2].selected = true;
-    }
-  }
-  function switchTheme(theme) {
-    switch (theme) {
-      case 'dark':
-        localStorage.theme = 'dark';
-        updateTheme();
-        break;
-      case 'light':
-        localStorage.theme = 'light';
-        updateTheme();
-        break;
-      default:
-        localStorage.removeItem('theme');
-        updateTheme();
-    }
-  }
-  function updateTheme() {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }
-  updateTheme();
-</script>
+          {#- theme selector ~#}
+          <form id="theme-form">
+            <label class="sr-only" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
+            <select id="theme-select" onchange="switchTheme(value)">
+              <option value="auto">{% trans %}Auto{% endtrans %}</option>
+              <option value="dark">{% trans %}Dark{% endtrans %}</option>
+              <option value="light">{% trans %}Light{% endtrans %}</option>
+            </select>
+          </form>
+          <script>{% apply minify_js %}
+            window.addEventListener('load', (event) => {
+              console.log("Page is fully loaded, select theme.");
+              selectTheme();
+            });
+            function selectTheme() {
+              if (!('theme' in localStorage)) {
+                document.getElementById('theme-select').options[0].selected = true;
+              }
+              if (localStorage.theme === 'dark') {
+                document.getElementById('theme-select').options[1].selected = true;
+              }
+              if (localStorage.theme === 'light') {
+                document.getElementById('theme-select').options[2].selected = true;
+              }
+            }
+            function switchTheme(theme) {
+              switch (theme) {
+                case 'dark':
+                  localStorage.theme = 'dark';
+                  updateTheme();
+                  break;
+                case 'light':
+                  localStorage.theme = 'light';
+                  updateTheme();
+                  break;
+                default:
+                  localStorage.removeItem('theme');
+                  updateTheme();
+              }
+            }
+            function updateTheme() {
+              if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+              } else {
+                document.documentElement.classList.remove('dark')
+              }
+            }
+            updateTheme();
+          {% endapply %}</script>

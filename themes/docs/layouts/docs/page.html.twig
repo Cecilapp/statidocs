@@ -5,7 +5,7 @@
       <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-8">
         <details class="mb-4 xl:hidden">
           <summary class="cursor-pointer text-slate-500 dark:text-slate-300">
-            {% trans %}On this page{% endtrans %}
+            {% trans %}On this page{% endtrans ~%}
           </summary>
           {{ page.body|toc }}
         </details>
@@ -41,7 +41,6 @@
         <nav id="on-this-page" class="hidden xl:block py-6 w-64 text-slate-500 dark:text-slate-300 sticky top-[80px]">
           <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">{% trans %}On this page{% endtrans %}</h3>
           {{ page.body|toc }}
-          {#-{%- include 'partials/languages.html.twig' ~%}~#}
           {%- include 'partials/edit.html.twig' ~%}
         </nav>
       </div>

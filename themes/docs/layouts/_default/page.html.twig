@@ -40,8 +40,12 @@
       </a>
       {%- endif ~%}
       <div class="flex justify-end">
-        <div class="hidden sm:block">{%- include 'partials/theme-selector.html.twig' ~%}</div>
-        <div>{%- include 'partials/language-selector.html.twig' ~%}</div>
+        <div class="hidden sm:block">
+          {%- include 'partials/theme-selector.html.twig' ~%}
+        </div>
+        <div>
+          {%- include 'partials/language-selector.html.twig' ~%}
+        </div>
       </div>
     </header>
     <main class="flex h-full mt-16">
@@ -61,15 +65,15 @@
       {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
     </footer>
     {#- scripts ~#}
-    <script>
+    <script>{% apply minify_js %}
       function toggleMenu() {
         document.getElementById('sidebar').classList.toggle('hidden');
         document.getElementById('sidebar-svg1').classList.toggle('hidden');
         document.getElementById('sidebar-svg2').classList.toggle('hidden');
       }
-    </script>
+    {% endapply %}</script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
-    <style>
+    <style>{% apply minify_css %}
       .hljs {
         background: none;
       }
@@ -79,20 +83,20 @@
       pre code.hljs {
         padding: 0;
       }
-    </style>
+    {% endapply %}</style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js" integrity="sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==" crossorigin="anonymous"></script>
-    <script>
+    <script>{% apply minify_js %}
       $(function () {
         $('article h2, article h3').each(function () {
           var url = document.URL.replace(/#.*$/, "") + '#' + $(this).attr('id');
           $(this).append('<a class="title-anchor" href="' + url + '">#</a>');
         });
       });
-    </script>
+    {% endapply %}</script>
     {%- if site.docsearch.enabled ?? false ~%}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-    <script>
+    <script>{% apply minify_js %}
       docsearch({
         apiKey: '{{ site.docsearch.apiKey|default }}',
         appId: '{{ site.docsearch.appId|default }}',
@@ -100,7 +104,7 @@
         container: '#search-container',
         debug: {{ site.docsearch.debug|default('false') }}
       });
-    </script>
+    {% endapply %}</script>
     {%- endif ~%}
     {%- include 'partials/regsw.js.twig' ignore missing with {'site': site} only ~%}
   </body>
