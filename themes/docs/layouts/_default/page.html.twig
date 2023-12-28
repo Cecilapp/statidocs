@@ -10,6 +10,7 @@
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950">
     <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
       {#- mobile sidebar ~#}
+      {%- if page.section == 'docs' ~%}
       <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
@@ -18,6 +19,7 @@
           <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
+      {%- endif ~%}
       {#- site title ~#}
       <a href="{{ url(site.home) }}" title="{{ site.title }}" class="lg:w-48 inline-block text-primary-100 hover:text-primary-50 px-4 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
         {{ site.title }}
