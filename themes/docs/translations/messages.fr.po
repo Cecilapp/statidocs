@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-12-19 00:22+0100\n"
-"PO-Revision-Date: 2023-12-19 00:22+0100\n"
+"POT-Creation-Date: 2023-12-28 20:22+0100\n"
+"PO-Revision-Date: 2023-12-28 20:23+0100\n"
 "Last-Translator: Arnaud Ligny <arnaud@ligny.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -13,23 +13,35 @@ msgstr ""
 "X-Poedit-Basepath: ../layouts\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: docs/page.html.twig:20
-msgid "Previous"
-msgstr "Précédent"
+#: _default/page.html.twig:61 partials/sidebar.html.twig:20
+msgid "Powered by"
+msgstr "Propulsé par"
 
-#: docs/page.html.twig:26
-msgid "Next"
-msgstr "Suivant"
+#: blocks/cta.html.twig:2
+msgid "Get started"
+msgstr "Démarrage"
 
-#: docs/page.html.twig:37
+#: blocks/cta.html.twig:3
+msgid "Open on GitHub"
+msgstr "Ouvrir sur GitHub"
+
+#: docs/page.html.twig:8 docs/page.html.twig:42
 msgid "On this page"
 msgstr "Sur cette page"
 
-#: partials/edit.html.twig:5
+#: docs/page.html.twig:26
+msgid "Previous"
+msgstr "Précédent"
+
+#: docs/page.html.twig:32
+msgid "Next"
+msgstr "Suivant"
+
+#: partials/edit.html.twig:6
 msgid "Edit this page"
 msgstr "Modifier cette page"
 
-#: partials/language-selector.html.twig:4
+#: partials/language-selector.html.twig:3
 msgid "Language:"
 msgstr "Langue :"
 
