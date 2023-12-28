@@ -1,1 +1,12 @@
 {% extends '_default/page.html.twig' %}
+
+{% block content %}
+<div class="mx-auto pt-16">
+{% for block in page.blocks|default %}
+  {%- include 'blocks/' ~ block.name ~ '.html.twig' ~%}
+{% endfor %}
+  <div class="m-10 items-center justify-center markdown">
+    {{ page.content }}
+  </div>
+</div>
+{% endblock %}
