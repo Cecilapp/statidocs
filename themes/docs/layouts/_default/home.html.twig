@@ -3,7 +3,7 @@
 {%- block content ~%}
       <div class="px-8 mx-auto pt-16 md:pt-20 flex-col space-y-12">
   {%- for block in page.blocks|default ~%}
-    {%- include 'blocks/' ~ block.name ~ '.html.twig' ~%}
+    {{- include('blocks/' ~ block.name ~ '.html.twig', ignore_missing = true) ~}}
   {%- endfor ~%}
         <div class="items-center justify-center markdown dark:markdown-invert">
           {{ page.content }}
