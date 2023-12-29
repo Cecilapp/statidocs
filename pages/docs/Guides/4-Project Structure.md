@@ -1,4 +1,4 @@
-# Project Structure
+# Project structure
 
 ## Title 1
 

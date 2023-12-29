@@ -1,4 +1,4 @@
-# Authoring Content in Markdown
+# Authoring content in Markdown
 
 Cecil supports [Markdown](https://cecil.app/documentation/content/#markdown) syntax in `.md` files as well as [front matter](https://cecil.app/documentation/content/#front-matter) to define variables.
 

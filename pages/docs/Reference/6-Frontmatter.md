@@ -1,4 +1,4 @@
-# Frontmatter Reference
+# Frontmatter reference
 
 ## Title 1
 

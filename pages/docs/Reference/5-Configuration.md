@@ -1,4 +1,4 @@
-# Configuration Reference
+# Configuration reference
 
 ## Title 1
 
