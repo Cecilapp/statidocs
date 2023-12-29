@@ -1,41 +1,39 @@
 ---
-title: Getting Started
+title: Getting started
 description: Learn how to start building your documentation website with Statidocs, powered by Cecil.
 ---
-# Getting Started
+# Getting started
 
-_Statidocs_ is a powerful documentation theme on top of [Cecil](https://cecil.app), a static site generator, so you need to [download Cecil](https://cecil.app/download) first.
+_Statidocs_ is a powerful documentation theme on top of [Cecil](https://cecil.app), a static site generator.
+
+## Installation
 
 :::important
 PHP 8.1+ is required
 :::
 
-## Installation
-
 ### Cecil
 
-According to you OS there is different way to download Cecil:
+There is differents way to install/download Cecil:
 
-Windows
-: Click on the following URL: <https://cecil.app/cecil.phar>
+CLI
+: `curl -LO https://cecil.app/cecil.phar`
 
-macOS
+Homebrew
 : `brew install cecilapp/cecil/cecil`
 
-Linux
-: curl -LO https://cecil.app/cecil.phar
-
-*[OS]: Operating System
+Manually
+: <https://cecil.app/cecil.phar>
 
 ### Statidocs
 
 The easiest way to install Statidocs is to download it from GitHub:
 
+Git
+: `git clone https://github.com/Cecilapp/statidocs.git`
+
 Manually
 : <https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main>
-
-With Git
-: `git clone https://github.com/Cecilapp/statidocs.git`
 
 ## Start the local server
 
@@ -57,11 +55,11 @@ Statidocs supports authoring content in Markdown with no configuration required.
 
 ### Add pages
 
-Add new pages to your site by creating `.md` files in `pages/docs/`. Use one level sub-folders to organize your files and to create multiple path segments.
+Add new pages to your site by creating `.md` files in `pages/docs/`. Use one level sub-folders to organize your files and number prefix to sort them.
 
 For example, the following file structure will generate pages at `domain.tld/docs/getting-started` and `domain.tld/docs/guides/i18n`:
 
-```
+```text
 <mywebsite>
 └─ pages
    └─ docs
@@ -72,4 +70,13 @@ For example, the following file structure will generate pages at `domain.tld/doc
 
 ### Front matter
 
-> to do
+All pages use front matter variables to control how the page appears:
+
+```yaml
+---
+title: Hello world
+description: This is a page description.
+---
+```
+
+To know more, checks the [Cecil front matter documentation](https://cecil.app/documentation/content/#front-matter).

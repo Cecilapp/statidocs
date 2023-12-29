@@ -8,8 +8,6 @@ blocks:
     button: docs/introduction/getting-started
     link: https://github.com/cecilapp/statidocs
 ---
-_Statidocs_ est un thème de documentation construit sur [Cecil](https://cecil.app/fr/).
-
 :::important
 _Statidocs_ est encore en cours de développement. Si quelque chose ne fonctionne pas, veuillez [créer un ticket sur GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 :::
