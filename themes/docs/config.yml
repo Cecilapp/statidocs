@@ -1,3 +1,4 @@
+# Project
 #github:
 #  repo: https://github.com/org/repo
 #  branch: main
@@ -10,7 +11,11 @@
 #sidebar:
 #  - Group 1
 #  - Group 2
+manifest:
+  background_color: '#EEF6FF'
+  theme_color: '#1C4ED8'
 
+# statidocs
 pagination:
   enabled: false
 pages:
