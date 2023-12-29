@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Links */
 a {
   @apply text-primary-700 dark:text-primary-400;
 }
