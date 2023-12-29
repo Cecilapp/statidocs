@@ -1,0 +1,23 @@
+{
+  "name": "cecil/theme-docs",
+  "type": "cecil-theme",
+  "description": "Cecil theme Docs",
+  "keywords": ["Cecil", "theme", "documentation"],
+  "license": "MIT",
+  "require": {
+    "cecil/theme-installer": "^1.4"
+  },
+  "extra": {
+    "name": "docs",
+    "branch-alias": {
+      "dev-master": "2.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "cecil/theme-installer": true
+    }
+  }
+}

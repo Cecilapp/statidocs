@@ -1,21 +1,14 @@
-# Project
-#github:
-#  repo: https://github.com/org/repo
-#  branch: main
-#docsearch:
-#  enabled: true
-#  apiKey: xxxx
-#  appId: xxxx
-#  indexName: xxxx
-#  debug: false
-#sidebar:
-#  - Group 1
-#  - Group 2
+# Statidocs default
+github:
+  repo: https://github.com/cecilapp/statidocs
+  branch: main
+docsearch:
+  enabled: false
 manifest:
   background_color: '#EEF6FF'
   theme_color: '#1C4ED8'
 
-# statidocs
+# Cecil config for Statidocs
 pagination:
   enabled: false
 pages:
