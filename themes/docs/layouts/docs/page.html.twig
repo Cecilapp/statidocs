@@ -20,7 +20,7 @@
         </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
-        <nav class="mt-12 mb-12">
+        <nav class="mt-10">
           {%- if page.prev is defined ~%}
           <a class="float-left mt-3 font-medium hover:no-underline" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
             <div class="mb-2 text-slate-500 dark:text-slate-400">{% trans %}Previous{% endtrans %}</div>
