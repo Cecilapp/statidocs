@@ -66,8 +66,8 @@ For example, the following file structure will generate pages at `domain.tld/doc
 └─ pages
    └─ docs
       ├─ guides
-      |  └─ i18n.md
-      └─ getting-started.md
+      |  └─ 2-i18n.md
+      └─ 1-Getting Started.md
 ```
 
 ### Front matter
