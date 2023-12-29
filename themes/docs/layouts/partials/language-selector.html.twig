@@ -18,7 +18,7 @@
             function setLanguageCookie(language) {
               language = trimSlashes(language);
               if (language.length === 0) {
-                language = 'en'; // default
+                language = '{{ site.language }}'; // default
               }
               document.cookie = 'nf_lang=' + language + '; path=/';
               console.log('nf_lang: ' + language);
