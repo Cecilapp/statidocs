@@ -1,11 +1,21 @@
 {%- set icons %}
-  {%- for icon in site.manifest.icons -%}
-    {%- set icon_asset = asset(icon) -%}
+  {%- for icon in site.manifest.icons %}
+    {%- if icon is iterable %}
+      {%- set icon_asset = asset(icon.src) -%}
+  {
+    "src": "{{ icon_asset|url }}",
+    "sizes": "{{ icon.sizes|default(icon_asset.width ~ 'x' ~ icon_asset.height) }}",
+    "type": "{{ icon.type|default(icon_asset.subtype) }}",
+    "purpose": "{{ icon.purpose|default('any') }}"
+  }{% if loop.length > 1 and not loop.last %},{% endif %}
+    {%- else %}
+      {%- set icon_asset = asset(icon) -%}
   {
     "src": "{{ icon_asset|url }}",
     "sizes": "{{ icon_asset.width }}x{{ icon_asset.height }}",
     "type": "{{ icon_asset.subtype }}"
   }{% if loop.length > 1 and not loop.last %},{% endif %}
+    {%- endif ~%}
   {%- endfor %}
 {% endset -%}
 {%- set screenshots %}

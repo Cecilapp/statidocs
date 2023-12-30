@@ -51,6 +51,10 @@ manifest:
   icons:
     - icon-192x192.png
     - icon-512x512.png
+    - src: icon-192x192-maskable.png
+      purpose: maskable
+    - src: icon-512x512-maskable.png
+      purpose: maskable
 ```
 
 #### Web manifest Optional
