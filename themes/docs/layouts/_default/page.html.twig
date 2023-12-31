@@ -8,7 +8,7 @@
     <link rel="manifest" href="{{ url('manifest') }}" />
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-slate-100">
-    <header class="h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
+    <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
       {#- mobile sidebar ~#}
       {%- if page.section == 'docs' ~%}
       <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
