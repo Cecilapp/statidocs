@@ -5,7 +5,7 @@
   {%- for block in page.blocks|default ~%}
     {{- include('blocks/' ~ block.name ~ '.html.twig', ignore_missing = true) ~}}
   {%- endfor ~%}
-        <div class="items-center justify-center markdown dark:markdown-invert">
+        <div class="items-center justify-center markdown dark:markdown-invert max-w-none">
           {{ page.content }}
         </div>
       </div>
