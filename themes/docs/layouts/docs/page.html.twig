@@ -20,15 +20,15 @@
         </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
-        <nav class="mt-10">
+        <nav class="mt-8">
           {%- if page.prev is defined ~%}
-          <a class="float-left mt-3 font-medium hover:no-underline" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
+          <a class="float-left font-medium hover:no-underline" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
             <div class="mb-2 text-slate-500 dark:text-slate-400">{% trans %}Previous{% endtrans %}</div>
             <div class="hover:opacity-75">← {{ page.prev.title }}</div>
           </a>
           {%- endif ~%}
           {%- if page.next is defined ~%}
-          <a class="float-right mt-3 font-medium hover:no-underline" href="{{ url(page.next) }}" title="{{ page.next.title }}">
+          <a class="float-right font-medium hover:no-underline" href="{{ url(page.next) }}" title="{{ page.next.title }}">
             <div class="mb-2 text-slate-500 dark:text-slate-400 text-right">{% trans %}Next{% endtrans %}</div>
             <div class="hover:opacity-75">{{ page.next.title }} →</div>
           </a>
