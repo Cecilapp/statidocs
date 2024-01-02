@@ -37,9 +37,9 @@
             }
             function updateTheme() {
               if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark')
+                document.documentElement.classList.add('dark');
               } else {
-                document.documentElement.classList.remove('dark')
+                document.documentElement.classList.remove('dark');
               }
             }
             selectTheme();
@@ -49,6 +49,6 @@
             window
               .matchMedia('(prefers-color-scheme: dark)')
               .addEventListener('change', ({matches:isDark}) => {
-                updateTheme()
+                updateTheme();
               })
           {% endapply %}</script>
