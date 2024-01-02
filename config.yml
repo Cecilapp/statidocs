@@ -23,7 +23,7 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: false
+  enabled: true
 github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
