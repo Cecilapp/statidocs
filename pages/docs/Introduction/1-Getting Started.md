@@ -9,14 +9,14 @@ _Statidocs_ is a powerful documentation starter on top of [Cecil](https://cecil.
 ## Installation
 
 :::important
-PHP 8.1+ is required
+PHP 8.1+ is required.
 :::
 
 ### Cecil
 
-There is differents way to install/download Cecil:
+There is differents way to install and/or download Cecil:
 
-CLI
+Terminal
 : `curl -LO https://cecil.app/cecil.phar`
 
 Homebrew
