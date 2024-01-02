@@ -2,8 +2,7 @@
 
 _Statidocs_ is a documentation theme built on top of [Cecil](https://cecil.app).
 
-> [!TIP]  
-> You can try _Statidocs_ on [GitHub Pages](https://cecilapp.github.io/statidocs/).
+[![Statidocs screenshot](docs/screenshot.png)](https://cecilapp.github.io/statidocs/)
 
 > [!IMPORTANT]  
 > _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
