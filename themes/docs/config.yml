@@ -1,4 +1,4 @@
-# Statidocs default
+# Docs default config
 github:
   repo: https://github.com/cecilapp/statidocs
   branch: main
@@ -8,7 +8,7 @@ manifest:
   background_color: '#EEF6FF'
   theme_color: '#1C4ED8'
 
-# Cecil config for Statidocs
+# Cecil config for Docs
 pagination:
   enabled: false
 pages:

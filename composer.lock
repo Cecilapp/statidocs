@@ -4,8 +4,58 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1380fa627637e5e1d74a4a1211688e7",
+    "content-hash": "0060b662e2c9fa2398234a5a0fccb298",
     "packages": [
+        {
+            "name": "cecil/theme-docs",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-docs.git",
+                "reference": "8baf234812be3490791c5aa2b2b8918209b30e74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/8baf234812be3490791c5aa2b2b8918209b30e74",
+                "reference": "8baf234812be3490791c5aa2b2b8918209b30e74",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "docs",
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil theme Docs",
+            "keywords": [
+                "cecil",
+                "documentation",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-docs/issues",
+                "source": "https://github.com/Cecilapp/theme-docs/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-01-02T10:47:28+00:00"
+        },
         {
             "name": "cecil/theme-installer",
             "version": "1.4.5",
