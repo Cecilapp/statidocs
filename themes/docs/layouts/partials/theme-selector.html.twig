@@ -9,7 +9,6 @@
           </form>
           <script>{% apply minify_js %}
             window.addEventListener('load', (event) => {
-              console.log("Page is fully loaded, select theme.");
               selectTheme();
             });
             function selectTheme() {
@@ -22,6 +21,7 @@
               if (localStorage.theme === 'light') {
                 document.getElementById('theme-select').options[2].selected = true;
               }
+              updateTheme();
             }
             function switchTheme(theme) {
               switch (theme) {
@@ -45,5 +45,4 @@
                 document.documentElement.classList.remove('dark')
               }
             }
-            updateTheme();
           {% endapply %}</script>
