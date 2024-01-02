@@ -20,16 +20,18 @@
         </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
-        <nav class="mt-8">
+        <nav class="mt-8 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-0 sm:space-x-4">
           {%- if page.prev is defined ~%}
-          <a class="float-left font-medium hover:no-underline" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
-            <div class="mb-2 text-slate-500 dark:text-slate-400">{% trans %}Previous{% endtrans %}</div>
+          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-left border-solid border border-slate-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
+            <div class="mb-2 text-sm text-slate-500 dark:text-slate-400">{% trans %}Previous{% endtrans %}</div>
             <div class="hover:opacity-75">← {{ page.prev.title }}</div>
           </a>
+          {%- else ~%}
+          <div class="grow"></div>
           {%- endif ~%}
           {%- if page.next is defined ~%}
-          <a class="float-right font-medium hover:no-underline" href="{{ url(page.next) }}" title="{{ page.next.title }}">
-            <div class="mb-2 text-slate-500 dark:text-slate-400 text-right">{% trans %}Next{% endtrans %}</div>
+          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-right border-solid border border-slate-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.next) }}" title="{{ page.next.title }}">
+            <div class="mb-2 text-sm text-slate-500 dark:text-slate-400">{% trans %}Next{% endtrans %}</div>
             <div class="hover:opacity-75">{{ page.next.title }} →</div>
           </a>
           {%- endif ~%}
