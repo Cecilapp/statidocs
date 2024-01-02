@@ -6,7 +6,7 @@ description: Create and manage an effective documentation.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
-image: cecil-card.png
+#image: og-card.png
 language: en
 languages:
   - code: en
@@ -23,7 +23,7 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: true
+  enabled: false
 github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
