@@ -9,23 +9,30 @@ _Statidocs_ is a documentation theme built on top of [Cecil](https://cecil.app).
 
 ## Usage
 
+Download Cecil:
+
 ```bash
-# download Cecil
 curl -LO https://cecil.app/cecil.phar
-# build & preview
+```
+
+Build & preview:
+
+```bash
 php cecil.phar serve
 ```
 
 ## Development
 
+Install/update dependencies:
+
 ```bash
-# install/update dependencies
 composer update
 npm install
 ```
 
+Build CSS (if necessary):
+
 ```bash
-# build CSS (if necessary)
 npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css
 ```
 
