@@ -4,7 +4,7 @@ description: Learn how to start building your documentation website with Statido
 ---
 # Getting started
 
-_Statidocs_ is a powerful documentation theme on top of [Cecil](https://cecil.app), a static site generator.
+_Statidocs_ is a powerful documentation starter on top of [Cecil](https://cecil.app), a static site generator.
 
 ## Installation
 
@@ -27,7 +27,7 @@ Manually
 
 ### Statidocs
 
-The easiest way to install Statidocs is to download it from GitHub:
+The easiest way to install _Statidocs_ is to download it from GitHub:
 
 Git
 : `git clone https://github.com/Cecilapp/statidocs.git`
@@ -51,7 +51,7 @@ This will log a message to your terminal with the URL of your local preview. Ope
 
 ### File formats
 
-Statidocs supports authoring content in Markdown with no configuration required. You can extend default capabilities by enabling [Cecil's Markdown options](https://cecil.app/documentation/content/#markdown).
+_Statidocs_ supports authoring content in Markdown with no configuration required. You can extend default capabilities by enabling [Cecil's Markdown options](https://cecil.app/documentation/content/#markdown).
 
 ### Add pages
 
