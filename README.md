@@ -1,6 +1,6 @@
 # Statidocs
 
-_Statidocs_ is a documentation theme built on top of [Cecil](https://cecil.app).
+_Statidocs_ is a starter documentation site built on top of [Cecil](https://cecil.app).
 
 [![Statidocs screenshot](docs/screenshot.png)](https://cecilapp.github.io/statidocs/)
 
