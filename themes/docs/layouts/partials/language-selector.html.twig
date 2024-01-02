@@ -1,3 +1,4 @@
+          {#- language selector ~#}
           {%- if page.translations|length >= 1 ~%}
           <form id="lang-form">
             <label class="sr-only" for="lang-select">{% trans %}Language:{% endtrans %}</label>
@@ -18,10 +19,9 @@
             function setLanguageCookie(language) {
               language = trimSlashes(language);
               if (language.length === 0) {
-                language = '{{ site.language }}'; // default
+                language = '{{ config.language }}';
               }
               document.cookie = 'nf_lang=' + language + '; path=/';
-              console.log('nf_lang: ' + language);
             }
             function trimSlashes(str){
               str = str.startsWith('/') ? str.substr(1) : str;

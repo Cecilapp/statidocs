@@ -8,21 +8,6 @@
             </select>
           </form>
           <script>{% apply minify_js %}
-            window.addEventListener('load', (event) => {
-              selectTheme();
-            });
-            function selectTheme() {
-              if (!('theme' in localStorage)) {
-                document.getElementById('theme-select').options[0].selected = true;
-              }
-              if (localStorage.theme === 'dark') {
-                document.getElementById('theme-select').options[1].selected = true;
-              }
-              if (localStorage.theme === 'light') {
-                document.getElementById('theme-select').options[2].selected = true;
-              }
-              updateTheme();
-            }
             function switchTheme(theme) {
               switch (theme) {
                 case 'dark':
@@ -38,6 +23,18 @@
                   updateTheme();
               }
             }
+            function selectTheme() {
+              if (!('theme' in localStorage)) {
+                document.getElementById('theme-select').options[0].selected = true;
+              }
+              if (localStorage.theme === 'dark') {
+                document.getElementById('theme-select').options[1].selected = true;
+              }
+              if (localStorage.theme === 'light') {
+                document.getElementById('theme-select').options[2].selected = true;
+              }
+              updateTheme();
+            }
             function updateTheme() {
               if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark')
@@ -45,4 +42,13 @@
                 document.documentElement.classList.remove('dark')
               }
             }
+            selectTheme();
+            window.addEventListener('load', (event) => {
+              selectTheme();
+            });
+            window
+              .matchMedia('(prefers-color-scheme: dark)')
+              .addEventListener('change', ({matches:isDark}) => {
+                updateTheme()
+              })
           {% endapply %}</script>
