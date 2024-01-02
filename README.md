@@ -7,13 +7,15 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 > [!IMPORTANT]  
 > _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 
-## Usage
+## Install
 
 Download Cecil:
 
 ```bash
 curl -LO https://cecil.app/cecil.phar
 ```
+
+## Usage
 
 Build & preview:
 
