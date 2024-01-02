@@ -9,7 +9,7 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 ## Install
 
-Download Cecil:
+Download _Statidocs_ then Cecil:
 
 ```bash
 curl -LO https://cecil.app/cecil.phar
