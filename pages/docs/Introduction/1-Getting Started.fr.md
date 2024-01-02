@@ -4,19 +4,19 @@ description: Apprenez à créer votre site de documentation avec Statidocs, prop
 ---
 # Mise en route
 
-_Statidocs_ est un puissant starter de documentation au dessus de Cecil [Cecil](https://cecil.app/fr), un générateur de site statique.
+_Statidocs_ est un puissant starter de documentation créé via [Cecil](https://cecil.app/fr), un générateur de site statique.
 
 ## Installation
 
 :::important
-PHP 8.1+ est nécessaire
+PHP 8.1+ est nécessaire.
 :::
 
 ### Cecil
 
-Il existe différentes manières d’installer/télécharger Cecil :
+Il existe différentes manières d’installer et/ou de télécharger Cecil :
 
-CLI
+Terminal
 : `curl -LO https://cecil.app/cecil.phar`
 
 Homebrew
@@ -32,12 +32,12 @@ La manière la plus simple d’installer _Statidocs_ est depuis GitHub :
 Git
 : `git clone https://github.com/Cecilapp/statidocs.git`
 
-Manually
+Manuellement
 : <https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main>
 
 ## Démarrer le serveur local
 
-Quand vous travaillez localement, le [serveur intégré à Cecil](https://cecil.app/documentation/commands/#serve) vous permet de prévisualiser votre travail et il rafraichit automatiquement votre navigateur lorsque vous éffectuez une modification.
+Quand vous travaillez localement, le [serveur intégré à Cecil](https://cecil.app/documentation/commands/#serve) vous permet de prévisualiser votre travail et il rafraichit automatiquement votre navigateur lorsque vous effectuez une modification.
 
 Au sein de votre projet, lancez la commande suivante pour démarrer le serveur local :
 
@@ -79,4 +79,4 @@ description: Ceci est une description de page.
 ---
 ```
 
-Pour en savoir plus, jeter un œil à la [documentation de Cecil concernant le front matter](https://cecil.app/documentation/content/#front-matter).
+Pour en savoir plus, jetez un œil à la [documentation de Cecil concernant le front matter](https://cecil.app/documentation/content/#front-matter).
