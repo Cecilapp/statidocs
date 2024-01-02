@@ -48,6 +48,7 @@ npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css
 ## Publish
 
 ```bash
-# build then copy `_site` to your web server
 php cecil.phar build
 ```
+
+Then copy content of `_site` to your web server.
