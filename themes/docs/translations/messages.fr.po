@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-12-29 15:23+0100\n"
-"PO-Revision-Date: 2023-12-29 15:23+0100\n"
+"POT-Creation-Date: 2024-01-02 15:16+0100\n"
+"PO-Revision-Date: 2024-01-02 15:17+0100\n"
 "Last-Translator: Arnaud Ligny <arnaud@ligny.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr "Propulsé par"
 
 #: blocks/cta.html.twig:3
 msgid "Get started"
-msgstr "Démarrage"
+msgstr "Mise en route"
 
 #: blocks/cta.html.twig:4
 msgid "View on GitHub"
