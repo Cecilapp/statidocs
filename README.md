@@ -21,6 +21,15 @@ Build & preview:
 php cecil.phar serve
 ```
 
+### Configuration (`config.yml`)
+
+Disable Service worker / PWA:
+
+```yaml
+serviceworker:
+  enabled: true
+```
+
 ## Development
 
 Install/update dependencies:
