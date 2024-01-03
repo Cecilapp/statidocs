@@ -29,9 +29,9 @@ github:
   branch: main
 docsearch:
   enabled: true
-  apiKey: xxxx
-  appId: xxxx
-  indexName: xxxx
+  appId: R2IYF7ETH7
+  indexName: docsearch
+  apiKey: 599cec31baffa4868cae4e79f180729b
 sidebar:
   - Introduction
   - Guides
