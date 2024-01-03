@@ -9,9 +9,9 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 ## Install
 
-Download _Statidocs_ then Cecil:
-
 ```bash
+composer create-project cecil/statidocs docs
+cd docs
 curl -LO https://cecil.app/cecil.phar
 ```
 
@@ -23,27 +23,18 @@ Build & preview:
 php cecil.phar serve
 ```
 
-### Configuration (`config.yml`)
-
-Disable Service worker / PWA:
-
-```yaml
-serviceworker:
-  enabled: true
-```
-
 ## Development
 
-Install/update dependencies:
+Update themes:
 
 ```bash
 composer update
-npm install
 ```
 
 Build CSS (if necessary):
 
 ```bash
+npm install
 npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css
 ```
 
