@@ -11,7 +11,8 @@
             {%- endfor ~%}
             </select>
           </form>
-          <script>{% apply minify_js %}
+          <script>
+            {%- apply minify_js ~%}
             function switchLanguage(language) {
               setLanguageCookie(language);
               window.location.href = document.getElementById('lang-select').value;
@@ -28,5 +29,6 @@
               str = str.endsWith('/') ? str.substr(0, str.length - 1) : str;
               return str;
             }
-          {% endapply %}</script>
+            {%- endapply ~%}
+          </script>
           {%- endif ~%}

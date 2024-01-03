@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300,400,700|Poppins:400,600&display=swap" rel="stylesheet" />
     <style>{{ asset('styles.css')|inline }}</style>
     <link rel="manifest" href="{{ url('manifest') }}" />
+    {%- if site.docsearch.enabled ?? false ~%}
+    <link rel="preconnect" href="https://{{ site.docsearch.appId|default }}-dsn.algolia.net" crossorigin />
+    {%- endif ~%}
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-slate-100">
     <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
@@ -65,15 +68,18 @@
       {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
     </footer>
     {#- scripts ~#}
-    <script>{% apply minify_js %}
+    <script>
+      {%- apply minify_js ~%}
       function toggleMenu() {
         document.getElementById('sidebar').classList.toggle('hidden');
         document.getElementById('sidebar-svg1').classList.toggle('hidden');
         document.getElementById('sidebar-svg2').classList.toggle('hidden');
       }
-    {% endapply %}</script>
+      {%- endapply ~%}
+    </script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
-    <style>{% apply minify_css %}
+    <style>
+      {%- apply minify_css ~%}
       .hljs {
         background: none;
       }
@@ -83,28 +89,36 @@
       pre code.hljs {
         padding: 0;
       }
-    {% endapply %}</style>
+      {%- endapply ~%}
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js" integrity="sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==" crossorigin="anonymous"></script>
-    <script>{% apply minify_js %}
+    <script>
+      {%- apply minify_js ~%}
       $(function () {
         $('article h2, article h3').each(function () {
           var url = document.URL.replace(/#.*$/, "") + '#' + $(this).attr('id');
           $(this).append('<a class="title-anchor" href="' + url + '">#</a>');
         });
       });
-    {% endapply %}</script>
+      {%- endapply ~%}
+    </script>
     {%- if site.docsearch.enabled ?? false ~%}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-    <script>{% apply minify_js %}
+    <script>
+      {%- apply minify_js ~%}
       docsearch({
         container: '#search-container',
         appId: '{{ site.docsearch.appId|default }}',
         indexName: '{{ site.docsearch.indexName|default }}',
         apiKey: '{{ site.docsearch.apiKey|default }}',
-        debug: {{ site.docsearch.debug|default('false') }}
+        debug: {{ site.docsearch.debug|default('false') }},
+        searchParameters: {
+          facetFilters: ['language:{{ site.language }}'],
+        },
       });
-    {% endapply %}</script>
+      {%- endapply ~%}
+    </script>
     {%- endif ~%}
     {%- include 'partials/regsw.js.twig' ignore missing with {'site': site} only ~%}
   </body>

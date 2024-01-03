@@ -7,7 +7,8 @@
               <option value="light">{% trans %}Light{% endtrans %}</option>
             </select>
           </form>
-          <script>{% apply minify_js %}
+          <script>
+            {%- apply minify_js ~%}
             function switchTheme(theme) {
               switch (theme) {
                 case 'dark':
@@ -38,8 +39,10 @@
             function updateTheme() {
               if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark');
+                document.documentElement.dataset.theme = 'dark';
               } else {
                 document.documentElement.classList.remove('dark');
+                delete document.documentElement.dataset.theme;
               }
             }
             selectTheme();
@@ -51,4 +54,5 @@
               .addEventListener('change', ({matches:isDark}) => {
                 updateTheme();
               })
-          {% endapply %}</script>
+            {%- endapply ~%}
+          </script>
