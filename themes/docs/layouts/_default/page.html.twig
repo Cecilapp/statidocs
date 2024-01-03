@@ -107,16 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
     <script>
       {%- apply minify_js ~%}
-      docsearch({
-        container: '#search-container',
-        appId: '{{ site.docsearch.appId|default }}',
-        indexName: '{{ site.docsearch.indexName|default }}',
-        apiKey: '{{ site.docsearch.apiKey|default }}',
-        debug: {{ site.docsearch.debug|default('false') }},
-        searchParameters: {
-          facetFilters: ['language:{{ site.language }}'],
-        },
-      });
+      {{- include('partials/docsearch.js.twig') ~}}
       {%- endapply ~%}
     </script>
     {%- endif ~%}

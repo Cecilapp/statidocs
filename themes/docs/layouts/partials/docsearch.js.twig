@@ -1,0 +1,54 @@
+      {#- DocSearch JS ~#}
+      docsearch({
+        container: '#search-container',
+        appId: '{{ site.docsearch.appId|default }}',
+        indexName: '{{ site.docsearch.indexName|default }}',
+        apiKey: '{{ site.docsearch.apiKey|default }}',
+        debug: {{ site.docsearch.debug|default('false') }},
+        searchParameters: {
+          facetFilters: ['language:{{ site.language }}'],
+        },
+        placeholder: '{{ 'Search docs'|trans }}',
+        translations: {
+          button: {
+            buttonText: '{{ 'Search'|trans }}',
+            buttonAriaLabel: '{{ 'Search'|trans }}',
+          },
+          modal: {
+            searchBox: {
+              resetButtonTitle: '{{ 'Clear the query'|trans }}',
+              resetButtonAriaLabel: '{{ 'Clear the query'|trans }}',
+              cancelButtonText: '{{ 'Cancel'|trans }}',
+              cancelButtonAriaLabel: '{{ 'Cancel'|trans }}',
+            },
+            startScreen: {
+              recentSearchesTitle: '{{ 'Recent'|trans }}',
+              noRecentSearchesText: '{{ 'No recent searches'|trans }}',
+              saveRecentSearchButtonTitle: '{{ 'Save this search'|trans }}',
+              removeRecentSearchButtonTitle: '{{ 'Remove this search from history'|trans }}',
+              favoriteSearchesTitle: '{{ 'Favorite'|trans }}',
+              removeFavoriteSearchButtonTitle: '{{ 'Remove this search from favorites'|trans }}',
+            },
+            errorScreen: {
+              titleText: '{{ 'Unable to fetch results'|trans }}',
+              helpText: '{{ 'You might want to check your network connection.'|trans }}',
+            },
+            footer: {
+              selectText: '{{ 'to select'|trans }}',
+              selectKeyAriaLabel: '{{ 'Enter key'|trans }}',
+              navigateText: '{{ 'to navigate'|trans }}',
+              navigateUpKeyAriaLabel: '{{ 'Arrow up'|trans }}',
+              navigateDownKeyAriaLabel: '{{ 'Arrow down'|trans }}',
+              closeText: '{{ 'to close'|trans }}',
+              closeKeyAriaLabel: '{{ 'Escape key'|trans }}',
+              searchByText: '{{ 'Search by'|trans }}',
+            },
+            noResultsScreen: {
+              noResultsText: '{{ 'No results for'|trans }}',
+              suggestedQueryText: '{{ 'Try searching for'|trans }}',
+              reportMissingResultsText: '{{ 'Believe this query should return results?'|trans }}',
+              reportMissingResultsLinkText: '{{ 'Let us know.'|trans }}',
+            },
+          },
+        },
+      });
