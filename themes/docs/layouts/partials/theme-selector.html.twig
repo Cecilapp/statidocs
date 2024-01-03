@@ -1,7 +1,7 @@
           {#- theme selector ~#}
           <form id="theme-form">
             <label class="sr-only" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
-            <select id="theme-select" onchange="switchTheme(value)">
+            <select id="theme-select" onchange="switchTheme(value)" class="w-[5rem] text-ellipsis">
               <option value="auto">{% trans %}Auto{% endtrans %}</option>
               <option value="dark">{% trans %}Dark{% endtrans %}</option>
               <option value="light">{% trans %}Light{% endtrans %}</option>

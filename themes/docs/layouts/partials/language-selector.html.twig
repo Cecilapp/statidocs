@@ -2,7 +2,7 @@
           {%- if page.translations|length >= 1 ~%}
           <form id="lang-form">
             <label class="sr-only" for="lang-select">{% trans %}Language:{% endtrans %}</label>
-            <select id="lang-select" onchange="switchLanguage(value)">
+            <select id="lang-select" onchange="switchLanguage(value)" class="w-[5.25rem] text-ellipsis">
               <option value="{{ url(page) }}">{{ page.language|language_name(site.language.locale(page.language))|capitalize }}</option>
             {%- for p in page.translations ~%}
               {%- if p.language is defined ~%}
