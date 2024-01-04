@@ -13,7 +13,6 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 ```bash
 composer create-project cecil/statidocs myproject
-cd myproject
 ```
 
 ### Cecil
