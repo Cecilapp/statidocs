@@ -9,9 +9,16 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 ## Install
 
+### _Statidocs_
+
 ```bash
-composer create-project cecil/statidocs docs
-cd docs
+composer create-project cecil/statidocs myproject
+cd myproject
+```
+
+### Cecil
+
+```bash
 curl -LO https://cecil.app/cecil.phar
 ```
 
@@ -22,6 +29,8 @@ Build & preview:
 ```bash
 php cecil.phar serve
 ```
+
+Read the [documentation](https://cecilapp.github.io/statidocs/).
 
 ## Development
 
