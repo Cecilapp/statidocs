@@ -9,13 +9,13 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 ## Install
 
-### _Statidocs_
+Use the following [Composer](https://getcomposer.org/) command:
 
 ```bash
 composer create-project cecil/statidocs myproject
 ```
 
-### Cecil
+Then download Cecil and put it at the root directory of your project:
 
 ```bash
 curl -LO https://cecil.app/cecil.phar
