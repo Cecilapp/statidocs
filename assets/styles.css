@@ -1108,6 +1108,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1168,32 +1172,16 @@ video {
   width: 16rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-\[5\.5rem\] {
-  width: 5.5rem;
+.w-\[5\.25rem\] {
+  width: 5.25rem;
 }
 
 .w-\[5rem\] {
   width: 5rem;
 }
 
-.w-\[5\.25rem\] {
-  width: 5.25rem;
+.w-full {
+  width: 100%;
 }
 
 .max-w-none {
@@ -1308,6 +1296,10 @@ video {
   border-width: 1px;
 }
 
+.border-l {
+  border-left-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1315,6 +1307,26 @@ video {
 .border-slate-300 {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.border-primary-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 234 254 / var(--tw-border-opacity));
+}
+
+.border-primary-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity));
+}
+
+.border-primary-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
 }
 
 .bg-primary-100 {
@@ -1397,6 +1409,18 @@ video {
   padding-top: 1.5rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1457,6 +1481,10 @@ video {
   font-weight: 100;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1467,6 +1495,10 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .tracking-wider {
@@ -2043,6 +2075,11 @@ main details a {
     height: 4rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -2091,6 +2128,15 @@ main details a {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+
+  .lg\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2118,6 +2164,11 @@ main details a {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+}
+
+:is(:where(.dark) .dark\:border-slate-800) {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
 }
 
 :is(:where(.dark) .dark\:bg-primary-900) {

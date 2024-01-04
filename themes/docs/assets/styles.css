@@ -544,40 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .markdown {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1202,6 +1168,14 @@ video {
   width: 16rem;
 }
 
+.w-\[5\.25rem\] {
+  width: 5.25rem;
+}
+
+.w-\[5rem\] {
+  width: 5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1300,6 +1274,10 @@ video {
 
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .rounded-lg {
@@ -1473,6 +1451,10 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .tracking-wider {
@@ -2049,6 +2031,11 @@ main details a {
     height: 4rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -2096,6 +2083,15 @@ main details a {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 

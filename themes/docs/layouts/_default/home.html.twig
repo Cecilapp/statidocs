@@ -1,7 +1,7 @@
 {% extends '_default/page.html.twig' %}
 
 {%- block content ~%}
-      <div class="px-8 mx-auto pt-14 md:pt-20 flex-col space-y-12">
+      <div class="px-8 mx-auto pt-14 md:pt-20 lg:pt-36 flex-col space-y-12">
   {%- for block in page.blocks|default ~%}
     {{- include('blocks/' ~ block.name ~ '.html.twig', ignore_missing = true) ~}}
   {%- endfor ~%}
