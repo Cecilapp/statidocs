@@ -15,12 +15,6 @@ Use the following [Composer](https://getcomposer.org/) command:
 composer create-project cecil/statidocs myproject
 ```
 
-Then download Cecil and put it at the root directory of your project:
-
-```bash
-curl -LO https://cecil.app/cecil.phar
-```
-
 ## Usage
 
 Build & preview:
