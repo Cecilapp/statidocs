@@ -4,36 +4,21 @@ description: Learn how to start building your documentation website with Statido
 ---
 # Getting started
 
-_Statidocs_ is a powerful documentation starter on top of [Cecil](https://cecil.app), a static site generator.
+Statidocs is a powerful documentation starter built by [Cecil](https://cecil.app), a static site generator.
 
-## Installation
+## Create a new project
+
+The easiest way to create a new Statidocs project is using [Composer](https://getcomposer.org):
+
+```bash
+composer create-project cecil/statidocs my-project
+```
+
+This command also download `cecil.phar` binary.
 
 :::important
 PHP 8.1+ is required.
 :::
-
-### Cecil
-
-There is differents way to install and/or download Cecil:
-
-Terminal
-: `curl -LO https://cecil.app/cecil.phar`
-
-Homebrew
-: `brew install cecilapp/cecil/cecil`
-
-Manually
-: <https://cecil.app/cecil.phar>
-
-### Statidocs
-
-The easiest way to install _Statidocs_ is to download it from GitHub:
-
-Git
-: `git clone https://github.com/Cecilapp/statidocs.git`
-
-Manually
-: <https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main>
 
 ## Start the local server
 
@@ -51,7 +36,7 @@ This will log a message to your terminal with the URL of your local preview. Ope
 
 ### File formats
 
-_Statidocs_ supports authoring content in Markdown with no configuration required. You can extend default capabilities by enabling [Cecil's Markdown options](https://cecil.app/documentation/content/#markdown).
+Statidocs supports authoring content in Markdown with no configuration required. You can extend default capabilities by enabling [Cecil's Markdown options](https://cecil.app/documentation/content/#markdown).
 
 ### Add pages
 
@@ -80,3 +65,15 @@ description: This is a page description.
 ```
 
 To know more, checks the [Cecil front matter documentation](https://cecil.app/documentation/content/#front-matter).
+
+## Updating Statidocs
+
+:::tip
+Statidocs is still in development, there will be frequent updates and improvements. Be sure to update Statidocs regularly
+:::
+
+Statidocs is built on top of the Cecil theme [_docs_](https://github.com/Cecilapp/theme-docs). You can update it and other Cecil themes by running the following command in your terminal:
+
+```bash
+composer update
+```

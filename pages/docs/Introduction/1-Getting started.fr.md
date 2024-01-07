@@ -4,36 +4,21 @@ description: Apprenez à créer votre site de documentation avec Statidocs, prop
 ---
 # Mise en route
 
-_Statidocs_ est un puissant starter de documentation créé via [Cecil](https://cecil.app/fr), un générateur de site statique.
+_Statidocs_ est un puissant démarreur de documentation créé via [Cecil](https://cecil.app/fr), un générateur de site statique.
 
-## Installation
+## Créer un nouveau projet
+
+Le moyen le plus simple de créer un nouveau projet Statidocs consiste à utiliser [Composer](https://getcomposer.org) :
+
+```bash
+composer create-project cecil/statidocs mon-projet
+```
+
+Cette commande télécharge également le binaire `cecil.phar`.
 
 :::important
 PHP 8.1+ est nécessaire.
 :::
-
-### Cecil
-
-Il existe différentes manières d’installer et/ou de télécharger Cecil :
-
-Terminal
-: `curl -LO https://cecil.app/cecil.phar`
-
-Homebrew
-: `brew install cecilapp/cecil/cecil`
-
-Manuellement
-: <https://cecil.app/cecil.phar>
-
-### Statidocs
-
-La manière la plus simple d’installer _Statidocs_ est depuis GitHub :
-
-Git
-: `git clone https://github.com/Cecilapp/statidocs.git`
-
-Manuellement
-: <https://codeload.github.com/Cecilapp/statidocs/zip/refs/heads/main>
 
 ## Démarrer le serveur local
 
@@ -79,4 +64,16 @@ description: Ceci est une description de page.
 ---
 ```
 
-Pour en savoir plus, jetez un œil à la [documentation de Cecil concernant le front matter](https://cecil.app/documentation/content/#front-matter).
+Pour en savoir plus, consultez la [documentation de Cecil concernant le front matter](https://cecil.app/documentation/content/#front-matter).
+
+## Mise à jour de Statidocs
+
+:::tip
+Statidocs est encore en développement, il y aura des mises à jour et des améliorations fréquentes. Assurez-vous de mettre à jour Statidocs régulièrement
+:::
+
+Statidocs est construit sur le thème Cecil [_docs_](https://github.com/Cecilapp/theme-docs). Vous pouvez le mettre à jour ainsi que d'autres thèmes Cecil en exécutant la commande suivante dans votre terminal :
+
+```bash
+composer update
+```
