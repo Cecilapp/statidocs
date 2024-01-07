@@ -1,8 +1,11 @@
 ---
 title: Structure projet
 ---
-
 # Structure projet
+
+:::info
+Travail en cours.
+:::
 
 ## Titre 1
 

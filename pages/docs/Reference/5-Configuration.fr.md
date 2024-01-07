@@ -1,8 +1,11 @@
 ---
 title: Configuration
 ---
-
 # Configuration
+
+:::info
+Travail en cours.
+:::
 
 ## Titre 1
 
