@@ -12,7 +12,7 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 Use the following [Composer](https://getcomposer.org/) command:
 
 ```bash
-composer create-project cecil/statidocs myproject
+composer create-project cecil/statidocs my-project
 ```
 
 ## Usage
