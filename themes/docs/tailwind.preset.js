@@ -18,4 +18,7 @@ module.exports = {
     }),
   ],
   darkMode: 'class',
+  safelist: [
+    'dark:brightness-90',
+  ],
 }

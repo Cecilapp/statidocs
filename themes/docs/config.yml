@@ -17,6 +17,7 @@ pages:
     highlight:
       enabled: true
     images:
+      class: "dark:brightness-90"
       resize:
         enabled: true
       webp:
