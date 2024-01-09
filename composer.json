@@ -13,8 +13,7 @@
   ],
   "require": {
     "cecil/theme-docs": "^1.6",
-    "cecil/theme-pwa": "^2.1",
-    "cecil/theme-netlify": "^2.0"
+    "cecil/theme-pwa": "^2.1"
   },
   "scripts": {
     "post-create-project-cmd": "curl -LO https://cecil.app/cecil.phar"

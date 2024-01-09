@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8f842fcc43e915ce3d6c703a6a6656a",
+    "content-hash": "46785b92cbc19100d7fbd594c8e1bdcf",
     "packages": [
         {
             "name": "cecil/theme-docs",
@@ -125,56 +125,6 @@
                 }
             ],
             "time": "2022-01-06T10:54:26+00:00"
-        },
-        {
-            "name": "cecil/theme-netlify",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-netlify.git",
-                "reference": "22f2799058513cfe427f5b47b568d515e60f2932"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/22f2799058513cfe427f5b47b568d515e60f2932",
-                "reference": "22f2799058513cfe427f5b47b568d515e60f2932",
-                "shasum": ""
-            },
-            "require": {
-                "cecil/theme-installer": "^1.4"
-            },
-            "type": "cecil-theme",
-            "extra": {
-                "name": "netlify",
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cecil component theme Netlify",
-            "keywords": [
-                "cecil",
-                "netlify",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-netlify/issues",
-                "source": "https://github.com/Cecilapp/theme-netlify/tree/2.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2023-12-09T01:10:41+00:00"
         },
         {
             "name": "cecil/theme-pwa",
