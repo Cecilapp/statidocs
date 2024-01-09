@@ -4,7 +4,11 @@ description: Apprenez à créer votre site de documentation avec Statidocs, prop
 ---
 # Mise en route
 
-_Statidocs_ est un puissant démarreur de documentation créé via [Cecil](https://cecil.app/fr), un générateur de site statique.
+Statidocs est un puissant démarreur de documentation, construit par le générateur de sites statiques [Cecil](https://cecil.app).
+
+:::important
+PHP 8.1+ est nécessaire.
+:::
 
 ## Créer un nouveau projet
 
@@ -14,10 +18,8 @@ Le moyen le plus simple de créer un nouveau projet Statidocs consiste à utilis
 composer create-project cecil/statidocs mon-projet
 ```
 
+:::info
 Cette commande télécharge également le binaire `cecil.phar`.
-
-:::important
-PHP 8.1+ est nécessaire.
 :::
 
 ## Démarrer le serveur local
@@ -36,7 +38,7 @@ Cela va afficher un message dans votre terminal avec l’URL de votre aperçu lo
 
 ### Formats de fichier
 
-_Statidocs_ supporte la rédaction de contenu au format Markdown sans paramétrage particulier. Vous pouvez étendre les capacités en activant les [options Markdown de Cecil](https://cecil.app/documentation/content/#markdown).
+Statidocs supporte la rédaction de contenu au format Markdown sans paramétrage particulier. Vous pouvez étendre les capacités en activant les [options Markdown de Cecil](https://cecil.app/documentation/content/#markdown).
 
 ### Ajouter des pages
 

@@ -9,5 +9,5 @@ blocks:
     #link: https://github.com/cecilapp/statidocs
 ---
 :::important
-_Statidocs_ est encore en cours de développement. Si quelque chose ne fonctionne pas, veuillez [créer un ticket sur GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
+Statidocs est encore en cours de développement. Si quelque chose ne fonctionne pas, veuillez [créer un ticket sur GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 :::

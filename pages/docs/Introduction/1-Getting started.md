@@ -4,7 +4,11 @@ description: Learn how to start building your documentation website with Statido
 ---
 # Getting started
 
-Statidocs is a powerful documentation starter built by [Cecil](https://cecil.app), a static site generator.
+Statidocs is a powerful documentation starter, built by static site generator [Cecil](https://cecil.app).
+
+:::important
+PHP 8.1+ is required.
+:::
 
 ## Create a new project
 
@@ -14,10 +18,8 @@ The easiest way to create a new Statidocs project is using [Composer](https://ge
 composer create-project cecil/statidocs my-project
 ```
 
+:::info
 This command also download `cecil.phar` binary.
-
-:::important
-PHP 8.1+ is required.
 :::
 
 ## Start the local server
