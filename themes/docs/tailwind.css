@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 /* Links */
-a {
+main a,
+footer a {
   @apply text-primary-700 dark:text-primary-400;
 }
 a:hover {

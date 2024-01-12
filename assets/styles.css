@@ -1570,12 +1570,14 @@ video {
 
 /* Links */
 
-a {
+main a,
+footer a {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
-:is(.dark a) {
+:is(.dark main a),:is(.dark 
+footer a) {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
