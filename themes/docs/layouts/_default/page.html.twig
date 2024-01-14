@@ -68,7 +68,7 @@
     <footer class="p-6 mx-auto font-light text-center">
       {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
     </footer>
-    {#- scripts ~#}
+    {%- block scripts ~%}
     <script>
       {%- apply minify_js ~%}
       function toggleMenu() {
@@ -113,5 +113,6 @@
     </script>
     {%- endif ~%}
     {%- include 'partials/regsw.js.twig' ignore missing with {'site': site} only ~%}
+    {%- endblock scripts ~%}
   </body>
 </html>

@@ -42,8 +42,47 @@
       <div>
         <nav id="on-this-page" class="hidden xl:block py-6 w-64 text-slate-500 dark:text-slate-300 sticky top-[80px]">
           <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">{% trans %}On this page{% endtrans %}</h3>
-          {{ page.body|toc }}
-          {%- include 'partials/edit.html.twig' ~%}
+          <div id="toc">
+            {{ page.body|toc }}
+          </div>
+          <div class="mt-5 border-t border-slate-400 dark:border-slate-500">
+            {%- include 'partials/edit.html.twig' ~%}
+          </div>
         </nav>
       </div>
     {%- endblock content ~%}
+
+    {% block scripts %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+    <style>
+      {%- apply minify_css ~%}
+      .toc-list {
+        padding-left: 0;
+      }
+      .toc-list .is-collapsible {
+        padding-left: 10px;
+      }
+      .toc-link::before {
+        display: none;
+      }
+      .is-active-link {
+        font-weight: 600;
+      }
+      {%- endapply ~%}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+    <script>
+      {%- apply minify_js ~%}
+      tocbot.init({
+        tocSelector: '#toc',
+        contentSelector: '#content',
+        headingSelector: 'h2, h3',
+        hasInnerContainers: true,
+        scrollSmooth: false,
+        headingsOffset: 70,
+        scrollSmoothOffset: -70,
+      });
+      {%- endapply ~%}
+    </script>
+    {%- endblock scripts ~%}

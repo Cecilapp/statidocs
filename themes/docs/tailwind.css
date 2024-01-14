@@ -4,7 +4,8 @@
 
 /* Links */
 main a,
-footer a {
+footer a,
+#toc {
   @apply text-primary-700 dark:text-primary-400;
 }
 a:hover {
@@ -29,8 +30,8 @@ a.title-anchor:hover {
 }
 
 /* On this page */
-#on-this-page > ul {
-  @apply list-none pb-5 border-b-2 border-slate-400 dark:border-slate-500;
+#on-this-page ul {
+  @apply list-none;
 }
 main details a {
   @apply no-underline !important;
