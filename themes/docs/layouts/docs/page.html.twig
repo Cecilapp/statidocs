@@ -42,7 +42,7 @@
       <div>
         <nav id="on-this-page" class="hidden xl:block py-6 w-64 text-slate-500 dark:text-slate-300 sticky top-[80px]">
           <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">{% trans %}On this page{% endtrans %}</h3>
-          <div id="toc">
+          <div id="on-this-page-toc">
             {{ page.body|toc }}
           </div>
           <div class="mt-5 border-t border-slate-400 dark:border-slate-500">
@@ -75,7 +75,7 @@
     <script>
       {%- apply minify_js ~%}
       tocbot.init({
-        tocSelector: '#toc',
+        tocSelector: '#on-this-page-toc',
         contentSelector: '#content',
         headingSelector: 'h2, h3',
         hasInnerContainers: true,

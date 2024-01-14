@@ -5,7 +5,7 @@
 /* Links */
 main a,
 footer a,
-#toc {
+#on-this-page-toc {
   @apply text-primary-700 dark:text-primary-400;
 }
 a:hover {
