@@ -119,7 +119,7 @@ Builder::create($config)->build();
 ```
 </pre>
 
-## There is a horizontal rule below this
+## Horizontal rule below
 
 ---
 
