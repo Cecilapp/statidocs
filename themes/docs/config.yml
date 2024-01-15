@@ -2,11 +2,20 @@
 github:
   repo: https://github.com/cecilapp/statidocs
   branch: main
-docsearch:
-  enabled: false
 manifest:
   background_color: '#EEF6FF'
   theme_color: '#1C4ED8'
+serviceworker:
+  enabled: false
+docsearch:
+  enabled: false
+  version: '3'
+highlightjs:
+  version: '11.7.0'
+jquery:
+  version: '3.7.0'
+tocbot:
+  version: '4.18.2'
 
 # Cecil config for Docs
 pagination:

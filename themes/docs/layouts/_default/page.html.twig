@@ -78,7 +78,7 @@
       }
       {%- endapply ~%}
     </script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlightjs.version ~ '/styles/github-dark.min.css', {minify: false})|html({title: 'GitHub dark'}, {preload: true}) }}
     <style>
       {%- apply minify_css ~%}
       .hljs {
@@ -92,7 +92,7 @@
       }
       {%- endapply ~%}
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.min.js" integrity="sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==" crossorigin="anonymous"></script>
+    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/' ~ site.jquery.version ~ '/jquery.slim.min.js', {minify: false})|html({integrity: 'sha512-5NqgLBAYtvRsyAzAvEBWhaW+NoB+vARl6QiA02AFMhCWvPpi7RWResDcTGYvQtzsHVCfiUhwvsijP+3ixUk1xw==', crossorigin: 'anonymous'}) }}
     <script>
       {%- apply minify_js ~%}
       $(function () {
@@ -104,8 +104,8 @@
       {%- endapply ~%}
     </script>
     {%- if site.docsearch.enabled ?? false ~%}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
-    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@{{ site.docsearch.version }}"/>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@{{ site.docsearch.version }}"></script>
     <script>
       {%- apply minify_js ~%}
       {{- include('partials/docsearch.js.twig') ~}}

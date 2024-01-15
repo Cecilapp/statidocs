@@ -54,7 +54,7 @@
 
     {% block scripts %}
     {{ parent() }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/tocbot/' ~ site.tocbot.version ~ '/tocbot.min.css', {minify: false})|html({title: 'Tocbot'}, {preload: true}) }}
     <style>
       {%- apply minify_css ~%}
       .toc-list {
@@ -71,7 +71,7 @@
       }
       {%- endapply ~%}
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
+    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/tocbot/' ~ site.tocbot.version ~ '/tocbot.min.js', {minify: false})|html }}
     <script>
       {%- apply minify_js ~%}
       tocbot.init({
