@@ -15,6 +15,8 @@ Use the following [Composer](https://getcomposer.org/) command:
 composer create-project cecil/statidocs my-project
 ```
 
+[![Latest Stable Version](https://poser.pugx.org/cecil/statidocs/v/stable)](https://packagist.org/packages/cecil/statidocs)
+
 ## Usage
 
 Build & preview:
