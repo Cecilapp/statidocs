@@ -27,11 +27,12 @@
       <a href="{{ url(site.home) }}" title="{{ site.title }}" class="lg:w-48 inline-block text-primary-100 hover:text-primary-50 px-4 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
         {{ site.title }}
       </a>
+      <div class="md:hidden grow"></div>
       {#- DocSearch ~#}
       {%- if site.docsearch.enabled ?? false ~%}
       <div id="search-container" class="md:inline-block md:px-4 py-2"></div>
       {%- endif ~%}
-      <div class="grow"></div>
+      <div class="hidden md:block grow"></div>
       {#- GitHub link -#}
       {%- if site.github.repo|default ~%}
       <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex text-primary-100 hover:text-primary-50 px-3 py-2 sm:mr-4 items-center">

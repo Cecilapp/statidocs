@@ -2124,8 +2124,16 @@ main details a {
     margin-top: 4rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline-block {
     display: inline-block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-16 {
