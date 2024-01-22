@@ -1195,6 +1195,10 @@ video {
   height: 100vh;
 }
 
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1516,11 +1520,6 @@ video {
 .text-primary-100 {
   --tw-text-opacity: 1;
   color: rgb(219 234 254 / var(--tw-text-opacity));
-}
-
-.text-primary-200 {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
 .text-primary-700 {
