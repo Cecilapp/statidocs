@@ -1195,6 +1195,10 @@ video {
   height: 100vh;
 }
 
+.max-h-\[91vh\] {
+  max-height: 91vh;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1516,11 +1520,6 @@ video {
 .text-primary-100 {
   --tw-text-opacity: 1;
   color: rgb(219 234 254 / var(--tw-text-opacity));
-}
-
-.text-primary-200 {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
 .text-primary-700 {
@@ -2124,8 +2123,16 @@ main details a {
     margin-top: 4rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline-block {
     display: inline-block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-16 {

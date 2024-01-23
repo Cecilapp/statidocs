@@ -12,7 +12,7 @@
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-slate-100">
     <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
-      {#- mobile sidebar button ~#}
+      {#- sidebar mobile button ~#}
       {%- if page.section == 'docs' ~%}
       <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -55,6 +55,7 @@
     </header>
     <main class="flex h-full mt-12 md:mt-16">
     {%- block content ~%}
+      {#- sidebar ~#}
       {%- include 'partials/sidebar.html.twig' ~%}
       <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-8">
         {#- article content ~#}
