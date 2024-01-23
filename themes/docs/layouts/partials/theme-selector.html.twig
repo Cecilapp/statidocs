@@ -1,58 +1,60 @@
           {#- theme selector ~#}
-          <form id="theme-form">
-            <label class="sr-only" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
-            <select id="theme-select" onchange="switchTheme(value)" class="w-[5rem] text-ellipsis">
-              <option value="auto">{% trans %}Auto{% endtrans %}</option>
-              <option value="dark">{% trans %}Dark{% endtrans %}</option>
-              <option value="light">{% trans %}Light{% endtrans %}</option>
-            </select>
-          </form>
-          <script>
-            {%- apply minify_js ~%}
-            function switchTheme(theme) {
-              switch (theme) {
-                case 'dark':
-                  localStorage.theme = 'dark';
-                  updateTheme();
-                  break;
-                case 'light':
-                  localStorage.theme = 'light';
-                  updateTheme();
-                  break;
-                default:
-                  localStorage.removeItem('theme');
-                  updateTheme();
+          <div class="hidden sm:block">
+            <form id="theme-form">
+              <label class="sr-only" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
+              <select id="theme-select" onchange="switchTheme(value)" class="w-[5rem] text-ellipsis">
+                <option value="auto">{% trans %}Auto{% endtrans %}</option>
+                <option value="dark">{% trans %}Dark{% endtrans %}</option>
+                <option value="light">{% trans %}Light{% endtrans %}</option>
+              </select>
+            </form>
+            <script>
+              {%- apply minify_js ~%}
+              function switchTheme(theme) {
+                switch (theme) {
+                  case 'dark':
+                    localStorage.theme = 'dark';
+                    updateTheme();
+                    break;
+                  case 'light':
+                    localStorage.theme = 'light';
+                    updateTheme();
+                    break;
+                  default:
+                    localStorage.removeItem('theme');
+                    updateTheme();
+                }
               }
-            }
-            function selectTheme() {
-              if (!('theme' in localStorage)) {
-                document.getElementById('theme-select').options[0].selected = true;
-              }
-              if (localStorage.theme === 'dark') {
-                document.getElementById('theme-select').options[1].selected = true;
-              }
-              if (localStorage.theme === 'light') {
-                document.getElementById('theme-select').options[2].selected = true;
-              }
-              updateTheme();
-            }
-            function updateTheme() {
-              if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-                document.documentElement.dataset.theme = 'dark';
-              } else {
-                document.documentElement.classList.remove('dark');
-                delete document.documentElement.dataset.theme;
-              }
-            }
-            selectTheme();
-            window.addEventListener('load', (event) => {
-              selectTheme();
-            });
-            window
-              .matchMedia('(prefers-color-scheme: dark)')
-              .addEventListener('change', ({matches:isDark}) => {
+              function selectTheme() {
+                if (!('theme' in localStorage)) {
+                  document.getElementById('theme-select').options[0].selected = true;
+                }
+                if (localStorage.theme === 'dark') {
+                  document.getElementById('theme-select').options[1].selected = true;
+                }
+                if (localStorage.theme === 'light') {
+                  document.getElementById('theme-select').options[2].selected = true;
+                }
                 updateTheme();
-              })
-            {%- endapply ~%}
-          </script>
+              }
+              function updateTheme() {
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                  document.documentElement.dataset.theme = 'dark';
+                } else {
+                  document.documentElement.classList.remove('dark');
+                  delete document.documentElement.dataset.theme;
+                }
+              }
+              selectTheme();
+              window.addEventListener('load', (event) => {
+                selectTheme();
+              });
+              window
+                .matchMedia('(prefers-color-scheme: dark)')
+                .addEventListener('change', ({matches:isDark}) => {
+                  updateTheme();
+                })
+              {%- endapply ~%}
+            </script>
+          </div>

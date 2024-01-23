@@ -11,10 +11,10 @@
     {%- endif ~%}
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-slate-100">
-    <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 py-3 shadow-md flex items-center">
+    <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 lg:px-6 py-3 shadow-md flex items-center">
       {#- sidebar mobile button ~#}
       {%- if page.section == 'docs' ~%}
-      <button class="flex lg:hidden items-center text-primary-100" onclick="toggleMenu()">
+      <button class="flex lg:hidden mr-4 items-center text-primary-100" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
@@ -24,18 +24,18 @@
       </button>
       {%- endif ~%}
       {#- site title ~#}
-      <a href="{{ url(site.home) }}" title="{{ site.title }}" class="lg:w-48 inline-block text-primary-100 hover:text-primary-50 px-4 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
+      <a href="{{ url(site.home) }}" title="{{ site.title }}" class="lg:w-48 inline-block text-primary-100 hover:text-primary-50 py-2 sm:mr-4 lg:mr-8 xl:mr-24 text-xl">
         {{ site.title }}
       </a>
       <div class="md:hidden grow"></div>
       {#- DocSearch ~#}
       {%- if site.docsearch.enabled ?? false ~%}
-      <div id="search-container" class="md:inline-block md:px-4 py-2"></div>
+      <div id="search-container" class="md:inline-block md:ml-2 py-2"></div>
       {%- endif ~%}
       <div class="hidden md:block grow"></div>
       {#- GitHub link -#}
       {%- if site.github.repo|default ~%}
-      <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex text-primary-100 hover:text-primary-50 px-3 py-2 sm:mr-4 items-center">
+      <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex text-primary-100 hover:text-primary-50 ml-4 py-2 items-center">
         <svg class="fill-current text-primary-100 hover:text-primary-50 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20">
           <title>{{ site.title }} on GitHub</title>
           <path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path>
@@ -44,19 +44,17 @@
       </a>
       {%- endif ~%}
       {#- selectors ~#}
-      <div class="flex justify-end space-x-2">
-        <div class="hidden sm:block">
-          {%- include 'partials/theme-selector.html.twig' ~%}
-        </div>
-        <div>
-          {%- include 'partials/language-selector.html.twig' ~%}
-        </div>
+      <div class="flex justify-end space-x-2 sm:ml-4">
+        {%- include 'partials/theme-selector.html.twig' ~%}
+        {%- include 'partials/language-selector.html.twig' ~%}
       </div>
     </header>
-    <main class="flex h-full mt-12 md:mt-16">
+    {#- sidebar ~#}
+    {%- if page.section == 'docs' ~%}
+    {%- include 'partials/sidebar.html.twig' ~%}
+    {%- endif ~%}
+    <main id="main" class="flex h-full mt-12 md:mt-16">
     {%- block content ~%}
-      {#- sidebar ~#}
-      {%- include 'partials/sidebar.html.twig' ~%}
       <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-8">
         {#- article content ~#}
         <section id="content" class="markdown dark:markdown-invert max-w-none">
@@ -67,14 +65,16 @@
       </article>
     {%- endblock content ~%}
     </main>
-    <footer class="p-6 mx-auto font-light text-center">
-      {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
+    <footer class="p-4 lg:p-6 mx-auto text-sm text-center">
+      <div>{{ site.footer}}</div>
+      <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>
     </footer>
     {%- block scripts ~%}
     <script>
       {%- apply minify_js ~%}
       function toggleMenu() {
-        document.getElementById('sidebar').classList.toggle('hidden');
+        document.getElementById('sidebar').classList.toggle('-translate-x-full');
+        document.getElementById('main').classList.toggle('opacity-25');
         document.getElementById('sidebar-svg1').classList.toggle('hidden');
         document.getElementById('sidebar-svg2').classList.toggle('hidden');
       }
