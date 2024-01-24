@@ -2,6 +2,7 @@
 github:
   repo: https://github.com/cecilapp/statidocs
   branch: main
+footer: Copyright © 2023-present Arnaud Ligny
 manifest:
   background_color: '#EEF6FF'
   theme_color: '#1C4ED8'
@@ -16,7 +17,6 @@ jquery:
   version: '3.7.0'
 tocbot:
   version: '4.18.2'
-footer: Copyright © 2024-present Arnaud Ligny
 
 # Cecil config for Docs
 pagination:

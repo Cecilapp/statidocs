@@ -77,6 +77,10 @@
         document.getElementById('main').classList.toggle('opacity-25');
         document.getElementById('sidebar-svg1').classList.toggle('hidden');
         document.getElementById('sidebar-svg2').classList.toggle('hidden');
+        document.getElementById('main').removeAttribute('onclick');
+        if (!document.getElementById('sidebar').matches('.-translate-x-full')) {
+          document.getElementById('main').setAttribute('onclick', 'toggleMenu()');
+        }
       }
       {%- endapply ~%}
     </script>
