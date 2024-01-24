@@ -1147,8 +1147,8 @@ video {
   margin-right: 1rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-5 {
@@ -1179,8 +1179,8 @@ video {
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-4 {
@@ -1235,12 +1235,17 @@ video {
   width: 100%;
 }
 
-.max-w-none {
-  max-width: none;
+.min-w-60 {
+  min-width: 15rem;
 }
 
-.flex-shrink-0 {
-  flex-shrink: 0;
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.max-w-none {
+  max-width: none;
 }
 
 .grow {
@@ -1438,12 +1443,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-14 {
@@ -1526,10 +1531,6 @@ video {
   text-transform: capitalize;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1581,6 +1582,11 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {
@@ -2162,10 +2168,6 @@ main details a {
     margin-left: 0.5rem;
   }
 
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -2176,10 +2178,6 @@ main details a {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-16 {
-    height: 4rem;
   }
 
   .md\:max-h-\[calc\(100vh-4rem\)\] {
@@ -2221,10 +2219,6 @@ main details a {
     width: 12rem;
   }
 
-  .lg\:w-64 {
-    width: 16rem;
-  }
-
   .lg\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2246,14 +2240,6 @@ main details a {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:pl-6 {
-    padding-left: 1.5rem;
-  }
-
-  .lg\:pr-8 {
-    padding-right: 2rem;
   }
 
   .lg\:pt-36 {
@@ -2287,10 +2273,6 @@ main details a {
 
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:w-80 {
-    width: 20rem;
   }
 
   .xl\:px-16 {
