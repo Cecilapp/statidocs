@@ -39,7 +39,7 @@ main details a {
 
 /* Sidebar */
 #sidebar h3 {
-  @apply text-slate-500 dark:text-slate-200 uppercase font-semibold text-sm;
+  @apply uppercase font-semibold text-sm text-slate-500 dark:text-slate-200;
 }
 #sidebar ul {
   @apply list-none p-0 mb-6;
@@ -73,12 +73,13 @@ main details a {
 
 /* DocSearch */
 .DocSearch.DocSearch-Button {
-  @apply w-full md:w-64 lg:w-80 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
+  @apply w-full md:w-64 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
   @apply max-md:bg-transparent !important;
   @apply max-md:shadow-none !important;
 }
 .DocSearch .DocSearch-Button-Placeholder {
-  @apply text-primary-100 !important;
+  @apply text-primary-100 font-light !important;
+  @apply pl-3 !important;
 }
 .DocSearch-Button-Keys {
   display: none !important;
@@ -87,8 +88,7 @@ main details a {
   @apply text-primary-100 !important;
 }
 .DocSearch-Form {
-  @apply bg-primary-800 !important;
-  @apply text-primary-100 !important;
+  @apply text-primary-100 bg-primary-800 !important;
 }
 .DocSearch-Input {
   @apply text-primary-100 !important;
