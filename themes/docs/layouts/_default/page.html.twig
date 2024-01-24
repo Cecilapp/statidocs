@@ -11,15 +11,15 @@
     {%- endif ~%}
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-slate-100">
-    <header class="h-12 md:h-16 fixed top-0 inset-x-0 z-10 bg-primary-700 dark:bg-primary-900 px-4 lg:px-6 py-3 shadow-md flex items-center">
+    <header class="fixed top-0 inset-x-0 z-10 flex items-center h-14 px-4 lg:px-6 py-3 bg-primary-700 dark:bg-primary-900 shadow-md">
       {#- sidebar mobile button ~#}
       {%- if page.section == 'docs' ~%}
       <button class="flex lg:hidden mr-4 items-center text-primary-100" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          <title>Open menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
         </svg>
         <svg id="sidebar-svg2" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
-          <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          <title>Close menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
       {%- endif ~%}
@@ -53,7 +53,7 @@
     {%- if page.section == 'docs' ~%}
     {%- include 'partials/sidebar.html.twig' ~%}
     {%- endif ~%}
-    <main id="main" class="flex h-full mt-12 md:mt-16">
+    <main id="main" class="flex h-full mt-14">
     {%- block content ~%}
       <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-8">
         {#- article content ~#}
@@ -75,6 +75,7 @@
       function toggleMenu() {
         document.getElementById('sidebar').classList.toggle('-translate-x-full');
         document.getElementById('main').classList.toggle('opacity-25');
+        document.getElementById('main').classList.toggle('grayscale');
         document.getElementById('sidebar-svg1').classList.toggle('hidden');
         document.getElementById('sidebar-svg2').classList.toggle('hidden');
         document.getElementById('main').removeAttribute('onclick');

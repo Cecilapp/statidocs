@@ -1,5 +1,5 @@
       {#- sidebar ~#}
-      <nav id="sidebar" class="fixed z-30 lg:z-0 -translate-x-full lg:translate-x-0 lg:flex lg:flex-col flex-shrink-0 lg:w-64 xl:w-80 h-screen max-h-[calc(100vh-3rem)] md:max-h-[calc(100vh-4rem)] bg-primary-100 dark:bg-primary-950 pl-4 lg:pl-6 pr-6 lg:pr-8 py-4 lg:py-6 overflow-auto leading-tight shadow-md lg:shadow-none transition-all duration-200 ease-out">
+      <nav id="sidebar" class="fixed lg:flex lg:flex-col overflow-auto z-30 lg:z-0 min-w-60 h-screen max-h-[calc(100vh-3rem)] md:max-h-[calc(100vh-4rem)] pl-6 pr-8 py-6 bg-primary-100 dark:bg-primary-950 shadow-md lg:shadow-none -translate-x-full lg:translate-x-0 transition-all duration-200 ease-out">
         {%- for group in site.sidebar ~%}
           {%- if site.page('docs/' ~ group|slugify) ~%}
             {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
