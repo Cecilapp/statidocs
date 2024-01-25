@@ -38,6 +38,9 @@ main details a {
 }
 
 /* Sidebar */
+#sidebar a {
+  @apply no-underline;
+}
 #sidebar h3 {
   @apply uppercase font-semibold text-sm text-slate-500 dark:text-slate-200;
 }
@@ -62,10 +65,10 @@ main details a {
 
 /* Selectors */
 #theme-select, #lang-select {
-  @apply bg-transparent border-0 text-primary-100 cursor-pointer;
+  @apply bg-transparent border-0 text-inherit cursor-pointer;
 }
 #theme-select:hover, #lang-select:hover {
-  @apply text-primary-50;
+  @apply text-inherit;
 }
 #theme-select option, #lang-select option {
   @apply text-primary-950;
