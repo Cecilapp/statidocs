@@ -4,7 +4,7 @@ github:
   branch: main
 footer: Copyright © 2023-present Arnaud Ligny
 manifest:
-  background_color: '#EEF6FF'
+  background_color: '#1C4ED8'
   theme_color: '#1C4ED8'
 serviceworker:
   enabled: false
