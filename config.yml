@@ -1,3 +1,4 @@
+# Statidocs default config
 title: Statidocs
 baseline: An effective documentation
 baseurl: https://cecilapp.github.io/statidocs/
@@ -19,11 +20,11 @@ languages:
     config:
       baseline: Une documentation efficace
       description: Créer et gérer une documentation efficace.
-theme:
-  - docs
-  - pwa
-serviceworker:
-  enabled: true
+sidebar:
+  - Introduction
+  - Guides
+  - Reference
+footer: Copyright © %author%
 github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
@@ -32,8 +33,10 @@ docsearch:
   appId: R2IYF7ETH7
   indexName: docsearch
   apiKey: 599cec31baffa4868cae4e79f180729b
-sidebar:
-  - Introduction
-  - Guides
-  - Reference
-footer: Copyright © 2023-present Arnaud Ligny
+
+# Cecil config for Statidocs
+theme:
+  - docs
+  - pwa
+serviceworker:
+  enabled: true
