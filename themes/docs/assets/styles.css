@@ -1215,8 +1215,8 @@ video {
   width: 1.75rem;
 }
 
-.w-\[12\.5rem\] {
-  width: 12.5rem;
+.w-\[15\.75rem\] {
+  width: 15.75rem;
 }
 
 .w-\[5\.25rem\] {
@@ -1227,12 +1227,12 @@ video {
   width: 5rem;
 }
 
-.w-full {
-  width: 100%;
+.w-auto {
+  width: auto;
 }
 
-.min-w-\[80vw\] {
-  min-width: 80vw;
+.w-full {
+  width: 100%;
 }
 
 .max-w-max {
@@ -1449,35 +1449,17 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pr-1 {
   padding-right: 0.25rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .pt-14 {
@@ -2247,12 +2229,8 @@ main details a {
     z-index: 0;
   }
 
-  .lg\:ml-56 {
-    margin-left: 14rem;
-  }
-
-  .lg\:ml-64 {
-    margin-left: 16rem;
+  .lg\:ml-72 {
+    margin-left: 18rem;
   }
 
   .lg\:flex {
@@ -2263,9 +2241,8 @@ main details a {
     display: none;
   }
 
-  .lg\:min-w-max {
-    min-width: -moz-max-content;
-    min-width: max-content;
+  .lg\:min-w-72 {
+    min-width: 18rem;
   }
 
   .lg\:translate-x-0 {
@@ -2279,11 +2256,6 @@ main details a {
 
   .lg\:p-6 {
     padding: 1.5rem;
-  }
-
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   .lg\:pl-6 {
@@ -2311,10 +2283,6 @@ main details a {
 }
 
 @media (min-width: 1280px) {
-  .xl\:ml-80 {
-    margin-left: 20rem;
-  }
-
   .xl\:block {
     display: block;
   }

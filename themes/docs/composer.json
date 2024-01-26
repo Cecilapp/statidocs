@@ -5,7 +5,7 @@
   "keywords": ["Cecil", "theme", "documentation"],
   "license": "MIT",
   "require": {
-    "cecil/theme-installer": "^1.4"
+    "cecil/theme-installer": "^1.0||^2.0"
   },
   "extra": {
     "name": "docs",
