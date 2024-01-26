@@ -57,7 +57,7 @@
       <div>{{ site.footer|replace({'%author%': site.author.name|default('Arnaud Ligny')}) }}</div>
       <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>
       <div id="button-top" class="fixed bottom-0 mb-4 right-0 mr-4 z-10 opacity-0">
-        <a href="#main" class="rounded-full border-0 flex items-center justify-center w-10 h-10 bg-primary-700 text-primary-50" aria-label="{% trans %}Back to top{% endtrans %}">
+        <a href="#main" class="rounded-full border-0 flex items-center justify-center w-10 h-10 bg-primary-700 dark:bg-primary-900 text-primary-100 hover:text-primary-50 shadow-md" aria-label="{% trans %}Back to top{% endtrans %}">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
           </svg>

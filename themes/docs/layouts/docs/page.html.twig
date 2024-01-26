@@ -23,7 +23,7 @@
           {%- if page.prev is defined ~%}
           <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-left border-solid border border-secondary-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
             <div class="mb-2 text-sm text-secondary-500 dark:text-secondary-400">{% trans %}Previous{% endtrans %}</div>
-            <div class="hover:opacity-75">← {{ page.prev.title }}</div>
+            <div>← {{ page.prev.title }}</div>
           </a>
           {%- else ~%}
           <div class="grow"></div>
@@ -31,7 +31,7 @@
           {%- if page.next is defined ~%}
           <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-right border-solid border border-secondary-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.next) }}" title="{{ page.next.title }}">
             <div class="mb-2 text-sm text-secondary-500 dark:text-secondary-400">{% trans %}Next{% endtrans %}</div>
-            <div class="hover:opacity-75">{{ page.next.title }} →</div>
+            <div>{{ page.next.title }} →</div>
           </a>
           {%- endif ~%}
         </nav>
