@@ -56,6 +56,24 @@
     <footer class="p-4 lg:p-6 mx-auto text-sm text-center">
       <div>{{ site.footer}}</div>
       <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>
+      <div id="button-top" class="fixed bottom-0 mb-4 right-0 mr-4 z-10 opacity-0">
+        <a href="#main" class="rounded-full border-0 flex items-center justify-center w-10 h-10 bg-primary-700 text-primary-50" aria-label="{% trans %}Back to top{% endtrans %}">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+          </svg>
+        </a>
+        <script>
+          {%- apply minify_js ~%}
+          window.addEventListener('scroll', function (e) {
+            console.log(window.scrollY);
+            document.getElementById('button-top').classList.add('opacity-0');
+            if (window.scrollY > 300) {
+              document.getElementById('button-top').classList.remove('opacity-0');
+            }
+          });
+          {%- endapply ~%}
+        </script>
+      </div>
     </footer>
     {%- block scripts ~%}
     <script>
