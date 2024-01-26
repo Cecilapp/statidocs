@@ -2,7 +2,7 @@
 github:
   repo: https://github.com/cecilapp/statidocs
   branch: main
-footer: Copyright © 2023-present Arnaud Ligny
+footer: Copyright © %author%
 manifest:
   background_color: '#1C4ED8'
   theme_color: '#1C4ED8'

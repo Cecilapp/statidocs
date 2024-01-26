@@ -42,7 +42,7 @@ main details a {
 
 /* Sidebar */
 #sidebar h3 {
-  @apply uppercase font-semibold text-sm text-slate-500 dark:text-slate-200;
+  @apply uppercase font-semibold text-sm text-secondary-500 dark:text-secondary-200;
 }
 #sidebar ul {
   @apply list-none p-0 mb-2;
@@ -57,11 +57,11 @@ main details a {
   @apply mb-0;
 }
 #sidebar ul>li>a {
-  @apply text-slate-800 dark:text-slate-300 px-2.5 py-1.5 no-underline font-medium;
+  @apply text-secondary-800 dark:text-secondary-300 px-2.5 py-1.5 no-underline font-medium;
 }
 #sidebar ul>li>a.active,
 #sidebar ul>li>a:hover {
-  @apply rounded bg-primary-200 dark:text-slate-800;
+  @apply rounded bg-primary-200 dark:text-secondary-800;
 }
 #sidebar ul>li>a.active {
   @apply text-primary-700;

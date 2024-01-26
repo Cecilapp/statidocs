@@ -7,8 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // https://tailwindcss.com/docs/customizing-colors
       colors: {
-        primary: colors.blue, // https://tailwindcss.com/docs/customizing-colors
+        primary: colors.blue,
+        secondary: colors.slate,
       },
     },
   },

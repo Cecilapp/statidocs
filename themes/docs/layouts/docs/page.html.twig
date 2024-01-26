@@ -3,7 +3,7 @@
     {%- block content ~%}
       <article class="w-full lg:ml-72 overflow-x-hidden px-4 xl:px-16 py-6">
         <details class="mb-4 xl:hidden rounded-md bg-primary-100 dark:bg-primary-950 px-2 py-1">
-          <summary class="cursor-pointer text-sm uppercase text-slate-500 dark:text-slate-300">
+          <summary class="cursor-pointer text-sm uppercase text-secondary-500 dark:text-secondary-300">
             {% trans %}On this page{% endtrans ~%}
           </summary>
           {{ page.body|toc }}
@@ -21,16 +21,16 @@
         {%- if page.next is defined or page.prev is defined ~%}
         <nav class="mt-8 flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-0 sm:space-x-4">
           {%- if page.prev is defined ~%}
-          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-left border-solid border border-slate-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
-            <div class="mb-2 text-sm text-slate-500 dark:text-slate-400">{% trans %}Previous{% endtrans %}</div>
+          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-left border-solid border border-secondary-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.prev) }}" title="{{ page.prev.title }}">
+            <div class="mb-2 text-sm text-secondary-500 dark:text-secondary-400">{% trans %}Previous{% endtrans %}</div>
             <div class="hover:opacity-75">← {{ page.prev.title }}</div>
           </a>
           {%- else ~%}
           <div class="grow"></div>
           {%- endif ~%}
           {%- if page.next is defined ~%}
-          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-right border-solid border border-slate-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.next) }}" title="{{ page.next.title }}">
-            <div class="mb-2 text-sm text-slate-500 dark:text-slate-400">{% trans %}Next{% endtrans %}</div>
+          <a class="basis-1/2 py-2 px-3 font-medium hover:no-underline text-right border-solid border border-secondary-300 hover:border-primary-700 dark:hover:border-primary-400 rounded-md" href="{{ url(page.next) }}" title="{{ page.next.title }}">
+            <div class="mb-2 text-sm text-secondary-500 dark:text-secondary-400">{% trans %}Next{% endtrans %}</div>
             <div class="hover:opacity-75">{{ page.next.title }} →</div>
           </a>
           {%- endif ~%}
@@ -39,12 +39,12 @@
       </article>
       {#- "On this page" navigation ~#}
       <div>
-        <nav id="on-this-page" class="hidden xl:block py-6 w-64 text-slate-500 dark:text-slate-300 sticky top-[80px]">
+        <nav id="on-this-page" class="hidden xl:block py-6 w-64 text-secondary-500 dark:text-secondary-300 sticky top-[80px]">
           <h3 class="mb-2 font-semibold text-sm uppercase tracking-wider">{% trans %}On this page{% endtrans %}</h3>
           <div id="on-this-page-toc">
             {{ page.body|toc }}
           </div>
-          <div class="mt-5 border-t border-slate-400 dark:border-slate-500">
+          <div class="mt-5 border-t border-secondary-400 dark:border-secondary-500">
             {%- include 'partials/edit.html.twig' ~%}
           </div>
         </nav>

@@ -9,11 +9,13 @@ module.exports = {
     './layouts/**/*.html.twig',
     './themes/**/layouts/**/*.html.twig',
   ],
-  // uncomment to define custom primary color
+  // uncomment to define custom colors
   /*theme: {
     extend: {
+      // https://tailwindcss.com/docs/customizing-colors
       colors: {
-        primary: colors.blue, // https://tailwindcss.com/docs/customizing-colors
+        primary: colors.blue,
+        secondary: colors.slate,
       },
     },
   }*/
