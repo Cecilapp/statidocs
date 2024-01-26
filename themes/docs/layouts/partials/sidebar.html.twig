@@ -1,5 +1,5 @@
       {#- sidebar ~#}
-      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col min-w-[80vw] lg:min-w-max h-screen overflow-auto bg-primary-100 dark:bg-primary-950 shadow-md lg:shadow-none -translate-x-full lg:translate-x-0 transition-all duration-200 ease-out">
+      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col min-w-[80vw] lg:min-w-max h-screen overflow-auto bg-primary-100 dark:bg-primary-900 shadow-md lg:shadow-none -translate-x-full lg:translate-x-0 transition-all duration-200 ease-out">
         <div class="lg:hidden flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pl-6 lg:pr-2 py-3">
           <div class="hidden"></div>
           {%- include 'partials/menu-title.html.twig' ~%}
@@ -16,12 +16,12 @@
             {#-{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}~#}
             {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
             <li>
-              <a href="{{ url(p) }}" class="{% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
+              <a href="{{ url(p) }}" class="flex {% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
             </li>
             {%- endfor ~%}
           </ul>
           {%- endfor ~%}
-          <footer class="text-sm font-thin text-slate-800 dark:text-slate-300">
+          <footer class="text-sm font-thin text-slate-800 dark:text-slate-300 mt-6">
             {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
           </footer>
         </nav>

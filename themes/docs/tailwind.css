@@ -33,34 +33,38 @@ a.title-anchor:hover {
 #on-this-page ul {
   @apply list-none;
 }
+main details li {
+  @apply m-2;
+}
 main details a {
-  @apply no-underline !important;
+  @apply no-underline text-inherit !important;
 }
 
 /* Sidebar */
-#sidebar a {
-  @apply no-underline;
-}
 #sidebar h3 {
   @apply uppercase font-semibold text-sm text-slate-500 dark:text-slate-200;
 }
 #sidebar ul {
-  @apply list-none p-0 mb-6;
+  @apply list-none p-0 mb-2;
 }
 #sidebar ul:last-child {
   @apply mb-0;
 }
 #sidebar ul>li {
-  @apply my-3;
+  @apply my-1;
 }
 #sidebar ul>li:last-child {
   @apply mb-0;
 }
 #sidebar ul>li>a {
-  @apply text-slate-800 dark:text-slate-300;
+  @apply text-slate-800 dark:text-slate-300 px-2.5 py-1.5 no-underline font-medium;
+}
+#sidebar ul>li>a.active,
+#sidebar ul>li>a:hover {
+  @apply rounded bg-primary-200 dark:text-slate-800;
 }
 #sidebar ul>li>a.active {
-  @apply font-bold;
+  @apply text-primary-700;
 }
 
 /* Selectors */

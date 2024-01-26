@@ -1151,6 +1151,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1405,6 +1409,11 @@ video {
   padding: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1423,6 +1432,11 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -1588,6 +1602,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.no-underline {
+  text-decoration-line: none;
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1691,15 +1709,16 @@ a.title-anchor:hover {
   list-style-type: none;
 }
 
+main details li {
+  margin: 0.5rem;
+}
+
 main details a {
+  color: inherit !important;
   text-decoration-line: none !important;
 }
 
 /* Sidebar */
-
-#sidebar a {
-  text-decoration-line: none;
-}
 
 #sidebar h3 {
   font-size: 0.875rem;
@@ -1716,7 +1735,7 @@ main details a {
 }
 
 #sidebar ul {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   list-style-type: none;
   padding: 0px;
 }
@@ -1726,8 +1745,8 @@ main details a {
 }
 
 #sidebar ul>li {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 #sidebar ul>li:last-child {
@@ -1735,8 +1754,14 @@ main details a {
 }
 
 #sidebar ul>li>a {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+  text-decoration-line: none;
 }
 
 :is(.dark #sidebar ul>li>a) {
@@ -1744,8 +1769,22 @@ main details a {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+#sidebar ul>li>a.active,
+#sidebar ul>li>a:hover {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+:is(.dark #sidebar ul>li>a.active),:is(.dark 
+#sidebar ul>li>a:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
 #sidebar ul>li>a.active {
-  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 /* Selectors */
@@ -2206,6 +2245,10 @@ main details a {
 
   .lg\:z-0 {
     z-index: 0;
+  }
+
+  .lg\:ml-56 {
+    margin-left: 14rem;
   }
 
   .lg\:ml-64 {

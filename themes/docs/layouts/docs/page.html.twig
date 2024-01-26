@@ -1,9 +1,9 @@
 {% extends '_default/page.html.twig' %}
 
     {%- block content ~%}
-      <article class="w-full lg:ml-64 xl:ml-80 overflow-x-hidden px-4 xl:px-16 py-4 lg:py-6">
-        <details class="mb-4 xl:hidden max-w-max">
-          <summary class="cursor-pointer text-slate-500 dark:text-slate-300">
+      <article class="w-full lg:ml-56 overflow-x-hidden px-4 xl:px-16 py-4 lg:py-6">
+        <details class="mb-4 xl:hidden rounded-md bg-primary-100 dark:bg-primary-950 px-2 py-1">
+          <summary class="cursor-pointer text-sm uppercase text-slate-500 dark:text-slate-300">
             {% trans %}On this page{% endtrans ~%}
           </summary>
           {{ page.body|toc }}
