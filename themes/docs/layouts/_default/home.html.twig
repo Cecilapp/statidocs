@@ -1,11 +1,21 @@
 {% extends '_default/page.html.twig' %}
 
 {%- block content ~%}
-      <div class="px-8 mx-auto pt-14 md:pt-20 lg:pt-36 flex-col space-y-12">
-  {%- for block in page.blocks|default ~%}
-    {{- include('blocks/' ~ block.name ~ '.html.twig', ignore_missing = true) ~}}
-  {%- endfor ~%}
-        <div class="items-center justify-center markdown dark:markdown-invert max-w-none">
+      <div class="px-6 md:px-8 lg:px-14 mx-auto pt-14 md:pt-20 lg:pt-36 flex-col space-y-12">
+        {#- blocks ~#}
+        {%- for block in page.blocks|default ~%}
+        {{- include('blocks/' ~ block.name ~ '.html.twig', ignore_missing = true) ~}}
+        {%- endfor ~%}
+        {#- features ~#}
+        {%- if page.features|default ~%}
+        <div class="flex flex-wrap">
+          {%- for feature in page.features|default ~%}
+            {{- include('partials/feature.html.twig') ~}}
+          {%- endfor ~%}
+        </div>
+        {%- endif ~%}
+        {#- content ~#}
+        <div class="markdown dark:markdown-invert max-w-none">
           {{ page.content }}
         </div>
       </div>
