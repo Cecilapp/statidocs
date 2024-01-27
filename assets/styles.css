@@ -1251,14 +1251,6 @@ video {
   width: 15.75rem;
 }
 
-.w-\[5\.25rem\] {
-  width: 5.25rem;
-}
-
-.w-\[5rem\] {
-  width: 5rem;
-}
-
 .w-auto {
   width: auto;
 }
@@ -2204,11 +2196,6 @@ main details a {
 :is(.dark .dark\:bg-primary-950) {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-primary-700) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 :is(.dark :is(.dark .dark\:dark\:bg-primary-900)) {
