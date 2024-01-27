@@ -7,7 +7,7 @@ description: Create and manage an effective documentation.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
-#image: og-card.png
+image: og-card.png
 language: en
 languages:
   - code: en
