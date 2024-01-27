@@ -2,7 +2,7 @@
 <html lang="{{ site.language }}" class="scroll-pt-[70px] scroll-smooth overflow-y-scroll">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    {%- include 'partials/metatags.html.twig' ~%}
+    {{- include('partials/metatags.html.twig') ~}}
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300,400,700|Poppins:400,600&display=swap" rel="stylesheet" />
     <style>{{ asset('styles.css')|inline }}</style>
     <link rel="manifest" href="{{ url('manifest') }}" />
@@ -13,12 +13,12 @@
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-secondary-100">
     {#- sidebar ~#}
     {%- if page.section == 'docs' ~%}
-    {%- include 'partials/sidebar.html.twig' ~%}
+    {{- include('partials/sidebar.html.twig') ~}}
     {%- endif ~%}
     <div id="cloudy-wrapper" class="hidden fixed top-0 z-40 w-full h-full bg-black opacity-25" onclick="toggleMenu()"></div>
     <header class="fixed top-0 inset-x-0 z-30 flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pl-6 lg:pr-2 py-3 bg-primary-700 dark:bg-primary-900 text-primary-100 hover:text-primary-50 shadow-md">
       <div class="hidden"></div>
-      {%- include 'partials/menu-title.html.twig' ~%}
+      {{- include('partials/menu-title.html.twig') ~}}
       <div class="md:hidden grow"></div>
       {#- DocSearch ~#}
       {%- if site.docsearch.enabled ?? false ~%}
@@ -37,8 +37,10 @@
       {%- endif ~%}
       {#- selectors ~#}
       <div class="flex justify-end space-x-2">
-        {%- include 'partials/theme-selector.html.twig' ~%}
-        {%- include 'partials/language-selector.html.twig' ~%}
+        <div class="hidden sm:block">
+          {{- include('partials/theme-selector.html.twig') ~}}
+        </div>
+        {{- include('partials/language-selector.html.twig') ~}}
       </div>
     </header>
     <main id="main" class="flex h-full mt-14">
@@ -55,6 +57,7 @@
     </main>
     <footer class="pt-12 p-4 mx-auto text-sm text-center">
       {%- block footer ~%}
+      {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
       <div>{{ site.footer|replace({'%author%': site.author.name|default('Arnaud Ligny')}) }}</div>
       <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>
       {%- endblock footer ~%}
@@ -93,7 +96,7 @@
       {%- endapply ~%}
     </script>
     {%- endif ~%}
-    {%- include 'partials/regsw.js.twig' ignore missing with {'site': site} only ~%}
+    {{- include('partials/regsw.js.twig', ignore_missing = true) ~}}
     {%- endblock scripts ~%}
   </body>
 </html>

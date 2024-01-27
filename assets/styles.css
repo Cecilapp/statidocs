@@ -2182,6 +2182,11 @@ main details a {
   opacity: 0.75;
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .markdown-code\:max-w-none :is(:where(code):not(:where([class~="not-markdown"],[class~="not-markdown"] *))) {
   max-width: none;
 }
@@ -2199,6 +2204,16 @@ main details a {
 :is(.dark .dark\:bg-primary-950) {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-primary-700) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+:is(.dark :is(.dark .dark\:dark\:bg-primary-900)) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:text-primary-400) {

@@ -15,7 +15,7 @@
           {%- endblock article ~%}
         </section>
         <footer class="pt-6">
-          {%- include 'partials/edit.html.twig' ~%}
+          {{- include('partials/edit.html.twig') ~}}
         </footer>
         {#- prev/next navigation ~#}
         {%- if page.next is defined or page.prev is defined ~%}
@@ -45,7 +45,7 @@
             {{ page.body|toc }}
           </div>
           <div class="mt-5 border-t border-secondary-400 dark:border-secondary-500">
-            {%- include 'partials/edit.html.twig' ~%}
+            {{- include('partials/edit.html.twig') ~}}
           </div>
         </nav>
       </div>
