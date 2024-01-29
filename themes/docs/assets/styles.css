@@ -1832,18 +1832,18 @@ main details a {
 
 /* Selectors */
 
-#theme-select, #lang-select {
+.selector {
   cursor: pointer;
   border-width: 0px;
   background-color: transparent;
   color: inherit;
 }
 
-#theme-select:hover, #lang-select:hover {
+.selector:hover {
   color: inherit;
 }
 
-#theme-select option, #lang-select option {
+.selector option {
   --tw-text-opacity: 1;
   color: rgb(23 37 84 / var(--tw-text-opacity));
 }

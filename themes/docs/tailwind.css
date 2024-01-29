@@ -68,13 +68,13 @@ main details a {
 }
 
 /* Selectors */
-#theme-select, #lang-select {
+.selector {
   @apply bg-transparent border-0 text-inherit cursor-pointer;
 }
-#theme-select:hover, #lang-select:hover {
+.selector:hover {
   @apply text-inherit;
 }
-#theme-select option, #lang-select option {
+.selector option {
   @apply text-primary-950;
 }
 

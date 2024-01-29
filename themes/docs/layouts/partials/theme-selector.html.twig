@@ -1,7 +1,7 @@
           {#- theme selector ~#}
           <form id="theme-form">
             <label class="{% if label ?? false != true %}sr-only{% endif %}" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
-            <select id="theme-select" onchange="switchTheme(value)" class="text-ellipsis focus:outline-none">
+            <select id="theme-select" onchange="switchTheme(value)" class="selector selector-theme text-ellipsis focus:outline-none">
               <option value="auto">{% trans %}Auto{% endtrans %}</option>
               <option value="dark">{% trans %}Dark{% endtrans %}</option>
               <option value="light">{% trans %}Light{% endtrans %}</option>
@@ -23,16 +23,24 @@
                   localStorage.removeItem('theme');
                   updateTheme();
               }
+              selectTheme(); // select others selects :-)
             }
             function selectTheme() {
+              var els = document.getElementsByClassName('selector-theme');
               if (!('theme' in localStorage)) {
-                document.getElementById('theme-select').options[0].selected = true;
+                [].forEach.call(els, function (el) {
+                  el.options[0].selected = true;
+                });
               }
               if (localStorage.theme === 'dark') {
-                document.getElementById('theme-select').options[1].selected = true;
+                [].forEach.call(els, function (el) {
+                  el.options[1].selected = true;
+                });
               }
               if (localStorage.theme === 'light') {
-                document.getElementById('theme-select').options[2].selected = true;
+                [].forEach.call(els, function (el) {
+                  el.options[2].selected = true;
+                });
               }
               updateTheme();
             }
