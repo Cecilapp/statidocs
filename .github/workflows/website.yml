@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       CECIL_BASEURL: ${{ vars.CECIL_BASEURL }}
+      CECIL_CANONICALURL: ${{ vars.CECIL_CANONICALURL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
