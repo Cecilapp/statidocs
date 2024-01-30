@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      CECIL_BASEURL: ${{ secrets.CECIL_BASEURL }} 
+      CECIL_BASEURL: ${{ vars.CECIL_BASEURL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
