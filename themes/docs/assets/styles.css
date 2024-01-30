@@ -1916,6 +1916,9 @@ main details a {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1 !important;
   color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 .DocSearch-Input {
@@ -1931,6 +1934,26 @@ main details a {
 .DocSearch-Input::placeholder {
   --tw-text-opacity: 1 !important;
   color: rgb(219 234 254 / var(--tw-text-opacity)) !important;
+}
+
+.DocSearch-Cancel {
+  --tw-text-opacity: 1 !important;
+  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
+}
+
+.DocSearch-Hit-source {
+  --tw-text-opacity: 1 !important;
+  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
+}
+
+.DocSearch-Hit[aria-selected=true] a {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity)) !important;
+}
+
+.DocSearch-Hits mark {
+  --tw-text-opacity: 1 !important;
+  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
 }
 
 /* Note block in Markdown */

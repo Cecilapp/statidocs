@@ -95,13 +95,25 @@ main details a {
   @apply text-primary-100 !important;
 }
 .DocSearch-Form {
-  @apply text-primary-100 bg-primary-800 !important;
+  @apply text-primary-100 bg-primary-800 shadow-none !important;
 }
 .DocSearch-Input {
   @apply text-primary-100 !important;
 }
 .DocSearch-Input::placeholder {
   @apply text-primary-100 !important;
+}
+.DocSearch-Cancel {
+  @apply text-primary-800 !important;
+}
+.DocSearch-Hit-source {
+  @apply text-primary-800 !important;
+}
+.DocSearch-Hit[aria-selected=true] a {
+  @apply bg-primary-800 !important;
+}
+.DocSearch-Hits mark {
+  @apply text-primary-800 !important;
 }
 
 /* Note block in Markdown */
