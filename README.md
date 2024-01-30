@@ -2,7 +2,7 @@
 
 _Statidocs_ is a starter documentation site built on top of [Cecil](https://cecil.app).
 
-[![Statidocs screenshot](docs/screenshot.png)](https://cecilapp.github.io/statidocs/)
+[![Statidocs screenshot](screenshot.png)](https://cecilapp.github.io/statidocs/)
 
 > [!IMPORTANT]  
 > _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
