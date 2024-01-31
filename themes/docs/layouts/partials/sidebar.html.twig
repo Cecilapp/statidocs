@@ -21,7 +21,11 @@
             {%- endfor ~%}
           </ul>
           {%- endfor ~%}
-          <footer class="text-sm font-thin text-secondary-800 dark:text-secondary-300 mt-6">
+          <div class="lg:hidden pt-4 border-t border-t-secondary-400">
+            {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
+            {{- include('partials/language-selector.html.twig', {'label': true}) ~}}
+          </div>
+          <footer class="mt-6 text-sm text-center text-secondary-800 dark:text-secondary-300 font-thin">
             {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
           </footer>
         </nav>

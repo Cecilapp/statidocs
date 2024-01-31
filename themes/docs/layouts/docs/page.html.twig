@@ -62,7 +62,6 @@
         <script>
           {%- apply minify_js ~%}
           window.addEventListener('scroll', function (e) {
-            console.log(window.scrollY);
             document.getElementById('button-top').classList.add('opacity-0');
             if (window.scrollY > 300) {
               document.getElementById('button-top').classList.remove('opacity-0');

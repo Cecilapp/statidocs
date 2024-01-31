@@ -40,7 +40,9 @@
         <div class="hidden sm:block">
           {{- include('partials/theme-selector.html.twig') ~}}
         </div>
-        {{- include('partials/language-selector.html.twig') ~}}
+        <div class="hidden sm:block">
+          {{- include('partials/language-selector.html.twig') ~}}
+        </div>
       </div>
     </header>
     <main id="main" class="flex h-full mt-14">
@@ -57,7 +59,6 @@
     </main>
     <footer class="pt-12 p-4 mx-auto text-sm text-center">
       {%- block footer ~%}
-      {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
       <div>{{ site.footer|replace({'%author%': site.author.name|default('Arnaud Ligny')}) }}</div>
       <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>
       {%- endblock footer ~%}

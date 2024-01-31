@@ -26,22 +26,18 @@
               selectTheme(); // select others selects :-)
             }
             function selectTheme() {
-              var els = document.getElementsByClassName('selector-theme');
-              if (!('theme' in localStorage)) {
-                [].forEach.call(els, function (el) {
-                  el.options[0].selected = true;
-                });
-              }
-              if (localStorage.theme === 'dark') {
-                [].forEach.call(els, function (el) {
-                  el.options[1].selected = true;
-                });
-              }
-              if (localStorage.theme === 'light') {
-                [].forEach.call(els, function (el) {
-                  el.options[2].selected = true;
-                });
-              }
+              var selectors = document.getElementsByClassName('selector-theme');
+              [].forEach.call(selectors, function (selector) {
+                if (!('theme' in localStorage)) {
+                  selector.options[0].selected = true;
+                }
+                if (localStorage.theme === 'dark') {
+                  selector.options[1].selected = true;
+                }
+                if (localStorage.theme === 'light') {
+                  selector.options[2].selected = true;
+                }
+              });
               updateTheme();
             }
             function updateTheme() {
