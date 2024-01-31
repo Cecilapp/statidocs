@@ -1142,6 +1142,11 @@ video {
   z-index: 50;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1161,6 +1166,10 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -1341,6 +1350,12 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1419,6 +1434,11 @@ video {
 .border-secondary-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+.border-t-secondary-300 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .border-t-secondary-400 {
@@ -1509,10 +1529,6 @@ video {
 
 .pr-1 {
   padding-right: 0.25rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .pt-14 {
@@ -1836,6 +1852,18 @@ main details a {
 }
 
 /* Selectors */
+
+.formselect {
+  border-radius: 0.125rem;
+  border-width: 1px;
+  border-color: rgb(239 246 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.25;
+  padding: 0.25rem;
+}
+
+#sidebar .formselect {
+  border-style: none;
+}
 
 .selector {
   cursor: pointer;

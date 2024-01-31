@@ -57,7 +57,7 @@
       </article>
     {%- endblock content ~%}
     </main>
-    <footer class="pt-12 p-4 mx-auto text-sm text-center">
+    <footer class="mt-8 mx-4 p-4 text-sm text-center border-t border-t-secondary-300">
       {%- block footer ~%}
       <div>{{ site.footer|replace({'%author%': site.author.name|default('Arnaud Ligny')}) }}</div>
       <div>{% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a></div>

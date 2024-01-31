@@ -1,6 +1,6 @@
         {#- language selector ~#}
         {%- if page.translations|length >= 1 ~%}
-        <form id="lang-form">
+        <form id="lang-form" class="formselect">
           <label class="{% if label ?? false != true %}sr-only{% endif %}" for="lang-select">{% trans %}Language:{% endtrans %}</label>
           <select id="lang-select" onchange="switchLanguage(value)" class="selector selector-lang text-ellipsis focus:outline-none">
             <option value="{{ url(page) }}">{{ page.language|language_name(site.language.locale(page.language))|capitalize }}</option>

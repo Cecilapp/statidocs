@@ -38,4 +38,4 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: true
+  enabled: false

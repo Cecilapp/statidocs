@@ -68,6 +68,12 @@ main details a {
 }
 
 /* Selectors */
+.formselect {
+  @apply p-1 border rounded-sm border-primary-50 border-opacity-25;
+}
+#sidebar .formselect {
+  @apply border-none;
+}
 .selector {
   @apply bg-transparent border-0 text-inherit cursor-pointer;
 }
