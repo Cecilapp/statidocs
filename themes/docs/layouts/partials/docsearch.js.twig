@@ -4,9 +4,9 @@
         appId: '{{ site.docsearch.appId|default }}',
         indexName: '{{ site.docsearch.indexName|default }}',
         apiKey: '{{ site.docsearch.apiKey|default }}',
-        debug: {{ site.docsearch.debug|default('false') }},
+        debug: '{{ site.docsearch.debug|default(site.debug ? 'true' : 'false') }}',
         searchParameters: {
-          facetFilters: ['language:{{ site.language }}'],
+          facetFilters: ['lang:{{ site.language }}'],
         },
         placeholder: '{{ 'Search docs'|trans }}',
         translations: {

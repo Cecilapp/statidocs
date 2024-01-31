@@ -29,9 +29,14 @@ github:
   branch: main
 docsearch:
   enabled: true
-  appId: R2IYF7ETH7
-  indexName: docsearch
-  apiKey: 599cec31baffa4868cae4e79f180729b
+  # demo
+  #appId: R2IYF7ETH7
+  #indexName: docsearch
+  #apiKey: 599cec31baffa4868cae4e79f180729b
+  # statidocs.cecil.app
+  appId: F5QE72IRAL
+  indexName: staticecil
+  apiKey: b165b7766201deabe0be660ca0bdab94
 
 # Cecil config for Statidocs
 theme:
