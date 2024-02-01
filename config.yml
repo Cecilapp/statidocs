@@ -56,4 +56,4 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: false
+  enabled: true
