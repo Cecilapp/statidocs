@@ -1,0 +1,6 @@
+        {#- navigation menu ~#}
+        {%- for entry in site.menus.navigation|sort_by_weight ~%}
+        <a href="{{ url(entry.url) }}" data-weight="{{ entry.weight }}">
+          {{ entry.name }}
+        </a>
+        {%- endfor -%}

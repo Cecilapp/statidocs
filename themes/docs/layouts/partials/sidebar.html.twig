@@ -1,11 +1,16 @@
       {#- sidebar ~#}
-      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col w-auto lg:min-w-72 h-screen overflow-auto bg-primary-100 dark:bg-primary-900 shadow-md lg:shadow-none -translate-x-full {% if page.type != 'homepage' %}lg:translate-x-0{% endif %} transition-all duration-200 ease-out">
+      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col w-80 lg:max-w-72 h-screen overflow-auto bg-primary-100 dark:bg-primary-900 shadow-md lg:shadow-none -translate-x-full {% if page.type != 'homepage' %}lg:translate-x-0{% endif %} transition-all duration-200 ease-out">
         <div class="lg:hidden flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pl-6 lg:pr-2 py-3">
           <div class="hidden"></div>
           {{- include('partials/menu-title.html.twig') ~}}
         </div>
         <nav class="px-4 py-3">
           {%- block navigation ~%}
+          {#- navigation menu ~#}
+          <div class="lg:hidden flex flex-col space-y-2 pb-4 mb-4 border-b border-b-secondary-400">
+            {{- include('partials/navigation.html.twig') ~}}
+          </div>
+          {#- sidebar groups ~#}
           {%- for group in site.sidebar ~%}
             {%- if site.page('docs/' ~ group|slugify) ~%}
               {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
