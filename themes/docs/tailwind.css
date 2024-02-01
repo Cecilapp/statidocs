@@ -41,7 +41,7 @@ main details a {
 }
 
 /* Sidebar */
-#sidebar h3 {
+#sidebar div.group-title {
   @apply uppercase font-semibold text-sm text-secondary-500 dark:text-secondary-200;
 }
 #sidebar ul {
@@ -86,9 +86,9 @@ main details a {
 
 /* DocSearch */
 .DocSearch.DocSearch-Button {
-  @apply w-full md:w-64 rounded m-0 px-3 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
-  @apply max-md:bg-transparent !important;
-  @apply max-md:shadow-none !important;
+  @apply w-full lg:w-48 rounded m-0 lg:px-4 py-2 bg-primary-800 focus:outline-none focus:bg-primary-700 shadow-inner cursor-pointer !important;
+  @apply max-lg:bg-transparent !important;
+  @apply max-lg:shadow-none !important;
 }
 .DocSearch .DocSearch-Button-Placeholder {
   @apply text-primary-100 font-light !important;

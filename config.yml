@@ -19,6 +19,22 @@ languages:
     config:
       baseline: Une documentation efficace
       description: Créer et gérer une documentation efficace.
+      menus:
+        main:
+          - id: index
+            enabled: false
+          - id: docs
+            name: Docs
+            url: docs/introduction/getting-started
+            weight: -1
+menus:
+  main:
+    - id: index
+      enabled: false
+    - id: docs
+      name: Docs
+      url: docs/introduction/getting-started
+      weight: -1
 sidebar:
   - Introduction
   - Guides

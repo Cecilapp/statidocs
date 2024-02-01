@@ -1,5 +1,4 @@
       {#- sidebar mobile button ~#}
-      {%- if page.section == 'docs' ~%}
       <button class="flex lg:hidden items-center" onclick="toggleMenu()">
         <svg id="sidebar-svg1" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
           <title>{% trans %}Open menu{% endtrans %}</title><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
@@ -8,7 +7,6 @@
           <title>{% trans %}Close menu{% endtrans %}</title><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
-      {%- endif ~%}
       {#- site title ~#}
       <div class="w-[15.75rem]">
         <a href="{{ url(site.home) }}" title="{{ site.title }}" class="text-xl text-inherit hover:text-inherit no-underline hover:no-underline py-2">{{ site.title }}</a>

@@ -1,17 +1,18 @@
       {#- sidebar ~#}
-      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col w-auto lg:min-w-72 h-screen overflow-auto bg-primary-100 dark:bg-primary-900 shadow-md lg:shadow-none -translate-x-full lg:translate-x-0 transition-all duration-200 ease-out">
+      <div id="sidebar" class="fixed z-50 lg:z-0 top-0 lg:top-auto lg:flex lg:flex-col w-auto lg:min-w-72 h-screen overflow-auto bg-primary-100 dark:bg-primary-900 shadow-md lg:shadow-none -translate-x-full {% if page.type != 'homepage' %}lg:translate-x-0{% endif %} transition-all duration-200 ease-out">
         <div class="lg:hidden flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pl-6 lg:pr-2 py-3">
           <div class="hidden"></div>
           {{- include('partials/menu-title.html.twig') ~}}
         </div>
         <nav class="px-4 py-3">
+          {%- block navigation ~%}
           {%- for group in site.sidebar ~%}
             {%- if site.page('docs/' ~ group|slugify) ~%}
               {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
             {%- else ~%}
               {%- set group_title = group ~%}
             {%- endif ~%}
-          <h3>{{ group_title|trans }}</h3>
+          <div class="group-title">{{ group_title|trans }}</div>
           <ul>
             {#-{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}~#}
             {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
@@ -21,6 +22,7 @@
             {%- endfor ~%}
           </ul>
           {%- endfor ~%}
+          {%- endblock ~%}
           <div class="lg:hidden mt-4 pt-4 flex flex-col space-y-1 border-t border-t-secondary-400">
             {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
             {{- include('partials/language-selector.html.twig', {'label': true}) ~}}

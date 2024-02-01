@@ -13,19 +13,24 @@
   </head>
   <body class="font-sans antialiased bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-secondary-100">
     {#- sidebar ~#}
-    {%- if page.section == 'docs' ~%}
     {{- include('partials/sidebar.html.twig') ~}}
-    {%- endif ~%}
     <div id="cloudy-wrapper" class="hidden fixed top-0 z-40 w-full h-full bg-black opacity-25" onclick="toggleMenu()"></div>
-    <header class="fixed top-0 inset-x-0 z-30 flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pl-6 lg:pr-2 py-3 bg-primary-700 dark:bg-primary-900 text-primary-100 hover:text-primary-50 shadow-md">
+    <header class="fixed top-0 inset-x-0 z-30 flex space-x-3 space-x-reverse items-center h-14 pl-4 pr-1 lg:pr-2 py-3 bg-primary-700 dark:bg-primary-900 text-primary-100 hover:text-primary-50 shadow-md">
       <div class="hidden"></div>
       {{- include('partials/menu-title.html.twig') ~}}
-      <div class="md:hidden grow"></div>
+      {#- menu ~#}
+      <div class="hidden lg:flex flex-row space-x-4">
+        {%- for entry in site.menus.main|sort_by_weight ~%}
+        <a class="hidden md:inline-block" href="{{ url(entry.url) }}" data-weight="{{ entry.weight }}">
+          {{ entry.name }}
+        </a>
+        {%- endfor -%}
+      </div>
+      <div class="grow"></div>
       {#- DocSearch ~#}
       {%- if site.docsearch.enabled ?? false ~%}
       <div id="search-container" class="md:inline-block py-2"></div>
       {%- endif ~%}
-      <div class="hidden md:block grow"></div>
       {#- GitHub link -#}
       {%- if site.github.repo|default ~%}
       <a href="{{ site.github.repo }}" title="{{ site.title }} on GitHub" class="flex no-underline hover:no-underline py-2 items-center">
@@ -41,7 +46,7 @@
         <div class="hidden sm:block">
           {{- include('partials/theme-selector.html.twig') ~}}
         </div>
-        <div class="hidden sm:block">
+        <div>
           {{- include('partials/language-selector.html.twig') ~}}
         </div>
       </div>
