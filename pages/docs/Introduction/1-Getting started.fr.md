@@ -32,9 +32,9 @@ Au sein de votre projet, lancez la commande suivante pour démarrer le serveur l
 php cecil.phar serve
 ```
 
-Cela va afficher un message dans votre terminal avec l’URL de votre aperçu local. Ouvrez cette URL pour commencer à parcourir votre documentation.
+Cela va afficher un message dans votre terminal avec l’URL de votre aperçu local. Ouvrez cette URL (<http://localhost:8000> par défaut) pour commencer à parcourir votre documentation.
 
-## Ajouter du contenu
+## Ajouter des articles
 
 ### Formats de fichier
 
