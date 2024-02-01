@@ -15,6 +15,10 @@ header a {
   @apply hover:no-underline
 }
 
+header * {
+  @apply text-primary-100 hover:text-primary-50;
+}
+
 /* Hx anchor */
 .title-anchor {
   padding-left: 0.5rem;

@@ -1749,6 +1749,16 @@ header a:hover {
   text-decoration-line: none;
 }
 
+header * {
+  --tw-text-opacity: 1;
+  color: rgb(219 234 254 / var(--tw-text-opacity));
+}
+
+header *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 246 255 / var(--tw-text-opacity));
+}
+
 /* Hx anchor */
 
 .title-anchor {

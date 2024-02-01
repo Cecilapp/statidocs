@@ -2,7 +2,7 @@
           <form id="theme-form" class="formselect">
             <label class="{% if label ?? false != true %}sr-only{% endif %}" for="theme-select">{% trans %}Theme:{% endtrans %}</label>
             <select id="theme-select" onchange="switchTheme(value)" class="selector selector-theme text-ellipsis focus:outline-none">
-              <option value="auto">{% trans %}Auto{% endtrans %}</option>
+              <option value="system">{% trans %}System{% endtrans %}</option>
               <option value="dark">{% trans %}Dark{% endtrans %}</option>
               <option value="light">{% trans %}Light{% endtrans %}</option>
             </select>
