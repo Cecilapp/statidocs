@@ -7,10 +7,11 @@
         <nav class="px-4 py-3 divide-y divide-secondary-400 lg:divide-y-0">
           {%- block navigation ~%}
           {#- navigation menu ~#}
-          <div class="lg:hidden flex flex-col space-y-2 pb-4">
+          <div class="lg:hidden flex flex-col space-y-2 pb-4 font-semibold">
             {{- include('partials/navigation.html.twig') ~}}
           </div>
-          {#- sidebar groups ~#}
+          {#- docs groups ~#}
+          {%- if page.section == 'docs' ~%}
           <div class="pt-4">
             {%- for group in site.sidebar ~%}
               {%- if site.page('docs/' ~ group|slugify) ~%}
@@ -29,7 +30,8 @@
             </ul>
             {%- endfor ~%}
           </div>
-          {%- endblock ~%}
+          {%- endif ~%}
+          {%- endblock navigation ~%}
           <div class="lg:hidden mt-4 pt-4 flex flex-col space-y-1">
             {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
             {{- include('partials/language-selector.html.twig', {'label': true}) ~}}
