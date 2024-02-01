@@ -4,36 +4,38 @@
           <div class="hidden"></div>
           {{- include('partials/menu-title.html.twig') ~}}
         </div>
-        <nav class="px-4 py-3">
+        <nav class="px-4 py-3 divide-y divide-secondary-400 lg:divide-y-0">
           {%- block navigation ~%}
           {#- navigation menu ~#}
-          <div class="lg:hidden flex flex-col space-y-2 pb-4 mb-4 border-b border-b-secondary-400">
+          <div class="lg:hidden flex flex-col space-y-2 pb-4">
             {{- include('partials/navigation.html.twig') ~}}
           </div>
           {#- sidebar groups ~#}
-          {%- for group in site.sidebar ~%}
-            {%- if site.page('docs/' ~ group|slugify) ~%}
-              {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
-            {%- else ~%}
-              {%- set group_title = group ~%}
-            {%- endif ~%}
-          <div class="group-title">{{ group_title|trans }}</div>
-          <ul>
-            {#-{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}~#}
-            {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
-            <li>
-              <a href="{{ url(p) }}" class="flex {% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
-            </li>
+          <div class="pt-4">
+            {%- for group in site.sidebar ~%}
+              {%- if site.page('docs/' ~ group|slugify) ~%}
+                {%- set group_title = site.page('docs/' ~ group|slugify).title ~%}
+              {%- else ~%}
+                {%- set group_title = group ~%}
+              {%- endif ~%}
+            <div class="group-title">{{ group_title|trans }}</div>
+            <ul>
+              {#-{%- for p in site.pages.showable|filter(p => p.path matches '{^docs/' ~ group|slugify ~ '}') ~%}~#}
+              {%- for p in site.pages.showable|filter(p => p.folder == 'docs/' ~ group|slugify) ~%}
+              <li>
+                <a href="{{ url(p) }}" class="flex {% if url(p) == url(page) %}active{% endif %}">{{ p.title }}</a>
+              </li>
+              {%- endfor ~%}
+            </ul>
             {%- endfor ~%}
-          </ul>
-          {%- endfor ~%}
+          </div>
           {%- endblock ~%}
-          <div class="lg:hidden mt-4 pt-4 flex flex-col space-y-1 border-t border-t-secondary-400">
+          <div class="lg:hidden mt-4 pt-4 flex flex-col space-y-1">
             {{- include('partials/theme-selector.html.twig', {'label': true}) ~}}
             {{- include('partials/language-selector.html.twig', {'label': true}) ~}}
           </div>
-          <footer class="mt-6 text-sm text-center text-secondary-800 dark:text-secondary-300 font-thin">
-            {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
-          </footer>
         </nav>
+        <footer class="mt-4 text-sm text-center text-secondary-800 dark:text-secondary-300 font-thin">
+          {% trans %}Powered by{% endtrans %} <a href="{{ cecil.url }}">Cecil</a>
+        </footer>
       </div>
