@@ -12,11 +12,14 @@
     }
   ],
   "require": {
-    "cecil/theme-docs": "^2.10",
+    "cecil/theme-docs": "^2.11",
     "cecil/theme-pwa": "^2.1"
   },
   "scripts": {
-    "post-create-project-cmd": "curl -LO https://cecil.app/cecil.phar"
+    "post-create-project-cmd": [
+      "curl -sOL https://cecil.app/cecil.phar",
+      "php cecil.phar -V"
+    ]
   },
   "config": {
     "allow-plugins": {
