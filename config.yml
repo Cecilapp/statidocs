@@ -42,10 +42,6 @@ github:
   branch: main
 docsearch:
   enabled: true
-  # demo
-  #appId: R2IYF7ETH7
-  #indexName: docsearch
-  #apiKey: 599cec31baffa4868cae4e79f180729b
   # statidocs.cecil.app
   appId: F5QE72IRAL
   indexName: staticecil
