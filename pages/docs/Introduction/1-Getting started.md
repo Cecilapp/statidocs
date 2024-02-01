@@ -32,9 +32,9 @@ Inside your project directory, run the following command to start the local serv
 php cecil.phar serve
 ```
 
-This will log a message to your terminal with the URL of your local preview. Open this URL to start browsing your documentation.
+This will log a message to your terminal with the URL of your local preview. Open this URL (<http://localhost:8000> by default) to start browsing your documentation.
 
-## Add content
+## Add articles
 
 ### File formats
 
