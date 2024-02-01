@@ -1273,6 +1273,10 @@ video {
   max-width: none;
 }
 
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .grow {
   flex-grow: 1;
 }
