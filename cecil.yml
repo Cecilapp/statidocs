@@ -46,6 +46,7 @@ docsearch:
   appId: F5QE72IRAL
   indexName: staticecil
   apiKey: b165b7766201deabe0be660ca0bdab94
+  insights: true
 
 # Cecil config for Statidocs
 theme:
