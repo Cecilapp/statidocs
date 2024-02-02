@@ -1,13 +1,12 @@
 # Project structure
 
-:::info
-Work in progress.
-:::
+This guide will show you how a Statidocs project is organized and what the different files in your project do.
 
-## Title 1
+Statidocs projects follow the same file and directory structure as a Cecil projects. See [Cecil’s files organization documentation](https://cecil.app/documentation/content/#files-organization) for more detail.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Files and directories
 
-## Title 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- `cecil.yml` — The cecil configuration file, includes the Statidocs configuration.
+- `pages/docs/` — Content files. Statidocs turns each .md file in this directory into a page on your site.
+- `translations/` (optional) — Translation data to support internationalization.
+- `assets/` — Assets (styles, images, favicon, PDFs, etc.) that will not be processed by Cecil.
