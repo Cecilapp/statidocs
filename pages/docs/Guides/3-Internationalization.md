@@ -1,13 +1,41 @@
 # Internationalization (i18n)
 
-:::info
-Work in progress.
+Statidocs provides built-in support for multilingual sites.
+
+## Configure i18n
+
+Tell Statidocs about the languages you support by passing locales in the configuraiton (`cecil.yml`) file:
+
+```yaml
+language: en # default language
+languages:
+  - code: en
+    name: English
+    locale: en
+  - code: fr
+    enabled: true # disable with "false"
+    name: Français
+    locale: fr
+```
+
+## Translate pages
+
+Duplicate pages you want to translate by adding language code as suffix, for example:
+
+```text
+<my-project>
+└─ pages
+   └─ docs
+      ├─ getting-started.md
+      └─ getting-started.fr.md
+```
+
+:::tips
+Cecil documentation: <https://cecil.app/documentation/content/#multilingual>
 :::
 
-## Title 1
+## Translate UI
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-## Title 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+:::tips
+Cecil documentation: <https://cecil.app/documentation/templates/#localization>
+:::
