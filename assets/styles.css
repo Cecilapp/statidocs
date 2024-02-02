@@ -1152,6 +1152,11 @@ video {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1687,8 +1692,12 @@ video {
   opacity: 0;
 }
 
-.opacity-25 {
-  opacity: 0.25;
+.opacity-45 {
+  opacity: 0.45;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-md {
@@ -2394,6 +2403,10 @@ main details a {
 
   .lg\:max-w-72 {
     max-width: 18rem;
+  }
+
+  .lg\:grow-0 {
+    flex-grow: 0;
   }
 
   .lg\:translate-x-0 {
