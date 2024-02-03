@@ -4,14 +4,14 @@ _Statidocs_ is a starter documentation site built on top of [Cecil](https://ceci
 
 [![Screenshot of the demo's homepage of Statidocs](screenshot.png)](https://cecilapp.github.io/statidocs/)
 
-Demo: https://cecilapp.github.io/statidocs/
+Demo: <https://cecilapp.github.io/statidocs/>
 
 > [!IMPORTANT]  
 > _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 
 ## Install
 
-Use the following [Composer](https://getcomposer.org/) command:
+The easiest way to create a new Statidocs project is using [Composer](https://getcomposer.org):
 
 ```bash
 composer create-project cecil/statidocs my-project
@@ -29,15 +29,23 @@ php cecil.phar serve
 
 Read the [documentation](https://cecilapp.github.io/statidocs/).
 
-## Development
+### Update themes
 
-Update themes:
+_Statidocs_ is depending of Cecil's themes [Docs](https://github.com/Cecilapp/theme-docs) and [PWA](https://github.com/Cecilapp/theme-pwa).
+
+Use the following command to update them:
 
 ```bash
 composer update
 ```
 
-Build CSS (if necessary):
+### Configuration
+
+Checks the [`cecil.yml`](cecil.yml) file.
+
+### Customize colors
+
+Checks the [`tailwind.config.js`](tailwind.config.js) file, then rebuild the CSS file:
 
 ```bash
 npm install
