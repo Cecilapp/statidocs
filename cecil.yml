@@ -12,36 +12,23 @@ languages:
   - code: en
     name: English
     locale: en
-  - code: fr
-    enabled: true # disable the second language with "false"
-    name: Français
-    locale: fr
-    config:
-      baseline: Une documentation efficace
-      description: Créer et gérer une documentation efficace.
-      menus:
-        navigation:
-          - id: docs
-            name: Docs
-            url: /docs/introduction/getting-started
 menus:
   navigation:
     - id: docs
       name: Docs
-      url: /docs/introduction/getting-started # set the default page
+      url: /docs/group-1/page-a # set the default page
     - id: about
       name: About
       url: /about
 sidebar: # docs groups in /pages/docs/
-  - Introduction
-  - Guides
-  - Reference
+  - Group 1
+  - Group 2
 footer: Copyright © %author%
 github:
   repo: https://github.com/Cecilapp/statidocs
   branch: main
 docsearch:
-  enabled: true
+  enabled: false
   # statidocs.cecil.app
   appId: F5QE72IRAL
   indexName: staticecil
@@ -53,4 +40,4 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: true # you should disable it locally
+  enabled: false
