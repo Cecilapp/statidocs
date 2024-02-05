@@ -1,14 +1,13 @@
 # Statidocs
 
-_Statidocs_ is a starter documentation site built on top of [Cecil](https://cecil.app) and [_Docs_ theme](https://github.com/Cecilapp/theme-docs).
+Statidocs is a documentation starter site, built on top of [Cecil](https://cecil.app) and the [Docs theme](https://github.com/Cecilapp/theme-docs).
 
 [![Screenshot of the demo's homepage of Statidocs](screenshot.png)](https://statidocs.cecil.app)
 
-- Documentation: <https://statidocs.cecil.app>
-- Demo: <https://cecilapp.github.io/statidocs/>
+Documentation: <https://statidocs.cecil.app>
 
 > [!IMPORTANT]  
-> _Statidocs_ is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
+> Statidocs is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 
 ## Install
 
@@ -19,6 +18,8 @@ composer create-project cecil/statidocs my-project
 ```
 
 [![Latest Stable Version](https://poser.pugx.org/cecil/statidocs/v/stable)](https://packagist.org/packages/cecil/statidocs)
+
+Demo: <https://cecilapp.github.io/statidocs/>
 
 ## Usage
 
@@ -32,9 +33,9 @@ Read the [documentation](https://cecilapp.github.io/statidocs/).
 
 ### Update themes
 
-_Statidocs_ is depending of Cecil's themes [Docs](https://github.com/Cecilapp/theme-docs) and [PWA](https://github.com/Cecilapp/theme-pwa).
+Statidocs is depending of Cecil's themes [Docs](https://github.com/Cecilapp/theme-docs) and [PWA](https://github.com/Cecilapp/theme-pwa).
 
-Use the following command to update them:
+Use Composer to update them:
 
 ```bash
 composer update
