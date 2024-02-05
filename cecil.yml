@@ -16,13 +16,13 @@ menus:
   navigation:
     - id: docs
       name: Docs
-      url: /docs/group-1/page-a # set the default page
+      url: /docs/group-a/page-1 # set the default page
     - id: about
       name: About
       url: /about
 sidebar: # docs groups in /pages/docs/
-  - Group 1
-  - Group 2
+  - Group A
+  - Group B
 footer: Copyright © %author%
 github:
   repo: https://github.com/Cecilapp/statidocs

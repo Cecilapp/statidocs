@@ -1,8 +1,4 @@
-# Page B
-
-:::note
-Replace this page or delete it.
-:::
+# Page 1
 
 ## Title 1
 
