@@ -4,8 +4,6 @@ Statidocs is a documentation starter site, built on top of [Cecil](https://cecil
 
 [![Screenshot of the demo's homepage of Statidocs](screenshot.png)](https://statidocs.cecil.app)
 
-Documentation: <https://statidocs.cecil.app>
-
 > [!IMPORTANT]  
 > Statidocs is still in development. If something that’s not working, please [open an issue on GitHub](https://github.com/Cecilapp/statidocs/issues/new/choose).
 
