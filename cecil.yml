@@ -7,11 +7,6 @@ author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr
 image: og-card.png
-language: en
-languages:
-  - code: en
-    name: English
-    locale: en
 menus:
   navigation:
     - id: docs
