@@ -35,4 +35,4 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: false
+  enabled: false # you should disable it locally
