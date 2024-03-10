@@ -27,7 +27,7 @@ Build & preview:
 php cecil.phar serve
 ```
 
-Read the [documentation](https://cecilapp.github.io/statidocs/).
+Read the [documentation](https://statidocs.cecil.app).
 
 ### Update themes
 
