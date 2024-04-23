@@ -11,15 +11,12 @@ menus:
   main:
     - id: index
       enabled: false
-    - id: docs
-      name: Docs
-      url: /docs/group-a/page-1/
-      weight: 10
 sidebar: # docs groups in /pages/docs/
   - Group A
   - Group B
 footer: Copyright © %author%
 github:
+  url: https://github.com/Cecilapp/statidocs
   repo: https://github.com/Cecilapp/statidocs
   branch: main
 docsearch:
