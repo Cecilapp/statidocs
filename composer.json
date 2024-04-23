@@ -12,7 +12,7 @@
     }
   ],
   "require": {
-    "cecil/theme-docs": "^2.17",
+    "cecil/theme-docs": "^2.18",
     "cecil/theme-pwa": "^2.7"
   },
   "scripts": {
