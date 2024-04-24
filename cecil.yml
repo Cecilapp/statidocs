@@ -21,7 +21,7 @@ github:
   branch: main
 docsearch:
   enabled: false
-  # statidocs.cecil.app
+  # statidocs.cecil.app credentials
   appId: F5QE72IRAL
   indexName: staticecil
   apiKey: b165b7766201deabe0be660ca0bdab94
@@ -32,4 +32,4 @@ theme:
   - docs
   - pwa
 serviceworker:
-  enabled: false # you should disable it locally
+  enabled: false
