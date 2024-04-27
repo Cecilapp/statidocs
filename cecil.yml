@@ -11,6 +11,8 @@ menus:
   main:
     - id: index
       enabled: false
+    - id: docs
+      weight: 0
 sidebar: # docs groups in /pages/docs/
   - Group A
   - Group B
