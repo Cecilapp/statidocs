@@ -41,7 +41,7 @@ composer update
 
 ### Configuration
 
-Checks the [`cecil.yml`](cecil.yml) file.
+Open and edit the [`cecil.yml`](cecil.yml) file.
 
 ### Customize colors
 

@@ -1,4 +1,4 @@
-// uncomment to define custom primary color
+// uncomment to define custom colors
 //const colors = require('tailwindcss/colors');
 
 module.exports = {
