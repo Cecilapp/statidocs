@@ -4,10 +4,10 @@ date: 2024-04-26
 description: This is a blog post demo.
 author:
   name: Arnaud Ligny
-  email: arnaud@ligny.org
+  url: https://ligny.fr
   image: https://github.com/arnaudligny.png
-  title: Statidocs maintainer, Cecil creator.
-authors: [Toto, Arnaud Ligny]
+  title: Statidocs maintainer.
+authors: [Cecil]
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum in nisl laoreet venenatis. Morbi eleifend libero augue, eu mattis nisi suscipit vitae. Cras facilisis mi vitae placerat rutrum. Sed fermentum neque et nulla sodales egestas. Suspendisse ultrices eleifend nibh, eu rutrum lectus. Donec vitae varius magna. Donec semper, nisl eget luctus mattis, sem magna ultrices nibh, vel vulputate turpis purus ultrices mi. Proin mollis felis ut sagittis semper.
 <!-- break -->

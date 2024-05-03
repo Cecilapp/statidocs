@@ -2,8 +2,9 @@ Arnaud Ligny:
   name: Arnaud Ligny
   url: https://ligny.fr
   image: https://github.com/arnaudligny.png
-  title: Cecil creator.
-Toto:
-  name: Toto
-  image: https://github.com/toto.png
-  title: Bio de toto.
+  title: Statidocs maintainer.
+Cecil:
+  name: Cecil
+  url: https://cecil.app
+  image: https://github.com/cecilapp.png
+  title: Static site generator.

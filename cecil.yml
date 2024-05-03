@@ -1,8 +1,8 @@
 # Statidocs default config
 title: Statidocs
-baseline: An effective documentation
+baseline: Build a documentation website quickly
 baseurl: /
-description: Create and manage an effective documentation.
+description: Write your pages in Markdown, customize templates with Twig and Tailwind CSS, and enjoy the power of Cecil static site generator.
 author:
   name: Arnaud Ligny
   url: https://arnaudligny.fr

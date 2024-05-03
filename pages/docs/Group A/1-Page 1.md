@@ -1,3 +1,7 @@
+---
+title: Page 1
+description: Page 1 description.
+---
 # Page 1
 
 ## Title 1
