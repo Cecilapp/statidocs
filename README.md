@@ -17,7 +17,10 @@ composer create-project cecil/statidocs my-project
 
 [![Latest Stable Version](https://poser.pugx.org/cecil/statidocs/v/stable)](https://packagist.org/packages/cecil/statidocs)
 
-Demo: <https://cecilapp.github.io/statidocs/>
+## Demo
+
+- Hosted by GitHub Pages: <https://cecilapp.github.io/statidocs/>
+- Hosted by Vercel: <https://statidocs.vercel.app>
 
 ## Usage
 
