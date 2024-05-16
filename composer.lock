@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f22fb633d64182725a0059a2e1c6fe43",
+    "content-hash": "6367cf05006b443abc53e76b856d1ba7",
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "80cf889740fe378aeb8e8a2f9d592f0f5170dd17"
+                "reference": "175fcd95b3327374f58674f2b1d30654b935002f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/80cf889740fe378aeb8e8a2f9d592f0f5170dd17",
-                "reference": "80cf889740fe378aeb8e8a2f9d592f0f5170dd17",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/175fcd95b3327374f58674f2b1d30654b935002f",
+                "reference": "175fcd95b3327374f58674f2b1d30654b935002f",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/2.26.0"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/2.27.0"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-05-03T15:14:20+00:00"
+            "time": "2024-05-16T12:07:06+00:00"
         },
         {
             "name": "cecil/theme-installer",
