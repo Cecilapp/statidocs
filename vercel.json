@@ -4,10 +4,6 @@
     "use": "@vercel/static-build",
     "config": { "distDir": "_site" }
   }],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-  ],
   "headers": [
     {
       "source" : "/:all*(svg|jpg|jpeg|gif|png|webp|css|mp4|webm|woff|woff2|ttf|eot|ico|js|json|xml)",
