@@ -12,7 +12,7 @@ Statidocs is a documentation starter site, built on top of [Cecil](https://cecil
 The easiest way to create a new Statidocs project is using [Composer](https://getcomposer.org):
 
 ```bash
-composer create-project cecil/statidocs my-project
+composer create-project cecil/statidocs --ask
 ```
 
 [![Latest Stable Version](https://poser.pugx.org/cecil/statidocs/v/stable)](https://packagist.org/packages/cecil/statidocs)
