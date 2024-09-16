@@ -8,14 +8,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env: 
-      CECIL_BASEURL: ${{ vars.CECIL_BASEURL }}
-      CECIL_CANONICALURL: ${{ vars.CECIL_CANONICALURL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v4
       - name: Build with Cecil
         uses: Cecilapp/Cecil-Action@v3
+        env:
+          CECIL_BASEURL: ${{ steps.pages.outputs.base_url }}
+          #CECIL_CANONICALURL: ${{ vars.CECIL_CANONICALURL }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
