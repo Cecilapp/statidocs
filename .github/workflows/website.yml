@@ -18,7 +18,7 @@ jobs:
         uses: Cecilapp/Cecil-Action@v3
         env:
           CECIL_BASEURL: ${{ steps.pages.outputs.base_url }}
-          #CECIL_CANONICALURL: ${{ vars.CECIL_CANONICALURL }}
+          CECIL_CANONICALURL: ${{ vars.CECIL_CANONICALURL }} # set Canonical URL
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
