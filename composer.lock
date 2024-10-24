@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60d6d22ddbc47c5bec9a92efdfc0bdd2",
+    "content-hash": "50d07b689a5e7c18fd95ce453640309d",
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "2.31.0",
+            "version": "2.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "b6e0474dc008b1d6eca59e158d2f47fbe1f37aa7"
+                "reference": "fd568009ba64cfd1dc682fd757ea166801b4e36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/b6e0474dc008b1d6eca59e158d2f47fbe1f37aa7",
-                "reference": "b6e0474dc008b1d6eca59e158d2f47fbe1f37aa7",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/fd568009ba64cfd1dc682fd757ea166801b4e36b",
+                "reference": "fd568009ba64cfd1dc682fd757ea166801b4e36b",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/2.31.0"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/2.31.1"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-10-24T00:31:13+00:00"
+            "time": "2024-10-24T09:29:48+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -180,10 +180,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
