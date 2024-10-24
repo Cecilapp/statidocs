@@ -13,6 +13,7 @@ menus:
       enabled: false
     - id: docs
       weight: 0
+logo: favicon.png
 sidebar: # docs groups in /pages/docs/
   - Group A
   - Group B
