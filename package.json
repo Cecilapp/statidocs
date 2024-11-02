@@ -4,5 +4,10 @@
     "@tailwindcss/typography": "^0.5",
     "tailwindcss": "^3.4"
   },
-  "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
+  "scripts": {
+    "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
+  },
+  "engines" : { 
+    "node" : ">=16.0.0 <20.0.0"
+  }
 }
