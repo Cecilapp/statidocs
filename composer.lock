@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "2.32.2",
+            "version": "2.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "4005b1525d5d021414cb933204a945dafe238b2a"
+                "reference": "14eca7c21082db8cb0e3b98e0e1e05f04edcd2fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/4005b1525d5d021414cb933204a945dafe238b2a",
-                "reference": "4005b1525d5d021414cb933204a945dafe238b2a",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/14eca7c21082db8cb0e3b98e0e1e05f04edcd2fd",
+                "reference": "14eca7c21082db8cb0e3b98e0e1e05f04edcd2fd",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/2.32.2"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/2.33.0"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-10-27T23:17:53+00:00"
+            "time": "2024-12-21T00:26:08+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -128,16 +128,16 @@
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "2.7.7",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "e0d1c264a29fd1cee2768d5d5d8416735de7b06d"
+                "reference": "9a04a3cbc10f3930e96c55b7952d57c992e27479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/e0d1c264a29fd1cee2768d5d5d8416735de7b06d",
-                "reference": "e0d1c264a29fd1cee2768d5d5d8416735de7b06d",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/9a04a3cbc10f3930e96c55b7952d57c992e27479",
+                "reference": "9a04a3cbc10f3930e96c55b7952d57c992e27479",
                 "shasum": ""
             },
             "require": {
@@ -162,7 +162,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.7.7"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.10.2"
             },
             "funding": [
                 {
@@ -174,16 +174,16 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-06-10T23:16:31+00:00"
+            "time": "2024-12-18T22:42:19+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
