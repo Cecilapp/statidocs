@@ -12,8 +12,8 @@
     }
   ],
   "require": {
-    "cecil/theme-docs": "^2.31",
-    "cecil/theme-pwa": "^2.7"
+    "cecil/theme-docs": "^2.34",
+    "cecil/theme-pwa": "^2.11"
   },
   "scripts": {
     "post-create-project-cmd": [
