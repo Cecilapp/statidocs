@@ -13,7 +13,7 @@
   ],
   "require": {
     "cecil/theme-docs": "^2.34",
-    "cecil/theme-pwa": "^2.11"
+    "cecil/theme-pwa": "^2.14"
   },
   "scripts": {
     "post-create-project-cmd": [
