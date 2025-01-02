@@ -35,9 +35,24 @@ theme:
   - docs
   - pwa
 manifest:
+  #background_color: '#1C4ED8'
+  #theme_color: '#1C4ED8'
+  #icons:
+  #  - icon-192x192.png
+  #  - icon-512x512.png
+  #  - src: icon-192x192-maskable.png
+  #    purpose: maskable
+  #  - src: icon-512x512-maskable.png
+  #    purpose: maskable
   shortcuts: true
 serviceworker:
   enabled: false
+  update:
+    snackbar:
+      enabled: true # show Snackbar message
+  offline:
+    snackbar:
+      enabled: true # show Snackbar message
 metatags:
   jsonld:
     enabled: true
