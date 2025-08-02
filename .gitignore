@@ -1,5 +1,6 @@
-/_site
-/.cache
-/.cecil
-/node_modules
-/vendor
+_site/
+_preview/
+.cache/
+.cecil/
+node_modules/
+vendor/
