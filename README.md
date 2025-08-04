@@ -46,15 +46,6 @@ composer update
 
 Open and edit the [`cecil.yml`](cecil.yml) file.
 
-### Customize colors
-
-Checks the [`tailwind.config.js`](tailwind.config.js) file, then rebuild the CSS file:
-
-```bash
-npm install
-npx tailwindcss -i ./themes/docs/tailwind.css -o ./assets/styles.css
-```
-
 ## Publish
 
 ```bash
