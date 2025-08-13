@@ -7,6 +7,9 @@ author:
   url: https://ligny.fr
   image: https://github.com/arnaudligny.png
   title: Statidocs maintainer, Cecil creator.
+social:
+  twitter: "ArnaudLigny"
+  mastodon: "@arnaud@gazuji.com"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum in nisl laoreet venenatis. Morbi eleifend libero augue, eu mattis nisi suscipit vitae. Cras facilisis mi vitae placerat rutrum. Sed fermentum neque et nulla sodales egestas. Suspendisse ultrices eleifend nibh, eu rutrum lectus. Donec vitae varius magna. Donec semper, nisl eget luctus mattis, sem magna ultrices nibh, vel vulputate turpis purus ultrices mi. Proin mollis felis ut sagittis semper.
 <!-- break -->
