@@ -39,9 +39,9 @@ theme:
 metatags:
   jsonld: true
 manifest:
-  background_color: '#1447E6'
-  theme_color: '#1447E6'
-  theme_color_dark: '#1C398E'
+  #background_color: '#1447E6'
+  #theme_color: '#1447E6'
+  #theme_color_dark: '#1C398E'
   #icons:
   #  - icon-192x192.png
   #  - icon-512x512.png
