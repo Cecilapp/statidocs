@@ -34,6 +34,8 @@ docsearch:
 theme:
   - docs
   - pwa
+  - redirects
+  - headers
 metatags:
   jsonld: true
 manifest:
