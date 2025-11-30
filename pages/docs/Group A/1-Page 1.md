@@ -27,10 +27,10 @@ helloWorld();
 This is an info alert.
 :::
 
-:::warning
-This is a warning alert.
+:::important
+This is a important alert.
 :::
 
-:::danger
-This is a danger alert.
+:::warning
+This is a warning alert.
 :::
