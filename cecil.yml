@@ -28,6 +28,11 @@ docsearch:
   insights: true
 
 # Cecil config for Statidocs
+output:
+  pagetypeformats:
+    homepage: ['html', 'atom', 'markdown', 'llms']
+    section: ['html', 'atom', 'markdown']
+    page: ['html', 'markdown']
 theme:
   - docs
   - pwa
