@@ -1,6 +1,7 @@
 ---
 title: Page 1
 description: Page 1 description.
+updated: 2026-10-10
 ---
 # Page 1
 
@@ -27,10 +28,18 @@ helloWorld();
 This is an info alert.
 :::
 
+:::tip
+This is a tip alert.
+:::
+
 :::important
-This is a important alert.
+This is an important alert.
 :::
 
 :::warning
 This is a warning alert.
+:::
+
+:::caution
+This is a caution alert.
 :::

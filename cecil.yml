@@ -19,6 +19,10 @@ github:
   url: https://github.com/Cecilapp/statidocs
   repo: https://github.com/Cecilapp/statidocs
   branch: main
+  path: pages # pages directory path in the repository
+sidebar:
+  collapsed: false # collapse the navigation groups, except the current one
+lastupdated: false # display the page date as "Last updated" date
 docsearch:
   enabled: false
   # statidocs.cecil.app credentials

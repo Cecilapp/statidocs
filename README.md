@@ -34,7 +34,7 @@ Read the [documentation](https://statidocs.cecil.app).
 
 ### Update themes
 
-Statidocs is depending of Cecil's themes [Docs](https://github.com/Cecilapp/theme-docs) and [PWA](https://github.com/Cecilapp/theme-pwa).
+Statidocs is depending of Cecil's themes [Docs](https://github.com/Cecilapp/theme-docs), [PWA](https://github.com/Cecilapp/theme-pwa), [Redirects](https://github.com/Cecilapp/theme-redirects) and [Headers](https://github.com/Cecilapp/theme-headers).
 
 Use Composer to update them:
 

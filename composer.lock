@@ -4,27 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9313ca6392cbe7f1c4081d3d3b626a2",
+    "content-hash": "4cbffa04ff895f3909392c23d6f2bb1f",
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "3.3.2",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "378ac8dc4fc9f4f427040d26596ab54474e737b4"
+                "reference": "11f9973f3a124fd839a6f1feb3c083a5e4f2017b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/378ac8dc4fc9f4f427040d26596ab54474e737b4",
-                "reference": "378ac8dc4fc9f4f427040d26596ab54474e737b4",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/11f9973f3a124fd839a6f1feb3c083a5e4f2017b",
+                "reference": "11f9973f3a124fd839a6f1feb3c083a5e4f2017b",
                 "shasum": ""
             },
             "require": {
                 "cecil/theme-installer": "^1.0||^2.0"
             },
             "require-dev": {
-                "aligny/tailwind-builder": "^1.0"
+                "aligny/tailwind-builder": "^1.2"
             },
             "type": "cecil-theme",
             "extra": {
@@ -45,7 +45,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/3.3.2"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/4.0.0"
             },
             "funding": [
                 {
@@ -57,7 +57,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-09-14T08:54:25+00:00"
+            "time": "2026-10-10T00:26:14+00:00"
         },
         {
             "name": "cecil/theme-headers",

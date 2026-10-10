@@ -2,7 +2,7 @@
 blocks:
   - name: hero
     description: >
-      Write your pages in [Markdown](page:docs/guides/authoring-content), customize templates with 
+      Write your pages in [Markdown](page:docs/group-a/page-1), customize templates with 
       [Twig](https://twig.symfony.com) and [Tailwind CSS](https://tailwindcss.com), 
       and enjoy the power of [Cecil](https://cecil.app) static site generator.
     #image: favicon.png
