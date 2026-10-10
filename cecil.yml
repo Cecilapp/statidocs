@@ -23,13 +23,6 @@ github:
 sidebar:
   collapsed: false # collapse the navigation groups, except the current one
 lastupdated: false # display the page date as "Last updated" date
-docsearch:
-  enabled: false
-  # statidocs.cecil.app credentials
-  appId: F5QE72IRAL
-  indexName: staticecil
-  apiKey: b165b7766201deabe0be660ca0bdab94
-  insights: true
 
 # Cecil config for Statidocs
 output:
@@ -39,6 +32,7 @@ output:
     page: ['html', 'markdown']
 theme:
   - docs
+  - flexsearch
   - pwa
   - redirects
   - headers

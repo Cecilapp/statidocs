@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cbffa04ff895f3909392c23d6f2bb1f",
+    "content-hash": "17a749ddb025c5aa9d479ba9c9449d22",
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "4.0.0",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "11f9973f3a124fd839a6f1feb3c083a5e4f2017b"
+                "reference": "0fc281839698ebf0361c2ed5c4e19af7a80fda52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/11f9973f3a124fd839a6f1feb3c083a5e4f2017b",
-                "reference": "11f9973f3a124fd839a6f1feb3c083a5e4f2017b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/0fc281839698ebf0361c2ed5c4e19af7a80fda52",
+                "reference": "0fc281839698ebf0361c2ed5c4e19af7a80fda52",
                 "shasum": ""
             },
             "require": {
@@ -25,6 +25,10 @@
             },
             "require-dev": {
                 "aligny/tailwind-builder": "^1.2"
+            },
+            "suggest": {
+                "cecil/theme-docsearch": "Search with Algolia DocSearch",
+                "cecil/theme-flexsearch": "Client side search with FlexSearch, without external service"
             },
             "type": "cecil-theme",
             "extra": {
@@ -45,7 +49,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/4.0.0"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/5.0.0"
             },
             "funding": [
                 {
@@ -57,7 +61,58 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-10T00:26:14+00:00"
+            "time": "2026-10-10T12:35:16+00:00"
+        },
+        {
+            "name": "cecil/theme-flexsearch",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-flexsearch.git",
+                "reference": "f6afed8ac852692c3c4b69a48a1958b8e68031a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-flexsearch/zipball/f6afed8ac852692c3c4b69a48a1958b8e68031a1",
+                "reference": "f6afed8ac852692c3c4b69a48a1958b8e68031a1",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4||^2.0"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "flexsearch",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme FlexSearch",
+            "keywords": [
+                "FlexSearch",
+                "cecil",
+                "search",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-flexsearch/issues",
+                "source": "https://github.com/Cecilapp/theme-flexsearch/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2026-10-08T09:31:33+00:00"
         },
         {
             "name": "cecil/theme-headers",
