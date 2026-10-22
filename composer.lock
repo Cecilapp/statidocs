@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17a749ddb025c5aa9d479ba9c9449d22",
+    "content-hash": "490abe892dac4106e413b0b5bbc9c1d7",
     "packages": [
         {
             "name": "cecil/theme-docs",
-            "version": "5.0.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-docs.git",
-                "reference": "0fc281839698ebf0361c2ed5c4e19af7a80fda52"
+                "reference": "526b1ae379c3f5eb2a201df8413891b23e095163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/0fc281839698ebf0361c2ed5c4e19af7a80fda52",
-                "reference": "0fc281839698ebf0361c2ed5c4e19af7a80fda52",
+                "url": "https://api.github.com/repos/Cecilapp/theme-docs/zipball/526b1ae379c3f5eb2a201df8413891b23e095163",
+                "reference": "526b1ae379c3f5eb2a201df8413891b23e095163",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             "extra": {
                 "name": "docs",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "6.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -49,7 +49,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-docs/issues",
-                "source": "https://github.com/Cecilapp/theme-docs/tree/5.0.0"
+                "source": "https://github.com/Cecilapp/theme-docs/tree/6.0.0"
             },
             "funding": [
                 {
@@ -61,20 +61,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-10T12:35:16+00:00"
+            "time": "2026-10-20T22:13:20+00:00"
         },
         {
             "name": "cecil/theme-flexsearch",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-flexsearch.git",
-                "reference": "f6afed8ac852692c3c4b69a48a1958b8e68031a1"
+                "reference": "2fe9e4c6e3baa970c72af99bbeb009676979dab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-flexsearch/zipball/f6afed8ac852692c3c4b69a48a1958b8e68031a1",
-                "reference": "f6afed8ac852692c3c4b69a48a1958b8e68031a1",
+                "url": "https://api.github.com/repos/Cecilapp/theme-flexsearch/zipball/2fe9e4c6e3baa970c72af99bbeb009676979dab2",
+                "reference": "2fe9e4c6e3baa970c72af99bbeb009676979dab2",
                 "shasum": ""
             },
             "require": {
@@ -100,7 +100,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-flexsearch/issues",
-                "source": "https://github.com/Cecilapp/theme-flexsearch/tree/1.0.0"
+                "source": "https://github.com/Cecilapp/theme-flexsearch/tree/1.2.0"
             },
             "funding": [
                 {
@@ -112,20 +112,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-08T09:31:33+00:00"
+            "time": "2026-10-20T02:18:56+00:00"
         },
         {
             "name": "cecil/theme-headers",
-            "version": "1.0.1",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-headers.git",
-                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288"
+                "reference": "924779ada44e69596eef955099b919933f037b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/9ae8f6701e3e732c629c2842b557f184a8f01288",
-                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288",
+                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/924779ada44e69596eef955099b919933f037b9b",
+                "reference": "924779ada44e69596eef955099b919933f037b9b",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
             "extra": {
                 "name": "headers",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -150,7 +150,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-headers/issues",
-                "source": "https://github.com/Cecilapp/theme-headers/tree/1.0.1"
+                "source": "https://github.com/Cecilapp/theme-headers/tree/2.0.1"
             },
             "funding": [
                 {
@@ -162,7 +162,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-09-16T13:33:31+00:00"
+            "time": "2026-10-19T11:20:06+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -232,16 +232,16 @@
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "2.21.1",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "d44e4a85147a3c82fedc2164899c9028e423ec92"
+                "reference": "f7e957eb39a56eac47f7588b145d20fa0c5c50a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/d44e4a85147a3c82fedc2164899c9028e423ec92",
-                "reference": "d44e4a85147a3c82fedc2164899c9028e423ec92",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/f7e957eb39a56eac47f7588b145d20fa0c5c50a6",
+                "reference": "f7e957eb39a56eac47f7588b145d20fa0c5c50a6",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
             "extra": {
                 "name": "pwa",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -266,7 +266,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.21.1"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/3.0.3"
             },
             "funding": [
                 {
@@ -278,20 +278,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-08-28T10:26:48+00:00"
+            "time": "2026-10-19T21:46:00+00:00"
         },
         {
             "name": "cecil/theme-redirects",
-            "version": "1.0.1",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-redirects.git",
-                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479"
+                "reference": "915466e9d13f1c613e71799a20a1e47874f315fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/f7d7ca86d2bec5763fac68883d4fafb26677c479",
-                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479",
+                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/915466e9d13f1c613e71799a20a1e47874f315fb",
+                "reference": "915466e9d13f1c613e71799a20a1e47874f315fb",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
             "extra": {
                 "name": "redirects",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -316,7 +316,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-redirects/issues",
-                "source": "https://github.com/Cecilapp/theme-redirects/tree/1.0.1"
+                "source": "https://github.com/Cecilapp/theme-redirects/tree/2.0.1"
             },
             "funding": [
                 {
@@ -328,7 +328,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-09-16T13:34:33+00:00"
+            "time": "2026-10-19T11:20:14+00:00"
         }
     ],
     "packages-dev": [],

@@ -12,11 +12,11 @@
     }
   ],
   "require": {
-    "cecil/theme-docs": "^5.0",
-    "cecil/theme-pwa": "^2.21",
-    "cecil/theme-redirects": "^1.0",
-    "cecil/theme-headers": "^1.0",
-    "cecil/theme-flexsearch": "^1.0"
+    "cecil/theme-docs": "^6.0",
+    "cecil/theme-pwa": "^3.0",
+    "cecil/theme-redirects": "^2.0",
+    "cecil/theme-headers": "^2.0",
+    "cecil/theme-flexsearch": "^1.2"
   },
   "scripts": {
     "post-create-project-cmd": [
